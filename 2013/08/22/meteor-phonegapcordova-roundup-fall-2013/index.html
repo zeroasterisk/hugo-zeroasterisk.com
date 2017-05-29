@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Meteor &#43; PhoneGap/Cordova (Roundup – Fall 2013) </title>
+
+     
+      
+    
+    
+    
+    
+    
+
+  <meta name="author" content="alan">
+
+ 
+    <meta property="og:title" content="Meteor &#43; PhoneGap/Cordova (Roundup – Fall 2013)" />
+<meta property="og:description" content="UPDATE: see meteor-core-cordova-support-alpha-release-is-out (2014-08-25) for new information
+&nbsp;
+About Meteor and PhoneGap / Cordova Meteor is a rapid server/client development framework, written in JS &#8211; makes very interactive apps easy to build. http://meteor.com
+PhoneGap / Cordova is a project to allow developers to use HTML, CSS, and JS to build mobile apps for all major devices. http://phonegap.com
+Basics of Integrating Meteor &#43; PhoneGap / Cordova The basic idea here is to use PhoneGap / Cordova to create a mobile App on several different platforms at once and it gives device hardware access; then “load” your Meteor application, which handles all of the rest of whatever you want your app to do." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zeroasterisk.com/2013/08/22/meteor-phonegapcordova-roundup-fall-2013/" />
+
+
+
+<meta property="article:published_time" content="2013-08-23T02:49:23&#43;00:00"/>
+<meta property="article:modified_time" content="2013-08-23T02:49:23&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+  <meta property="og:image" content="https://en.gravatar.com/userimage/831761/080d157cba7201fa2d89172617f6b7bb.jpg?size=200">
+
+ 
+    
+     
+     
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.com/2013/08/22/meteor-phonegapcordova-roundup-fall-2013/">   <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABwlBMVEUAAAA/3MUK07UJ0rRk6NkC0rMAw5sAx6Ic1rs/3MYAlU0E0rQAhjMAyKIAiTkM07UJ07UAhC8m2L4o2L5O4Msn2L4AzKoAzq0128Mo2b8F0rQE0rMu2cAt2cAA0bI228MA0LAAy6kr2b8Q1LcF0rMH0rUAxp4t2b8c1ros2b8P1LcAzKsAzq4528Q02sIM07YAfyg93cUD0rMA0LEA0bFK4c0M1LcL07Uv2sEAzawY1rlJ4c0w2sEAzKkY1rqr+PQN07Yj170G0rQI07UF0bMt2cAF0rMC0bIL07UF0bMs2cAF0rMA0bIC0bIL07UF0rMA0bIA0bIA0bIO1LYr2b8N07Yp2L4F0rMF0rQJ07UA0bIC0bMA0bIH0rQK07UD0bMA0LAF0rMAyqYE0rMA0bIS1Lg228ID0bMM07YS1LcI07QL07UJ07UC0bMM07YG0rMS1Lc328IR1LcC0bIK07UM07Yo2L4P1LcL07UD0rMD0rMD0rMB0bIH0rQ23MMQ1LcD0rMN1LYB0LAJ0rQ33MMG0bMP1bgD0rMN07YH0rQH0rQ33MQF0rMD0rMN1LYo2L4F0rQG0rSA6tsA0bIB0bL////yxqscAAAAk3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgnDXAUItvZKBAi6+vpMuf3++wEIAQcEBFn5AgR9UwMEoQLD/AEH4AIdAzha+UMEAQcc9AM4CAFSA9IC+4AEAc8yAwIEBAHOMQOBBLfLMAnFlAJNsa0LAAAAAWJLR0SVCGB6gwAAAAd0SU1FB+EBBBI4BduZ4woAAAF5SURBVDjLY2CAAUYmZgcWRydnVhc2dg4GTMAJlOdydZvs7sHtiU0FSJ7Hy3uyz2RfP24XNl4OLPJ8Xv5A+YBAsAo0M2DyQZMnY1fBL+AgCJXHrkIoWDgEJo9NhUioaBhCHqoiXExcAqZAMkIqckrU5MkoKqSjZeAmyMbIxSIZAFIRMCVOOl4epkAmQSERrwKOJMXkySl4rEhVSkufHDAZtyMzlDPdJweiyiN7UyRLIHsKQj5wMnowSIar5ExJQcjn5qnmqyFHlzqKL7EoQPMlphUaaL7EcGSBZiGKLzFUZGgVFSP5ElNFCVPpFORwhAeVto4uWEGwUJk3alSAVXhIR+tB7ShHTi5QkOIzpUKqEmKCPpODgReaipSUyVWl0tW6GEkWGhRBk2tq6wzrsSVqqPaGRqOmZmMTXWwqwNpbTFvbzMwtsGUMoPb2DqOmTksxK2xZLyhgck1XtzVIuw22zNszeXJvH0i7rR1G9gVlf/v+CRMnWaPYDgA74gwO0j2znAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMS0wNFQxODo1NjowNSswMTowME2yC4wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDEtMDRUMTg6NTY6MDUrMDE6MDA877MwAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css"> 
+    <link rel="stylesheet" href="https://zeroasterisk.com/css/landing.css"> 
+<link rel="stylesheet" href="https://zeroasterisk.com/css/blog-post.css"> 
+<link rel="stylesheet" href="https://zeroasterisk.com/css/code-highlighting/dark.css">
+<link rel="stylesheet" href="https://zeroasterisk.com/css/custom.css"> 
+ 
+    
+    
+</head>
+
+
+<body>
+    <header> <nav class="nav has-shadow">
+<div class="nav-left">
+    <a class="nav-item" href="https://zeroasterisk.com/">
+        <img src="https://zeroasterisk.com/img/logo-zeroasterisk-on-blue.png" alt="Zeroasterisk | Alan Blount">
+    </a>
+</div>
+
+<div class="nav-center">
+    
+
+    <a class="nav-item" target="blank" href="https://github.com/zeroasterisk">
+        <span class="icon">
+            <i class="fa fa-github"></i>
+          </span>
+    </a>
+    
+    
+
+    <a class="nav-item" target="blank" href="https://twitter.com/zeroasterisk">
+        <span class="icon">
+            <i class="fa fa-twitter"></i>
+          </span>
+    </a>
+    
+</div>
+
+
+
+<span class="nav-toggle">
+        <span></span>
+<span></span>
+<span></span>
+</span>
+
+
+
+<div class="nav-right nav-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        
+        
+        <a itemprop="url" class="nav-item is-tab " href="https://zeroasterisk.com/alan/"><span itemprop="name">Alans</span></a>
+        
+        <a itemprop="url" class="nav-item is-tab  is-active" href="https://zeroasterisk.com/post/"><span itemprop="name">Posts</span></a>
+        
+</div>
+</nav>
+ </header>
+    <main>
+
+<div class="container" itemscope itemtype="http://schema.org/BlogPosting">
+     
+<meta itemprop="name" content="Meteor &#43; PhoneGap/Cordova (Roundup – Fall 2013)">
+<meta itemprop="description" content="UPDATE: see meteor-core-cordova-support-alpha-release-is-out (2014-08-25) for new information
+&nbsp;
+About Meteor and PhoneGap / Cordova Meteor is a rapid server/client development framework, written in JS &#8211; makes very interactive apps easy to build. http://meteor.com
+PhoneGap / Cordova is a project to allow developers to use HTML, CSS, and JS to build mobile apps for all major devices. http://phonegap.com
+Basics of Integrating Meteor &#43; PhoneGap / Cordova The basic idea here is to use PhoneGap / Cordova to create a mobile App on several different platforms at once and it gives device hardware access; then “load” your Meteor application, which handles all of the rest of whatever you want your app to do.">
+
+
+<meta itemprop="dateModified" content="2013-08-23T02:49:23&#43;00:00" />
+<meta itemprop="wordCount" content="1379">
+
+
+
+<meta itemprop="keywords" content="adobe-connect,alan,anita,art,cakephp,cordova-/-phonegap,development,event/news,friends-blogs,geek,general,japan,js,laughable,learning-developers,linux,look-at-this,meteorjs,oliver,penelope,php,political,pregnancy,thoughts,beforesave,birth,cake,cakephp,california,childbirth,code,cron,docker,doula,family,geek,git,github,google,google-apps,google-docs,heal,home-birth,internet-explorer-6,linux,master,midwifery,monitor,mysql,new-developers,oliver,open-source,php,poppy,programming,replication,slave,sonoma,tech-web,test,test-heal,vacation,vacation-wedding,wedding," />
+
+    <section class="hero is-primary is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-2" itemprop="headline">
+                    Meteor &#43; PhoneGap/Cordova (Roundup – Fall 2013)
+                </h1>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section blog">
+        <div class="container">
+            <p><span class="icon">
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+</span>
+<span>7 minute read</span>
+<span class="icon">
+ <i class="fa fa-pencil" aria-hidden="true"></i>
+</span>
+
+  Published: <time datetime="2013-08-23T02:49:23&#43;00:00">23 Aug, 2013</time>
+
+</p>
+            <div class="columns is-mobile">
+                <div class="column">
+
+                    <div class="content blog-post section" itemprop="articleBody">
+
+                        
+                        <hr>
+                        
+
+<p>UPDATE: see <a href="https://zeroasterisk.com/2014/08/25/meteor-core-cordova-support-alpha-release-is-out/">meteor-core-cordova-support-alpha-release-is-out (2014-08-25)</a> for new information</p>
+
+<hr />
+
+<p>&nbsp;</p>
+
+<h1 id="about-meteor-and-phonegap-cordova">About Meteor and PhoneGap / Cordova</h1>
+
+<p><strong>Meteor</strong> is a rapid server/client development framework, written in JS &#8211; makes very interactive apps easy to build. <a href="http://meteor.com">http://meteor.com</a></p>
+
+<p><strong>PhoneGap / Cordova</strong> is a project to allow developers to use HTML, CSS, and JS to build mobile apps for all major devices. <a href="http://phonegap.com">http://phonegap.com</a></p>
+
+<h3 id="basics-of-integrating-meteor-phonegap-cordova">Basics of Integrating Meteor + PhoneGap / Cordova</h3>
+
+<p>The basic idea here is to use PhoneGap / Cordova to create a mobile App on several different platforms at once and it gives device hardware access; then “load” your Meteor application, which handles all of the rest of whatever you want your app to do.</p>
+
+<h3 id="why-this-approach">Why this approach?</h3>
+
+<p><strong>Meteor</strong> already has a lot of what you’d want for any App, including client/server shared logic, client optimization and caching, and an amazing client/server data sync/transfer system.  It’s fast, easy to work in, and well documented.  If you ignore the mobile aspect, this is a wonderful platform &#8212; if we can get it to work with mobile devices, then it’s a no-brainer win.</p>
+
+<p><strong>PhoneGap / Cordova</strong> is a convenient “shell” for this, allowing you to get the device hardware hooks in/out of JS, and load up whatever HTML, CSS, JS you like.  Web developers love it, and even people who can work with native Android or iOS (etc) apps may like it because it’s cross platform, business logic only has to be written once.  (Also, it’s now a lot more organized and stable after the 3x release)</p>
+
+<h3 id="meteor-phonegap-win">Meteor + PhoneGap = Win!</h3>
+
+<p>The benefits of both are easy to combine. It’s your web app, and now it’s also your mobile app.</p>
+
+<p>Just in case you didn’t hear that, <strong>your full application is available on the web and on the device exactly the same, you only have to build it once</strong>.  You simply have to slap on some responsive CSS and have logic in your app that determines if you’re in PhoneGap or not (more on that later).</p>
+
+<p>More: <a href="http://prezi.com/ig9gjm11mwsi/from-zero-to-mobile-web-app-in-sixty-minutes/">http://prezi.com/ig9gjm11mwsi/from-zero-to-mobile-web-app-in-sixty-minutes/</a></p>
+
+<h2 id="integration-options">Integration Options</h2>
+
+<h3 id="cordovaphonegap-lazy-loading">CordovaPhonegap (Lazy Loading)</h3>
+
+<p>This approach starts the PhoneGap / Cordova out at the URL to the Meteor App.  This means NOTHING on the PhoneGap www folder gets loaded, and everything is loaded via Meteor.  After the page has loaded, it attempts to load the correct PhoneGap / Cordova JS file (again, from Meteor, out of the public folder) and then run device specific logic.</p>
+
+<p><a href="https://github.com/awatson1978/cordova-phonegap">https://github.com/awatson1978/cordova-phonegap</a></p>
+
+<h4 id="pros">Pros</h4>
+
+<ul>
+<li>Fast &#8211; fast to initially load, and internal changes are also fast</li>
+<li>No middle layer in PhoneGap, no exchange</li>
+<li>Simple way to get Meteor app into App Store and monetized</li>
+<li>Apps built with this method <strong>have</strong> gotten approved in both iTunes and Google Play</li>
+</ul>
+
+<h4 id="cons">Cons</h4>
+
+<ul>
+<li>Complicated because there are lots of different Cordova JS files you may have to support, for different browsers and different versions.</li>
+<li>PhoneGap plugins JS more complicated (again, has to be managed inside Meteor, but versions kept in sync with PhoneGap)</li>
+</ul>
+
+<h3 id="meteorrider-dom-hijacking">MeteorRider (DOM Hijacking)</h3>
+
+<p>This approach is somewhere between the other 2.  The PhoneGap / Cordova files live on the device in the PhoneGap www folder.  The App starts up with the local index.html file, but then JS “hijacks” the DOM, it does an AJAX request to your Meteor app and rewrites the document with your Meteor document, triggering all the events needed for Meteor to startup.</p>
+
+<p>This gives Meteor access to all the PhoneGap JS (already loaded) but the PhoneGap JS is bundled for each device/version within PhoneGap.  It also puts all of the PhoneGap JS into the global scope alongside Meteor JS.</p>
+
+<p><a href="https://github.com/zeroasterisk/MeteorRider">https://github.com/zeroasterisk/MeteorRider</a></p>
+
+<h4 id="pros-1">Pros</h4>
+
+<ul>
+<li>Simple to manage, because all the device-specific code is within PhoneGap (each version is bundled)</li>
+<li>Pretty fast, the base level AJAX request is pretty fast</li>
+<li>Scope is easy, because PhoneGap is available to Meteor directly</li>
+<li>App JS can be tested independent of Meteor (just don’t load it)</li>
+</ul>
+
+<h4 id="cons-1">Cons</h4>
+
+<ul>
+<li>Scope collision is possible, be careful</li>
+<li>Global scope collisions are very possible, you have to be careful with your plugins and variable names.</li>
+</ul>
+
+<h3 id="meteor-cordova-push-iframes">Meteor-Cordova (Push / iFrames)</h3>
+
+<p>This approach is perhaps the most isolated.  It uses JS to make an iframe inside of the PhoneGap / Cordova “page” and to create a “queue” to exchange JS from Meteor to PhoneGap and back.  Meteor and PhoneGap can only talk to each other through this exchange, not directly.</p>
+
+<p><a href="https://github.com/raix/Meteor-Cordova">https://github.com/raix/Meteor-Cordova</a></p>
+
+<h4 id="pros-2">Pros</h4>
+
+<ul>
+<li>Simple to manage, because all the device-specific code is within PhoneGap (each version is bundled)</li>
+<li>Sort-of fast, the base level iframe is pretty fast, but the in-iframe scrolling can lag</li>
+<li>Scope is isolated, no collisions</li>
+<li>App JS can be tested independent of Meteor (just don’t load it)</li>
+<li>Plugins are basically guaranteed to work, because they are 100% isolated</li>
+<li>Sophisticated use of Appcache</li>
+</ul>
+
+<h4 id="cons-2">Cons</h4>
+
+<ul>
+<li>Scope is more complicated and slow, you HAVE to learn and use the exchange methods</li>
+<li>it’s an iFrame&#8230; <em>(ick)</em></li>
+<li>because it’s an iFrame, scrolling can lag/flicker on some devices</li>
+</ul>
+
+<h3 id="packmeteor-update">Packmeteor <em>(update)</em></h3>
+
+<p>This builds all of the Meteor JS/CSS assets, along with the Cordova HTML/JS/CSS assets into a single bundle for deployment.</p>
+
+<p><a href="https://github.com/SpaceCapsule/packmeteor">https://github.com/SpaceCapsule/packmeteor</a></p>
+
+<h4 id="pros-3">Pros</h4>
+
+<ul>
+<li>Fastest load time</li>
+<li>All assets always correct versions, in sync</li>
+</ul>
+
+<h4 id="cons-3">Cons</h4>
+
+<ul>
+<li>You have to have your users download a new version of your app to get updates</li>
+<li>Versions can get out of sync</li>
+</ul>
+
+<h3 id="loader-update">“Loader” <em>(update)</em></h3>
+
+<p>This is a newer approach which builds all Cordova JS files into an asset hosted-on/loaded-from Meteor&#8217;s public folder.</p>
+
+<p><a href="https://github.com/andrewreedy/cordova-loader">https://github.com/andrewreedy/cordova-loader</a></p>
+
+<h4 id="pros-4">Pros</h4>
+
+<ul>
+<li>Fast load time</li>
+<li>Sophisticated use of Appcache</li>
+<li>You no not have download a new version of your app to get updates</li>
+<li>Versions can no longer get out of sync</li>
+</ul>
+
+<h4 id="cons-4">Cons</h4>
+
+<ul>
+<li>???</li>
+</ul>
+
+<h3 id="core-support-update">“Core Support” <em>(update)</em></h3>
+
+<p>The Meteor Core team is working on Cordova Support.</p>
+
+<p>See their <a href="https://meteor.hackpad.com/Cordova-Support-Brainstorming-hL7s1ggxw4Q">Cordova Support Brainstorming</a> HackPad</p>
+
+<p>and the <a href="https://github.com/meteor/meteor/tree/cordova-hcp">Dev Branch on GitHub</a>.</p>
+
+<p><strong>Update</strong>:</p>
+
+<p>Watch the <a href="https://www.youtube.com/watch?v=zzNoXbv1DX4&amp;feature=youtu.be&amp;t=24m">DevShop Presentation of Cordova ALPHA release</a></p>
+
+<p>and <a href="https://meteor.hackpad.com/Getting-Started-With-Cordova-Z5n6zkVB1xq">here are instructions</a> to get it going and play with it.</p>
+
+<h4 id="pros-5">Pros</h4>
+
+<ul>
+<li>Fast load time</li>
+<li>Sophisticated use of Appcache/localStorage</li>
+<li>You no not have download a new version of your app to get updates</li>
+<li>Versions can no longer get out of sync</li>
+</ul>
+
+<h4 id="cons-5">Cons</h4>
+
+<ul>
+<li>???</li>
+</ul>
+
+<hr />
+
+<h1 id="smoothing-the-rough-edges">Smoothing the Rough Edges</h1>
+
+<p>For any of these options, you need to know:</p>
+
+<ul>
+<li>from Meteor
+
+<ul>
+<li>Am I loaded into a device via PhoneGap?</li>
+<li>Is the device loaded?  (deviceread, before Meteor is loaded, or after)</li>
+<li>What hardware hooks are available?</li>
+</ul></li>
+<li>from PhoneGap
+
+<ul>
+<li>Is Meteor connected (status)?</li>
+<li>Do we need a “fallback” URL, if Meteor is not online</li>
+</ul></li>
+</ul>
+
+<p>Some of that is built into all of the options, but there is a lot of room left for “making is easy”.</p>
+
+<p>There is also some need for simplifying and standardizing some of the JS needed on the PhoneGap side (for the “hijack” and “iframe” methods) to load the Meteor app and failover if it’s not available.</p>
+
+<p>Feel free to contribute if you accomplish any of these, or if you want to help out with the documentation (github fork &amp; pull request).</p>
+
+<h1 id="conclusions">Conclusions</h1>
+
+<p>These are all new approaches and libraries.  There will be more support from the Meteor core for Mobile sometime, but that may be a while.  Until then, these are great options for making an excellent mobile app with Meteor and PhoneGap.</p>
+
+<p><strong>Alan’s favorite = “iframes” because the isolation is good for PhoneGap plugins</strong></p>
+
+<p>I personally HATE iframes with a passion, but after having used (and contributed to) all three options, I’m personally using the “iframe” method now.  This is because I have had trouble with PhoneGap plugins with the other methods.</p>
+
+<p><strong>no plugins?  = “hijack” because it’s fast and simple</strong></p>
+
+<p>If you don’t plan on using plugins, but may use PhoneGap core API then I recommend the “hijack” method.  It’s fast, simple, and you don’t have the awkward iframe exchange in the middle.</p>
+
+<p>Finally, if you don’t use anything from PhoneGap at all, and it’s just a shell/browser for your Meteor App, you may prefer “lazy loading” &#8211; it is dead simple.  Be aware though, the long list of Cordova versions your app will eventually have to support makes this option my least favorite long term.</p>
+
+<h1 id="resources">Resources</h1>
+
+<p><strong>on Meteor</strong></p>
+
+<ul>
+<li><p><a href="http://meteor.com">http://meteor.com</a></p></li>
+
+<li><p><a href="http://docs.meteor.com/">http://docs.meteor.com/</a></p></li>
+
+<li><p>Resource Roundup &#8211; <a href="http://goo.gl/cVlbB">http://goo.gl/cVlbB</a></p></li>
+
+<li><p>Videos &#8211; <a href="http://www.eventedmind.com/">http://www.eventedmind.com/</a></p></li>
+
+<li><p>Book &#8211; <a href="http://www.discovermeteor.com/">http://www.discovermeteor.com/</a></p></li>
+
+<li><p>Excellent overview/case study &#8211; <a href="http://www.ibm.com/developerworks/web/library/wa-meteor-webapps/index.html">http://www.ibm.com/developerworks/web/library/wa-meteor-webapps/index.html</a></p></li>
+</ul>
+
+<p><strong>General PhoneGap Guides</strong></p>
+
+<ul>
+<li><p><a href="http://docs.phonegap.com/en/edge/guide_platforms_android_index.md.html#Android%20Platform%20Guide">PhoneGap Cordova Android Platform Guide</a></p></li>
+
+<li><p><a href="http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide">PhoneGap Cordova iOS Platform Guide</a></p></li>
+
+<li><p><a href="http://msdn.microsoft.com/en-us/magazine/hh975345.aspx">http://msdn.microsoft.com/en-us/magazine/hh975345.aspx</a></p></li>
+</ul>
+
+<p><strong>on Meteor + PhoneGap</strong></p>
+
+<ul>
+<li><p><a href="http://prezi.com/ig9gjm11mwsi/from-zero-to-mobile-web-app-in-sixty-minutes/">http://prezi.com/ig9gjm11mwsi/from-zero-to-mobile-web-app-in-sixty-minutes/</a></p></li>
+
+<li><p><a href="http://stackoverflow.com/questions/10322723/can-meteor-be-used-with-phonegap">http://stackoverflow.com/questions/10322723/can-meteor-be-used-with-phon</a><a href="http://blog.snowflax.com/meteor-on-mobile-device-using-phonegap/">egap</a></p></li>
+
+<li><p><a href="http://blog.snowflax.com/meteor-on-mobile-device-using-phonegap/">http://blog.snowflax.com/meteor-on-mobile-device-using-phone</a><a href="http://msdn.microsoft.com/en-us/magazine/hh975345.aspx">gap/</a></p></li>
+
+<li><p>Example of Lazy Loading: <a href="https://github.com/zeroasterisk/Presenteract">https://github.com/zeroasterisk/Presenteract</a> &amp; <a href="https://github.com/zeroasterisk/Presenteract-PhoneGap-ios">https://github.com/zeroasterisk/Presenteract-PhoneGap-ios</a></p></li>
+</ul>
+
+<p><strong>Meteor Packages:</strong></p>
+
+<ul>
+<li><a href="https://github.com/awatson1978/cordova-phonegap">https://github.com/awatson1978/cordova-phonegap</a> (lazy loading)</li>
+<li><a href="https://github.com/raix/Meteor-Cordova">https://github.com/raix/Meteor-Cordova</a> (iframes)</li>
+<li><a href="https://github.com/zeroasterisk/MeteorRider">https://github.com/zeroasterisk/MeteorRider</a> (hijacking dom)</li>
+</ul>
+
+                    </div>
+                    <div class="title is-4">
+                        <p>
+  Published
+  
+    
+      by <span itemprop="author">alan</span>
+    
+  
+  <time datetime="2013-08-23T02:49:23&#43;00:00">
+    23 Aug, 2013
+  </time>
+  
+    in <span itemprop="articleSection"><a href="https://zeroasterisk.com/categories/geek/">geek</a>, <a href="https://zeroasterisk.com/categories/js/">js</a> and <a href="https://zeroasterisk.com/categories/meteorjs/">meteorjs</a></span>
+  
+  
+  using <span itemprop="wordCount">1379</span> words.
+</p>
+
+                        
+
+
+
+                    </div>
+          
+                    
+            
+                </div>
+            </div>
+        
+        </div>
+    </section>
+</div>
+
+</main>
+    <footer> 
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+              &copy;
+              <a rel="noopener" href="https://alanblount.com/">
+                Alan Blount
+              </a>
+              &middot;
+              For more nerdy stuff checkout
+              <a rel="noopener" href="https://code.zeroasterisk.com/">code.zeroasterisk.com</a>
+              <em class="muted">~</em>
+              <a target="_blank" rel="noopener" href="https://github.com/zeroasterisk/">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+ </footer>
+
+    <script async type="text/javascript" src="https://zeroasterisk.com/js/bulma.js"></script>
+    <script async type="text/javascript"  src="https://zeroasterisk.com/js/clipboard.min.js"></script>
+    <script async type="text/javascript"  src="https://zeroasterisk.com/js/clip.js"></script>
+</body>
+
+</html>

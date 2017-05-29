@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/categories/php/</link>
+    <description>Recent content in Php on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Feb 2010 02:59:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key</title>
+      <link>https://zeroasterisk.com/2010/02/18/cakephp-beforesave-gotcha-this-__exists/</link>
+      <pubDate>Fri, 19 Feb 2010 02:59:45 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/02/18/cakephp-beforesave-gotcha-this-__exists/</guid>
+      <description>I added an update to CakePHP Book: beforeSave()
+ Also, if you add a primary key which would turn an &amp;#8220;insert&amp;#8221; into an &amp;#8220;update&amp;#8221; within beforeSave() you&amp;#8217;ll need to set $this-&amp;gt;__exists = true;&amp;#8230; the call to $this-&amp;gt;exists(); happens in model.php before the callback to beforeSave().
+function beforeSave() { if (!isset($this-&amp;gt;data[$this-&amp;gt;name][&#39;id&#39;]) &amp;&amp; isset($this-&amp;gt;data[$this-&amp;gt;name][&#39;unique_field&#39;])) { $found = $this-&amp;gt;find(&#34;first&#34;,array( &#34;recursive&#34; =&amp;gt; -1, &#34;fields&#34; =&amp;gt; array(&#34;id&#34;), &#34;conditions&#34; =&amp;gt; array(&#34;unique_field&#34; =&amp;gt; $this-&amp;gt;data[$this-&amp;gt;name][&#39;unique_field&#39;]))); if (!empty($found) &amp;&amp; isset($found[$this-&amp;gt;name][&#39;id&#39;])) { $this-&amp;gt;id = $this-&amp;gt;data[$this-&amp;gt;name][&#39;id&#39;] = $found[$this-&amp;gt;name][&#39;id&#39;]; $this-&amp;gt;__exists = true; } } return parent::beforeSave(); }  That&amp;#8217;s been confusing me a bit recently &amp;#8211; setting the ID of a row within beforesave() should change the save to an update, but it was trying to insert with a specified ID and thus, failing&amp;#8230; glad to have a simple solution that makes sense&amp;#8230; hope that helps someone else&amp;#8230;</description>
+    </item>
+    
+    <item>
+      <title>MySQL Master/Slave Replication Monitoring PHP Script</title>
+      <link>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</link>
+      <pubDate>Wed, 13 Jan 2010 18:47:25 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</guid>
+      <description>I&amp;#8217;m a bit proud of myself on this one&amp;#8230; I setup a simple, but clean and configurable, MySQL Master/Slave Replication Monitoring PHP Script:
+http://code.google.com/p/php-mysql-master-slave-replication-monitor/ (docs)
+It&amp;#8217;s Open Source and free, I welcome comments, suggestions, and questions.
+I think this will be quite useful for anyone who is setting up a pair of MySQL servers as master/slave and want to be sure their replication works as it should.
+  </description>
+    </item>
+    
+    <item>
+      <title>SVN Merge, making sure a branch is updated from trunk, then merging back to trunk</title>
+      <link>https://zeroasterisk.com/2009/03/05/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/</link>
+      <pubDate>Thu, 05 Mar 2009 17:49:34 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2009/03/05/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/</guid>
+      <description>So I&amp;#8217;ve just fought a battle w/ SVN merge and thought I&amp;#8217;d post the solution in case others might find it&amp;#8230;
+Scenario
+Our stable code is in trunk svn://svn.domain.tld/repository/trunk
+I&amp;#8217;ve got a branch of trunk svn://svn.domain.tld/repository/branches/dev
+Changes have been made to my branch and changes have been made to trunk, since I branched.
+I&amp;#8217;m ready to merge my branch back into trunk.
+Approach / Overview
+Basically, to be safe, I need to first update my branch with the changes from trunk and resolve any conflicts.</description>
+    </item>
+    
+    <item>
+      <title>repost: If programming languages were religions</title>
+      <link>https://zeroasterisk.com/2008/12/17/repost-if-programming-languages-were-religions/</link>
+      <pubDate>Wed, 17 Dec 2008 18:00:20 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2008/12/17/repost-if-programming-languages-were-religions/</guid>
+      <description>A very funny post for the programming nerds out there:
+If programming languages were religions&amp;#8230;
+By amz &amp;#8211; Monday, December 15, 2008 at 14:52
+ PHP would be Cafeteria Christianity &amp;#8211; Fights with Java for the web market. It draws a few concepts from C and Java, but only those that it really likes. Maybe it&amp;#8217;s not as coherent as other languages, but at least it leaves you with much more freedom and ostensibly keeps the core idea of the whole thing.</description>
+    </item>
+    
+    <item>
+      <title>Mantis to Basecamp to-do(s)</title>
+      <link>https://zeroasterisk.com/2008/11/13/mantis-to-basecamp-to-dos/</link>
+      <pubDate>Thu, 13 Nov 2008 18:36:39 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2008/11/13/mantis-to-basecamp-to-dos/</guid>
+      <description>I just created a handy little script to create todos in basecamp for unresovled tickets in mantis.
+You can see the open sourced code/project: http://code.google.com/p/mantis2basecamp-todo/.
+This is something we found useful, if you use both tools, you might find it useful as well.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

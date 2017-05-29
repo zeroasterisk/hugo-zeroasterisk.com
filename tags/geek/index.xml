@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geek on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/geek/</link>
+    <description>Recent content in Geek on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2014 18:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/geek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coreos &amp; Docker, great presentation</title>
+      <link>https://zeroasterisk.com/2014/10/21/coreos-docker-great-presentation/</link>
+      <pubDate>Tue, 21 Oct 2014 18:43:00 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2014/10/21/coreos-docker-great-presentation/</guid>
+      <description>Found this inspriing presentation from a Chicago Docker meetup:
+http://www.mediafly.com/news/karl-grzeszczak-september-docker-presentation
+from:
+Chicago Docker &amp;#8211; September 2014 at Mediafly
+Thursday, Sep 25, 2014, 6:00 PM
+http://www.meetup.com/Docker-Chicago/events/204992852/
+by:
+Karl Grzeszczak: on Twitter @karl_grz and his website http://karlgrz.com/.
+It linked to this amazingly well done animation on RAFT consensus and how it works:
+http://thesecretlivesofdata.com/raft/
+Also linked a great blog post:
+http://lukebond.ghost.io/deploying-docker-containers-on-a-coreos-cluster-with-fleet/
+And here are some of the &amp;#8220;main&amp;#8221; coreos repos:
+https://github.com/coreos/etcd
+After digging up a bit on the presenter, he also had this interested post:</description>
+    </item>
+    
+    <item>
+      <title>Great advice from Arunoda “Just Contribute!”</title>
+      <link>https://zeroasterisk.com/2014/04/24/great-advice-from-arunoda-contribute/</link>
+      <pubDate>Thu, 24 Apr 2014 14:06:47 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2014/04/24/great-advice-from-arunoda-contribute/</guid>
+      <description>http://readme.lk/noticed-tech-crowd-interview-arunoda-susiripala/      This advice might be aimed at people who already consider themselves developers, but there&amp;#8217;s a nugget in there that&amp;#8217;s perfect for anyone who is interested in getting started&amp;#8230;      Pick some open-source project, probably a smaller one, that does something you&amp;#8217;re interested in. Maybe it&amp;#8217;s something you tried out and used. Maybe it&amp;#8217;s something you tried out and it didn&amp;#8217;t work out.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Master on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/master/</link>
+    <description>Recent content in Master on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jan 2010 18:47:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/master/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL Master/Slave Replication Monitoring PHP Script</title>
+      <link>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</link>
+      <pubDate>Wed, 13 Jan 2010 18:47:25 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</guid>
+      <description>I&amp;#8217;m a bit proud of myself on this one&amp;#8230; I setup a simple, but clean and configurable, MySQL Master/Slave Replication Monitoring PHP Script:
+http://code.google.com/p/php-mysql-master-slave-replication-monitor/ (docs)
+It&amp;#8217;s Open Source and free, I welcome comments, suggestions, and questions.
+I think this will be quite useful for anyone who is setting up a pair of MySQL servers as master/slave and want to be sure their replication works as it should.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

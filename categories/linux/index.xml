@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/categories/linux/</link>
+    <description>Recent content in Linux on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2013 10:53:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MOSSCON 2013 was lots of fun</title>
+      <link>https://zeroasterisk.com/2013/05/19/mosscon-2013-was-lots-of-fun/</link>
+      <pubDate>Sun, 19 May 2013 10:53:59 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2013/05/19/mosscon-2013-was-lots-of-fun/</guid>
+      <description>I had a great time attending and presenting at moscon.
+http://mosscon.org/
+May 18 &amp;#8211; 19, 2013 | University of Louisville | Louisville, Kentucky
+I know it was a lot of work for the people who set it up, but you did a great job and I look forward to attending again in another year.
+(if I present again next time, my slides will be more readable, I promise&amp;#8230;)</description>
+    </item>
+    
+    <item>
+      <title>MySQL Master/Slave Replication Monitoring PHP Script</title>
+      <link>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</link>
+      <pubDate>Wed, 13 Jan 2010 18:47:25 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/01/13/mysql-masterslave-replication-monitoring-php-script/</guid>
+      <description>I&amp;#8217;m a bit proud of myself on this one&amp;#8230; I setup a simple, but clean and configurable, MySQL Master/Slave Replication Monitoring PHP Script:
+http://code.google.com/p/php-mysql-master-slave-replication-monitor/ (docs)
+It&amp;#8217;s Open Source and free, I welcome comments, suggestions, and questions.
+I think this will be quite useful for anyone who is setting up a pair of MySQL servers as master/slave and want to be sure their replication works as it should.
+  </description>
+    </item>
+    
+    <item>
+      <title>fanout, a super useful linux script if you manage multiple, similar servers</title>
+      <link>https://zeroasterisk.com/2009/12/24/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</link>
+      <pubDate>Thu, 24 Dec 2009 04:54:29 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2009/12/24/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</guid>
+      <description>I love this fanout script for running the same command on multiple servers, just in case you&amp;#8217;re interested:
+http://www.stearns.org/fanout/fanout
+[root@199564-6 scripts]# fanout &amp;quot;$SERVERS&amp;quot; &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Starting root@db1&amp;lt;br /&amp;gt; Starting root@db2&amp;lt;br /&amp;gt; Starting root@nas&amp;lt;br /&amp;gt; Starting root@www1&amp;lt;br /&amp;gt; Starting root@www2&amp;lt;br /&amp;gt; Starting root@www3&amp;lt;br /&amp;gt; Fanout executing &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Start time Wed Dec 23 23:45:35 EST 2009 , End time Wed Dec 23 23:45:47 EST 2009&amp;lt;br /&amp;gt; ==== As root on db1 ====</description>
+    </item>
+    
+  </channel>
+</rss>

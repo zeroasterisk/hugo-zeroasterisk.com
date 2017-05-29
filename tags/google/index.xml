@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/google/</link>
+    <description>Recent content in Google on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2010 23:24:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Apps removes support for IE6</title>
+      <link>https://zeroasterisk.com/2010/02/01/google-apps-removes-support-for-ie6/</link>
+      <pubDate>Mon, 01 Feb 2010 23:24:10 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/02/01/google-apps-removes-support-for-ie6/</guid>
+      <description>http://googleenterprise.blogspot.com/2010/01/modern-browsers-for-modern-applications.html
+ Many other companies have already stopped supporting older browsers like Internet Explorer 6.0 as well as browsers that are not supported by their own manufacturers. We’re also going to begin phasing out our support, starting with Google Docs and Google Sites. As a result you may find that from March 1 key functionality within these products &amp;#8212; as well as new Docs and Sites features &amp;#8212; won’t work properly in older browsers.</description>
+    </item>
+    
+  </channel>
+</rss>

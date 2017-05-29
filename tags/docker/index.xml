@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/docker/</link>
+    <description>Recent content in Docker on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2014 18:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coreos &amp; Docker, great presentation</title>
+      <link>https://zeroasterisk.com/2014/10/21/coreos-docker-great-presentation/</link>
+      <pubDate>Tue, 21 Oct 2014 18:43:00 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2014/10/21/coreos-docker-great-presentation/</guid>
+      <description>Found this inspriing presentation from a Chicago Docker meetup:
+http://www.mediafly.com/news/karl-grzeszczak-september-docker-presentation
+from:
+Chicago Docker &amp;#8211; September 2014 at Mediafly
+Thursday, Sep 25, 2014, 6:00 PM
+http://www.meetup.com/Docker-Chicago/events/204992852/
+by:
+Karl Grzeszczak: on Twitter @karl_grz and his website http://karlgrz.com/.
+It linked to this amazingly well done animation on RAFT consensus and how it works:
+http://thesecretlivesofdata.com/raft/
+Also linked a great blog post:
+http://lukebond.ghost.io/deploying-docker-containers-on-a-coreos-cluster-with-fleet/
+And here are some of the &amp;#8220;main&amp;#8221; coreos repos:
+https://github.com/coreos/etcd
+After digging up a bit on the presenter, he also had this interested post:</description>
+    </item>
+    
+  </channel>
+</rss>

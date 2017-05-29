@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cake on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/cake/</link>
+    <description>Recent content in Cake on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Feb 2010 02:59:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/cake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key</title>
+      <link>https://zeroasterisk.com/2010/02/18/cakephp-beforesave-gotcha-this-__exists/</link>
+      <pubDate>Fri, 19 Feb 2010 02:59:45 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2010/02/18/cakephp-beforesave-gotcha-this-__exists/</guid>
+      <description>I added an update to CakePHP Book: beforeSave()
+ Also, if you add a primary key which would turn an &amp;#8220;insert&amp;#8221; into an &amp;#8220;update&amp;#8221; within beforeSave() you&amp;#8217;ll need to set $this-&amp;gt;__exists = true;&amp;#8230; the call to $this-&amp;gt;exists(); happens in model.php before the callback to beforeSave().
+function beforeSave() { if (!isset($this-&amp;gt;data[$this-&amp;gt;name][&#39;id&#39;]) &amp;&amp; isset($this-&amp;gt;data[$this-&amp;gt;name][&#39;unique_field&#39;])) { $found = $this-&amp;gt;find(&#34;first&#34;,array( &#34;recursive&#34; =&amp;gt; -1, &#34;fields&#34; =&amp;gt; array(&#34;id&#34;), &#34;conditions&#34; =&amp;gt; array(&#34;unique_field&#34; =&amp;gt; $this-&amp;gt;data[$this-&amp;gt;name][&#39;unique_field&#39;]))); if (!empty($found) &amp;&amp; isset($found[$this-&amp;gt;name][&#39;id&#39;])) { $this-&amp;gt;id = $this-&amp;gt;data[$this-&amp;gt;name][&#39;id&#39;] = $found[$this-&amp;gt;name][&#39;id&#39;]; $this-&amp;gt;__exists = true; } } return parent::beforeSave(); }  That&amp;#8217;s been confusing me a bit recently &amp;#8211; setting the ID of a row within beforesave() should change the save to an update, but it was trying to insert with a specified ID and thus, failing&amp;#8230; glad to have a simple solution that makes sense&amp;#8230; hope that helps someone else&amp;#8230;</description>
+    </item>
+    
+  </channel>
+</rss>

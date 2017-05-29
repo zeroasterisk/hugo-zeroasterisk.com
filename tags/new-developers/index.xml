@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Developers on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/new-developers/</link>
+    <description>Recent content in New Developers on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Apr 2014 14:06:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/new-developers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Great advice from Arunoda “Just Contribute!”</title>
+      <link>https://zeroasterisk.com/2014/04/24/great-advice-from-arunoda-contribute/</link>
+      <pubDate>Thu, 24 Apr 2014 14:06:47 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2014/04/24/great-advice-from-arunoda-contribute/</guid>
+      <description>http://readme.lk/noticed-tech-crowd-interview-arunoda-susiripala/      This advice might be aimed at people who already consider themselves developers, but there&amp;#8217;s a nugget in there that&amp;#8217;s perfect for anyone who is interested in getting started&amp;#8230;      Pick some open-source project, probably a smaller one, that does something you&amp;#8217;re interested in. Maybe it&amp;#8217;s something you tried out and used. Maybe it&amp;#8217;s something you tried out and it didn&amp;#8217;t work out.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Web on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/tech-web/</link>
+    <description>Recent content in Tech Web on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2009 16:58:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/tech-web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WolframAlpha &amp; Google Chrome OS</title>
+      <link>https://zeroasterisk.com/2009/07/08/google-chrome-os/</link>
+      <pubDate>Wed, 08 Jul 2009 16:58:09 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/2009/07/08/google-chrome-os/</guid>
+      <description>I recently came across wolframalpha which is really fantastic. It provides a much of data for a very wide variety of searches&amp;#8230; basically the neat part is it&amp;#8217;s conversion of English statements into data-based queries and graphs&amp;#8230; It works across tons and tons of datatypes, including one of the most useful weather reports I&amp;#8217;ve seen&amp;#8230; simple and obvious and useful data across the board. (perhaps I just like graphs too much) It also has good financial data, though I still prefer google finance.</description>
+    </item>
+    
+  </channel>
+</rss>
