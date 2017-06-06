@@ -6,10 +6,21 @@
     <description>Recent content in Code on Alan Blount &amp; Family | zeroasterisk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2010 18:47:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 May 2017 18:28:04 -0400</lastBuildDate>
     
 	<atom:link href="https://zeroasterisk.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017 memorial day homework</title>
+      <link>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</link>
+      <pubDate>Mon, 29 May 2017 18:28:04 -0400</pubDate>
+      
+      <guid>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</guid>
+      <description>I have made the formal household declaration that all screen time will be matched, hour-for-hour with project time. Yesterday we cleaned the 1st floor, mopped and everything. Today we went grocery shopping, made lunch, and then started on homework time.
+To say that I am unpopular here, would be an understatement.
+But both of our kids will benefit from some extra assignements. Our education system is super lax, and a bit of supplimental assignment seems like a good idea.</description>
+    </item>
     
     <item>
       <title>MySQL Master/Slave Replication Monitoring PHP Script</title>

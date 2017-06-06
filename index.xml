@@ -6,10 +6,21 @@
     <description>Recent content on Alan Blount &amp; Family | zeroasterisk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2015 05:10:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 May 2017 18:28:04 -0400</lastBuildDate>
     
 	<atom:link href="https://zeroasterisk.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017 memorial day homework</title>
+      <link>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</link>
+      <pubDate>Mon, 29 May 2017 18:28:04 -0400</pubDate>
+      
+      <guid>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</guid>
+      <description>I have made the formal household declaration that all screen time will be matched, hour-for-hour with project time. Yesterday we cleaned the 1st floor, mopped and everything. Today we went grocery shopping, made lunch, and then started on homework time.
+To say that I am unpopular here, would be an understatement.
+But both of our kids will benefit from some extra assignements. Our education system is super lax, and a bit of supplimental assignment seems like a good idea.</description>
+    </item>
     
     <item>
       <title>Best part of CodepaLOUsa so far…</title>
@@ -55,19 +66,6 @@ After digging up a bit on the presenter, he also had this interested post:</desc
 Basic summary: &amp;#8220;everyone is and can be creative: you just have to be fearless about failing, and practice a bunch.&amp;#8221;
 Led to this understanding by my art-teacher mother, since early childhood I&amp;#8217;ve been saying something pretty similar.
 Creativity is wonderful, amazing, useful, freeing, and fun&amp;#8230; but it&amp;#8217;s not rare. Being creative is a skill, available to everyone. It doesn&amp;#8217;t have to be &amp;#8220;Art&amp;#8221; (note the capital A) nor innovation. It doesn&amp;#8217;t have to be shared.</description>
-    </item>
-    
-    <item>
-      <title>alan</title>
-      <link>https://zeroasterisk.com/alan/</link>
-      <pubDate>Wed, 10 Sep 2014 17:38:30 +0000</pubDate>
-      
-      <guid>https://zeroasterisk.com/alan/</guid>
-      <description>Tagline
-Geek, Freak, Muppet, Robot, Inventor, Artist, Communicator
-Introduction
-I fix things, or try. Often breaking them till they work or they don&amp;#8217;t. This applies to programs, web applications, websites, computers, artwork, food, friendships, relationships, people, and anything else I devote energy to.
-Since fatherhood, the amount of time devoted to pretty much anything else has been drastically reduced. The amount of time devoted to my wonderful family has seen a significant increase&amp;#8230; all is right with my very small part of the world, and I am truly grateful.</description>
     </item>
     
     <item>
@@ -121,7 +119,9 @@ I just got assigned a crappy bug ticket on IE8 + WinXP and had to dust this off 
       <pubDate>Thu, 24 Apr 2014 14:06:47 +0000</pubDate>
       
       <guid>https://zeroasterisk.com/2014/04/24/great-advice-from-arunoda-contribute/</guid>
-      <description>http://readme.lk/noticed-tech-crowd-interview-arunoda-susiripala/      This advice might be aimed at people who already consider themselves developers, but there&amp;#8217;s a nugget in there that&amp;#8217;s perfect for anyone who is interested in getting started&amp;#8230;      Pick some open-source project, probably a smaller one, that does something you&amp;#8217;re interested in. Maybe it&amp;#8217;s something you tried out and used. Maybe it&amp;#8217;s something you tried out and it didn&amp;#8217;t work out.</description>
+      <description>http://readme.lk/noticed-tech-crowd-interview-arunoda-susiripala/
+This advice might be aimed at people who already consider themselves developers, but there&amp;#8217;s a nugget in there that&amp;#8217;s perfect for anyone who is interested in getting started&amp;#8230;
+Pick some open-source project, probably a smaller one, that does something you&amp;#8217;re interested in. Maybe it&amp;#8217;s something you tried out and used. Maybe it&amp;#8217;s something you tried out and it didn&amp;#8217;t work out. Maybe it&amp;#8217;s something you looked at and didn&amp;#8217;t understand.</description>
     </item>
     
     <item>
@@ -3676,6 +3676,18 @@ Also, while you are looking at that photo, look around the friends 2005 photos &
       <guid>https://zeroasterisk.com/2005/07/12/first-post-on-wordpress/</guid>
       <description>I have implemented a blogging system on my site (utilizing WordPress) and modified the display of my wiki to play well with the blog&amp;#8230; The basics of the change are making the content fixed width, and moving the &amp;#8220;article, discussion, edit, history, etc&amp;#8221; tabs to a sidebar component on the wiki&amp;#8230; then coming up with a shared header&amp;#8230;
 I still need to get the old blog entries into this system (very do-able), and I am thinking a homepage not in the wiki, is appropriate&amp;#8230; either that or i should get rid of the &amp;#8220;home&amp;#8221; link in the header&amp;#8230; hurumph &amp;#8211; i think i&amp;#8217;m going to remove the &amp;#8220;home&amp;#8221; link in the header now (since it&amp;#8217;s the same as the wiki link for now).</description>
+    </item>
+    
+    <item>
+      <title>About Alan</title>
+      <link>https://zeroasterisk.com/about/</link>
+      <pubDate>Wed, 17 Jan 1979 00:00:00 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/about/</guid>
+      <description>Tagline Geek, Freak, Muppet, Robot, Inventor, Artist, Communicator
+Introduction
+I fix things, or try. Often breaking them till they work or they don&amp;rsquo;t. This applies to programs, web applications, websites, computers, artwork, food, friendships, relationships, people, and anything else I devote energy to.
+Since fatherhood, the amount of time devoted to pretty much anything else has been drastically reduced. The amount of time devoted to my wonderful family has seen a significant increase; all is right with my very small part of the world, and I am truly grateful.</description>
     </item>
     
   </channel>

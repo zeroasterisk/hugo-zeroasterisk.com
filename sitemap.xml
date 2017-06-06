@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</loc>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/2015/04/28/best-part-of-codepalousa-so-far/</loc>
     <lastmod>2015-04-28T05:10:01+00:00</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>https://zeroasterisk.com/2014/10/14/life-changlingly-good-ted-radio-hour-the-source-of-creativity/</loc>
     <lastmod>2014-10-14T14:07:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zeroasterisk.com/alan/</loc>
-    <lastmod>2014-09-10T17:38:30+00:00</lastmod>
   </url>
   
   <url>
@@ -1677,6 +1677,17 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/about/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zeroasterisk.com/about/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/categories/adobe-connect/</loc>
     <lastmod>2010-07-23T17:54:50+00:00</lastmod>
     <priority>0</priority>
@@ -1689,14 +1700,14 @@
   </url>
   
   <url>
-    <loc>https://zeroasterisk.com/</loc>
-    <lastmod>2015-04-28T05:10:01+00:00</lastmod>
+    <loc>https://zeroasterisk.com/tags/alan/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zeroasterisk.com/alan/</loc>
-    <lastmod>2014-09-10T17:38:30+00:00</lastmod>
+    <loc>https://zeroasterisk.com/</loc>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1762,7 +1773,7 @@
   
   <url>
     <loc>https://zeroasterisk.com/tags/code/</loc>
-    <lastmod>2010-01-13T18:47:25+00:00</lastmod>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1875,6 +1886,12 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/tags/homework/</loc>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/tags/internet-explorer-6/</loc>
     <lastmod>2010-02-01T23:24:10+00:00</lastmod>
     <priority>0</priority>
@@ -1889,6 +1906,12 @@
   <url>
     <loc>https://zeroasterisk.com/categories/js/</loc>
     <lastmod>2013-08-23T02:49:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeroasterisk.com/tags/kids/</loc>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2008,7 +2031,7 @@
   
   <url>
     <loc>https://zeroasterisk.com/post/</loc>
-    <lastmod>2015-04-28T05:10:01+00:00</lastmod>
+    <lastmod>2017-05-29T18:28:04-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2044,7 +2067,7 @@
   
   <url>
     <loc>https://zeroasterisk.com/tags/</loc>
-    <lastmod>2010-02-19T02:59:45+00:00</lastmod>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

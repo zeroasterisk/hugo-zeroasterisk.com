@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alan on Alan Blount &amp; Family | zeroasterisk</title>
+    <link>https://zeroasterisk.com/tags/alan/</link>
+    <description>Recent content in Alan on Alan Blount &amp; Family | zeroasterisk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jan 1979 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zeroasterisk.com/tags/alan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Alan</title>
+      <link>https://zeroasterisk.com/about/</link>
+      <pubDate>Wed, 17 Jan 1979 00:00:00 +0000</pubDate>
+      
+      <guid>https://zeroasterisk.com/about/</guid>
+      <description>Tagline Geek, Freak, Muppet, Robot, Inventor, Artist, Communicator
+Introduction
+I fix things, or try. Often breaking them till they work or they don&amp;rsquo;t. This applies to programs, web applications, websites, computers, artwork, food, friendships, relationships, people, and anything else I devote energy to.
+Since fatherhood, the amount of time devoted to pretty much anything else has been drastically reduced. The amount of time devoted to my wonderful family has seen a significant increase; all is right with my very small part of the world, and I am truly grateful.</description>
+    </item>
+    
+  </channel>
+</rss>
