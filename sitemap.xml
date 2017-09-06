@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://zeroasterisk.com/2017/05/2017-memorial-day-homework/</loc>
@@ -1682,6 +1683,11 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/about/</loc>
     <lastmod>2017-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1720,6 +1726,11 @@
   <url>
     <loc>https://zeroasterisk.com/categories/art/</loc>
     <lastmod>2014-10-14T14:07:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeroasterisk.com/tags/arthur/</loc>
     <priority>0</priority>
   </url>
   
@@ -1808,6 +1819,11 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/tags/engaged/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/categories/event/news/</loc>
     <lastmod>2009-02-03T05:36:05+00:00</lastmod>
     <priority>0</priority>
@@ -1892,6 +1908,10 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/1/01/how-to-learn-----meta/</loc>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/tags/internet-explorer-6/</loc>
     <lastmod>2010-02-01T23:24:10+00:00</lastmod>
     <priority>0</priority>
@@ -1922,6 +1942,11 @@
   </url>
   
   <url>
+    <loc>https://zeroasterisk.com/tags/learning/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeroasterisk.com/categories/learning-developers/</loc>
     <lastmod>2014-04-24T14:06:47+00:00</lastmod>
     <priority>0</priority>
@@ -1948,6 +1973,11 @@
   <url>
     <loc>https://zeroasterisk.com/tags/master/</loc>
     <lastmod>2010-01-13T18:47:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeroasterisk.com/tags/meta/</loc>
     <priority>0</priority>
   </url>
   
