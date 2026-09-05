@@ -1,7 +1,7 @@
 ---
 title: "Meteor 0.9.2-rc1 is fun to play with, Cordova support functional"
 date: 2014-09-09T21:41:00+00:00
-tags: ["2014"]
+tags: ["2014", "meteor", "cordova", "mobile"]
 type: "posts"
 ---
 

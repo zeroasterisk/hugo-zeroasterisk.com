@@ -1,7 +1,7 @@
 ---
 title: "Meteor and Elixir (part one) A Rocky Courtship"
 date: 2017-06-23
-tags: ["2017"]
+tags: ["2017", "meteor", "elixir", "javascript", "functional-programming"]
 type: "posts"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Meteor 1.5 ~ Bundle Optimization + Examples"
 date: 2017-05-31
-tags: ["2017"]
+tags: ["2017", "meteor", "javascript", "optimization"]
 type: "posts"
 ---
 
