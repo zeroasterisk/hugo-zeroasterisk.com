@@ -1,0 +1,10 @@
+name = "Minimal Tech"
+description = "A clean, professional theme for technical professionals"
+homepage = "https://github.com/zeroasterisk/minimal-tech-theme"
+tags = ["minimal", "professional", "technical", "clean"]
+features = ["responsive", "fast", "accessible"]
+min_version = "0.111.0"
+
+[author]
+  name = "Alan Blount"
+  homepage = "https://zeroasterisk.com"

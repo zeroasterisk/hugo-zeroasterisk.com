@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Graph paper grid -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f4f8" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="smallGrid" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#f8fafc" stroke-width="0.3"/>
+    </pattern>
+    <!-- Coffee stain gradient -->
+    <radialGradient id="coffeeStain" cx="80%" cy="85%" r="15%">
+      <stop offset="0%" stop-color="#8B4513" stop-opacity="0.03"/>
+      <stop offset="30%" stop-color="#A0522D" stop-opacity="0.02"/>
+      <stop offset="70%" stop-color="#CD853F" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="#DEB887" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="#fefefe"/>
+  
+  <!-- Small grid -->
+  <rect width="100" height="100" fill="url(#smallGrid)"/>
+  
+  <!-- Main grid -->
+  <rect width="100" height="100" fill="url(#grid)"/>
+  
+  <!-- Coffee stain -->
+  <ellipse cx="85" cy="88" rx="12" ry="8" fill="url(#coffeeStain)" transform="rotate(-15 85 88)"/>
+</svg>

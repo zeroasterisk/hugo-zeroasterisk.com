@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="tags-page">
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">Browse by Tag</h1>
+            <p class="page-description">Explore posts by topic and technology</p>
+        </header>
+        
+        <div class="tags-cloud">
+            {{ range .Site.Taxonomies.tags.Alphabetical }}
+            <a href="/tags/{{ .Name | urlize }}/" class="tag-cloud-item">
+                <span class="tag-name">{{ .Name }}</span>
+                <span class="tag-count">({{ .Count }})</span>
+            </a>
+            {{ end }}
+        </div>
+        
+        <div class="recent-tags">
+            <h2>Popular Tags</h2>
+            <div class="popular-tags">
+                {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+                <a href="/tags/{{ .Name | urlize }}/" class="popular-tag">
+                    <span class="tag-name">{{ .Name }}</span>
+                    <span class="tag-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="single-content">
+    <div class="container">
+        <header class="content-header">
+            <div class="content-meta">
+                <span class="content-type">{{ .Type | title }}</span>
+                <time class="content-date">{{ .Date.Format "January 2, 2006" }}</time>
+                {{ if .Params.reading_time }}
+                <span class="reading-time">{{ .Params.reading_time }}</span>
+                {{ end }}
+            </div>
+            
+            <h1 class="content-title">{{ .Title }}</h1>
+            
+            {{ with .Description }}
+            <p class="content-description">{{ . }}</p>
+            {{ end }}
+            
+            {{ with .Params.tags }}
+            <div class="content-tags">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </header>
+        
+        <div class="content-body">
+            {{ .Content }}
+        </div>
+        
+        {{ if or .NextInSection .PrevInSection }}
+        <nav class="content-navigation">
+            {{ with .PrevInSection }}
+            <div class="nav-prev">
+                <span class="nav-label">← Previous</span>
+                <a href="{{ .Permalink }}" class="nav-title">{{ .Title }}</a>
+            </div>
+            {{ end }}
+            
+            {{ with .NextInSection }}
+            <div class="nav-next">
+                <span class="nav-label">Next →</span>
+                <a href="{{ .Permalink }}" class="nav-title">{{ .Title }}</a>
+            </div>
+            {{ end }}
+        </nav>
+        {{ end }}
+    </div>
+</article>
+{{ end }}

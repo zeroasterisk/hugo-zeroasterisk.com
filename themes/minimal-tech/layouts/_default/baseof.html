@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {{ hugo.Generator }}
+    
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    
+    {{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+    
+    {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">
+    {{ end }}
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    
+    <!-- Canonical URL -->
+    {{ if .Params.canonical_url }}
+    <link rel="canonical" href="{{ .Params.canonical_url }}">
+    <meta property="article:canonical_url" content="{{ .Params.canonical_url }}">
+    {{ else }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ end }}
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Site.Params.twitter }}
+    <meta name="twitter:creator" content="@{{ . }}">
+    {{ end }}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- RSS Feed -->
+    {{ with .AlternativeOutputFormats.Get "rss" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    
+    {{ if .Site.Params.googleAnalytics }}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ .Site.Params.googleAnalytics }}');
+    </script>
+    {{ end }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+    
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer.html" . }}
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

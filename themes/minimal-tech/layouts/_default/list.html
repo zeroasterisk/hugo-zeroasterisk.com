@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="content-page">
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ if .Description }}
+            <p class="page-description">{{ .Description }}</p>
+            {{ end }}
+        </header>
+        
+        <div class="content-list">
+            {{ $paginator := .Paginate .Pages }}
+            {{ range $paginator.Pages }}
+            <article class="content-item">
+                <div class="item-meta">
+                    <time class="item-date">{{ .Date.Format "2006-01-02" }}</time>
+                    {{ if .Params.reading_time }}
+                    <span class="reading-time">{{ .Params.reading_time }}</span>
+                    {{ end }}
+                </div>
+                
+                <h2 class="item-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                
+                {{ with .Summary }}
+                <div class="item-summary">
+                    {{ . }}
+                </div>
+                {{ end }}
+                
+                {{ with .Params.tags }}
+                <div class="item-tags">
+                    {{ range . }}
+                    <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+                
+                <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+            </article>
+            {{ end }}
+        </div>
+        
+        {{ if gt $paginator.TotalPages 1 }}
+        <nav class="pagination">
+            {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="pagination-link">← Previous</a>
+            {{ end }}
+            
+            <span class="pagination-info">
+                Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+            </span>
+            
+            {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="pagination-link">Next →</a>
+            {{ end }}
+        </nav>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

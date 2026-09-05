@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <!-- Very subtle grid pattern for engineering paper feel -->
+    <pattern id="subtleGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f8fafb" stroke-width="0.3" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Ultra-subtle minor grid lines -->
+    <pattern id="microGrid" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M 5 0 L 0 0 0 5" fill="none" stroke="#fbfcfc" stroke-width="0.2" opacity="0.2"/>
+    </pattern>
+    
+    <!-- Barely visible coffee stain in corner -->
+    <radialGradient id="subtleCoffee" cx="85%" cy="15%" r="25%">
+      <stop offset="0%" stop-color="#8B4513" stop-opacity="0.008"/>
+      <stop offset="60%" stop-color="#A0522D" stop-opacity="0.005"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base white/cream paper -->
+  <rect width="60" height="60" fill="#fefefe"/>
+  
+  <!-- Micro grid -->
+  <rect width="60" height="60" fill="url(#microGrid)"/>
+  
+  <!-- Main grid -->
+  <rect width="60" height="60" fill="url(#subtleGrid)"/>
+  
+  <!-- Ultra-subtle coffee stain -->
+  <rect width="60" height="60" fill="url(#subtleCoffee)"/>
+</svg>

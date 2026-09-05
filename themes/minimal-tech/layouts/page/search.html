@@ -1,0 +1,86 @@
+{{ define "main" }}
+<div class="search-page">
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">{{ .Title }}</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search posts..." class="search-input">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </header>
+        
+        <div class="search-content">
+            <div id="searchIndex" style="display: none;">
+                {{ range .Site.RegularPages }}
+                    {{ if or (eq .Type "posts") (eq .Type "personal") }}
+                <div class="search-item" data-title="{{ .Title | lower }}" data-content="{{ .Plain | lower }}" data-tags="{{ delimit .Params.tags " " | lower }}">
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <div class="item-meta">
+                        <span class="item-type">{{ if eq .Type "posts" }}Tech{{ else }}Personal{{ end }}</span>
+                        <time>{{ .Date.Format "2006-01-02" }}</time>
+                        {{ if .Params.tags }}
+                        <div class="item-tags">
+                            {{ range .Params.tags }}
+                            <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    <p class="item-summary">{{ .Summary | truncate 200 }}</p>
+                </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+            
+            <div id="noResults" style="display: none;">
+                <p>No posts found matching your search.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchItems = document.querySelectorAll('.search-item');
+    const noResults = document.getElementById('noResults');
+    
+    function performSearch(query) {
+        if (query.length === 0) {
+            searchResults.innerHTML = '';
+            noResults.style.display = 'none';
+            return;
+        }
+        
+        const results = [];
+        const searchTerm = query.toLowerCase();
+        
+        searchItems.forEach(item => {
+            const title = item.dataset.title;
+            const content = item.dataset.content;
+            const tags = item.dataset.tags;
+            
+            if (title.includes(searchTerm) || content.includes(searchTerm) || tags.includes(searchTerm)) {
+                results.push(item.cloneNode(true));
+            }
+        });
+        
+        searchResults.innerHTML = '';
+        
+        if (results.length > 0) {
+            results.forEach(result => {
+                searchResults.appendChild(result);
+            });
+            noResults.style.display = 'none';
+        } else {
+            noResults.style.display = 'block';
+        }
+    }
+    
+    searchInput.addEventListener('input', function() {
+        performSearch(this.value);
+    });
+});
+</script>
+{{ end }}

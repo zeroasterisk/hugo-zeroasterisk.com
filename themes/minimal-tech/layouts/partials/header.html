@@ -1,0 +1,20 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="/" class="brand-link">
+                    <strong>{{ .Site.Params.author }}</strong>
+                    <span class="brand-subtitle">{{ .Site.Params.job }}</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">
+                    {{ .Name }}
+                </a>
+                {{ end }}
+            </nav>
+        </div>
+    </div>
+</header>

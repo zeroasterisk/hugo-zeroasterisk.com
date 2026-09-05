@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <!-- Main grid lines every 20px -->
+    <pattern id="majorGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e8f4f8" stroke-width="0.8"/>
+    </pattern>
+    
+    <!-- Minor grid lines every 4px -->
+    <pattern id="minorGrid" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#f0f8fc" stroke-width="0.3"/>
+    </pattern>
+    
+    <!-- Coffee stain 1 - subtle ring in corner -->
+    <radialGradient id="coffeeStain1" cx="85%" cy="15%" r="12%">
+      <stop offset="0%" stop-color="#8B4513" stop-opacity="0.04"/>
+      <stop offset="40%" stop-color="#A0522D" stop-opacity="0.02"/>
+      <stop offset="80%" stop-color="#CD853F" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    
+    <!-- Coffee stain 2 - smaller one -->
+    <radialGradient id="coffeeStain2" cx="10%" cy="90%" r="8%">
+      <stop offset="0%" stop-color="#8B4513" stop-opacity="0.03"/>
+      <stop offset="50%" stop-color="#A0522D" stop-opacity="0.015"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base engineering paper color -->
+  <rect width="40" height="40" fill="#fdfdfe"/>
+  
+  <!-- Minor grid (frequent lines) -->
+  <rect width="40" height="40" fill="url(#minorGrid)"/>
+  
+  <!-- Major grid (bold lines) -->
+  <rect width="40" height="40" fill="url(#majorGrid)"/>
+  
+  <!-- Coffee stains for vintage feel -->
+  <rect width="40" height="40" fill="url(#coffeeStain1)"/>
+  <rect width="40" height="40" fill="url(#coffeeStain2)"/>
+</svg>
