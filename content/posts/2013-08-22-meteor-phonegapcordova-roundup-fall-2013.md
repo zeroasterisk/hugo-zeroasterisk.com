@@ -1,7 +1,7 @@
 ---
 title: "Meteor + PhoneGap/Cordova (Roundup – Fall 2013)"
 date: 2013-08-23T02:49:23+00:00
-tags: ["2013"]
+tags: ["2013", "meteor", "phonegap", "cordova", "mobile"]
 type: "posts"
 ---
 

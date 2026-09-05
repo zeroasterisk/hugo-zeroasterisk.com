@@ -1,7 +1,7 @@
 ---
 title: "Meteor Core Cordova Support – Alpha Release is out"
 date: 2014-08-25T20:02:49+00:00
-tags: ["2014"]
+tags: ["2014", "meteor", "cordova", "mobile"]
 type: "posts"
 ---
 
