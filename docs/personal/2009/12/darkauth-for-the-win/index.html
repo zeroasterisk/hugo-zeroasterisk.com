@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="generator" content="Hugo 0.121.1">
+    
+    <title>DarkAuth for the win! | Alan Blount | AI/ML Engineer at Google</title>
+    
+    
+    <meta name="description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    
+    
+    <meta name="author" content="Alan Blount">
+    
+    
+    
+    <meta property="og:title" content="DarkAuth for the win!">
+    <meta property="og:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/">
+    <meta property="og:site_name" content="Alan Blount | AI/ML Engineer at Google">
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/">
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DarkAuth for the win!">
+    <meta name="twitter:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    <meta name="twitter:creator" content="@zeroasterisk">
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/">
+    
+    
+    <link rel="stylesheet" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/css/main.css">
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2011466-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2011466-1');
+    </script>
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/" class="brand-link">
+                    <strong>Alan Blount</strong>
+                    <span class="brand-subtitle">AI/ML Engineer at Google</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/posts/" class="nav-link">
+                    Tech
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/" class="nav-link">
+                    Personal
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/about/" class="nav-link">
+                    About
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/" class="nav-link">
+                    Tags
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/search/" class="nav-link">
+                    Search
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+    
+    <main>
+        
+<article class="single-content">
+    <div class="container">
+        <header class="content-header">
+            <div class="content-meta">
+                <span class="content-type">Personal</span>
+                <time class="content-date">December 2, 2009</time>
+                
+            </div>
+            
+            <h1 class="content-title">DarkAuth for the win!</h1>
+            
+            
+            
+            
+            <div class="content-tags">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2009/" class="tag">2009</a>
+                
+            </div>
+            
+        </header>
+        
+        <div class="content-body">
+            <p>I’ve been working with CakePHP for a few years now and am very happy with it.  I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the <a href="http://book.cakephp.org/view/172/Authentication">Auth</a> and <a href="http://book.cakephp.org/view/171/Access-Control-Lists">ACL</a> core components.</p>
+<p>I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the <a href="http://bakery.cakephp.org/articles/view/darkauth-v1-3-an-auth-component">DarkAuth</a> component, which was much better suited to my needs.</p>
+<p>The main reasons I prefer it are:</p>
+<ul>
+<li><!-- raw HTML omitted -->Role/Group based access out of the box, which is how I ususally provision security anyway<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to customize/tweak to suit my needs (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions… instead I have to explicitly restrict controllers or actions.  Also it’s easy to check for prefixes and restrict based on that (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Fast<!-- raw HTML omitted --></li>
+</ul>
+<p>So here are some of my customizations:</p>
+<p>I like having some parameters set on the controller for easy access to “who is logged in”, so I put this in the bottom of the DarkAuth startup() function:</p>
+<p>`I’ve been working with CakePHP for a few years now and am very happy with it.  I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the <a href="http://book.cakephp.org/view/172/Authentication">Auth</a> and <a href="http://book.cakephp.org/view/171/Access-Control-Lists">ACL</a> core components.</p>
+<p>I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the <a href="http://bakery.cakephp.org/articles/view/darkauth-v1-3-an-auth-component">DarkAuth</a> component, which was much better suited to my needs.</p>
+<p>The main reasons I prefer it are:</p>
+<ul>
+<li><!-- raw HTML omitted -->Role/Group based access out of the box, which is how I ususally provision security anyway<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to customize/tweak to suit my needs (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions… instead I have to explicitly restrict controllers or actions.  Also it’s easy to check for prefixes and restrict based on that (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Fast<!-- raw HTML omitted --></li>
+</ul>
+<p>So here are some of my customizations:</p>
+<p>I like having some parameters set on the controller for easy access to “who is logged in”, so I put this in the bottom of the DarkAuth startup() function:</p>
+<p>`</p>
+<p>I like using the core security class for password hashing, which can easily be done like so:</p>
+<p>``I’ve been working with CakePHP for a few years now and am very happy with it.  I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the <a href="http://book.cakephp.org/view/172/Authentication">Auth</a> and <a href="http://book.cakephp.org/view/171/Access-Control-Lists">ACL</a> core components.</p>
+<p>I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the <a href="http://bakery.cakephp.org/articles/view/darkauth-v1-3-an-auth-component">DarkAuth</a> component, which was much better suited to my needs.</p>
+<p>The main reasons I prefer it are:</p>
+<ul>
+<li><!-- raw HTML omitted -->Role/Group based access out of the box, which is how I ususally provision security anyway<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to customize/tweak to suit my needs (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions… instead I have to explicitly restrict controllers or actions.  Also it’s easy to check for prefixes and restrict based on that (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Fast<!-- raw HTML omitted --></li>
+</ul>
+<p>So here are some of my customizations:</p>
+<p>I like having some parameters set on the controller for easy access to “who is logged in”, so I put this in the bottom of the DarkAuth startup() function:</p>
+<p>`I’ve been working with CakePHP for a few years now and am very happy with it.  I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the <a href="http://book.cakephp.org/view/172/Authentication">Auth</a> and <a href="http://book.cakephp.org/view/171/Access-Control-Lists">ACL</a> core components.</p>
+<p>I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the <a href="http://bakery.cakephp.org/articles/view/darkauth-v1-3-an-auth-component">DarkAuth</a> component, which was much better suited to my needs.</p>
+<p>The main reasons I prefer it are:</p>
+<ul>
+<li><!-- raw HTML omitted -->Role/Group based access out of the box, which is how I ususally provision security anyway<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to customize/tweak to suit my needs (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions… instead I have to explicitly restrict controllers or actions.  Also it’s easy to check for prefixes and restrict based on that (more below)<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Fast<!-- raw HTML omitted --></li>
+</ul>
+<p>So here are some of my customizations:</p>
+<p>I like having some parameters set on the controller for easy access to “who is logged in”, so I put this in the bottom of the DarkAuth startup() function:</p>
+<p>`</p>
+<p>I like using the core security class for password hashing, which can easily be done like so:</p>
+<p>``</p>
+<p>Here’s how to inject admin requirements based on the admin routing path (prefix):</p>
+<pre tabindex="0"><code class="language-I&#8217;ve" data-lang="I&#8217;ve">
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``
+
+Here&amp;#8217;s how to inject admin requirements based on the admin routing path (prefix):
+</code></pre><p>And some other useful controller tricks:</p>
+<pre tabindex="0"><code class="language-I&#8217;ve" data-lang="I&#8217;ve">
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``
+
+Here&amp;#8217;s how to inject admin requirements based on the admin routing path (prefix):
+
+```I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`I&amp;#8217;ve been working with CakePHP for a few years now and am very happy with it.  I&amp;#8217;ve been working with the 1.2 version for a few months (since it went stable) and playing with the [Auth][1] and [ACL][2] core components.
+
+I&amp;#8217;ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect.  So after some research, I switched to the [DarkAuth][3] component, which was much better suited to my needs.
+
+The main reasons I prefer it are:
+
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Role/Group based access out of the box, which is how I ususally provision security anyway&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to customize/tweak to suit my needs (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Easy to setup permissions, easy to add to app_controller, without then having to explicitly allow public controllers/actions&amp;#8230; instead I have to explicitly restrict controllers or actions.  Also it&amp;#8217;s easy to check for prefixes and restrict based on that (more below)&lt;/span&gt;
+  * &lt;span style=&#34;background-color: #ffffff; &#34;&gt;Fast&lt;/span&gt;
+
+So here are some of my customizations:
+
+I like having some parameters set on the controller for easy access to &amp;#8220;who is logged in&amp;#8221;, so I put this in the bottom of the DarkAuth startup() function:
+
+`
+
+I like using the core security class for password hashing, which can easily be done like so:
+
+``
+
+Here&amp;#8217;s how to inject admin requirements based on the admin routing path (prefix):
+
+```
+
+And some other useful controller tricks:
+</code></pre>
+        </div>
+        
+        
+        <nav class="content-navigation">
+            
+            <div class="nav-prev">
+                <span class="nav-label">← Previous</span>
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-cakephp-gotcha-for-migrating-from-1.1-to-1.2-on-model-create/" class="nav-title">A CakePHP gotcha for migrating from 1.1 to 1.2&#43; on Model-&gt;create()</a>
+            </div>
+            
+            
+            
+            <div class="nav-next">
+                <span class="nav-label">Next →</span>
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/" class="nav-title">fanout, a super useful linux script if you manage multiple, similar servers</a>
+            </div>
+            
+        </nav>
+        
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Alan Blount. All rights reserved.</p>
+                <p class="footer-description">AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.</p>
+            </div>
+            
+            <div class="footer-links">
+                
+                <a href="https://github.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                
+                
+                <a href="https://twitter.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                
+                
+                <a href="https://linkedin.com/in/alanblount" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://zeroasterisk.github.io/zeroasterisk-unified-preview/js/main.js"></script>
+</body>
+</html>

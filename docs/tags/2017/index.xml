@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2017/</link>
+    <description>Recent content in 2017 on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2017/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2017 09 06 How To Learn</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/09/2017-09-06-how-to-learn/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/09/2017-09-06-how-to-learn/</guid>
+      <description>+++ description = &amp;ldquo;How To Learn &amp;mdash; Arthur Knowledge&amp;rdquo; title = &amp;ldquo;How to Learn &amp;mdash; Meta&amp;rdquo; categories = [&amp;quot;&amp;quot;] tags = [&amp;ldquo;learning&amp;rdquo;, &amp;ldquo;meta&amp;rdquo;, &amp;ldquo;engaged&amp;rdquo;, &amp;ldquo;Arthur&amp;rdquo;] +++&#xA;My buddy Arthur recently shared this with me, his synthesis of research he&amp;rsquo;s been doing on how to be a more effective learner.&#xA;Stay engaged Choose to find the information useful Be invested in tackling difficult problems Try to anticipate what&amp;rsquo;s next Identify big idea Use them as anchor to connect details Periodically summarize what you&amp;rsquo;ve heard Keep conclusions tentative Evaluate evidence, don&amp;rsquo;t accept it at face value Ask followup questions Don&amp;rsquo;t get derailed Concentrate on the message, not the messenger Don&amp;rsquo;t get thrown off by emotionally charged language Don&amp;rsquo;t stop listening when you disagree Humanize the presenter, get to know them Adjust note taking to the presenter&amp;rsquo;s patterns Seriously - how great is that?</description>
+    </item>
+    <item>
+      <title>Playing with Elixir is just FUN</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using Elixir for a few weeks now, sometimes&#xA;&lt;a href=&#34;https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-rocky-courtship/&#34;&gt;forcing it to play nice with Mongodb/Meteor&lt;/a&gt;&#xA;, which it doesn&amp;rsquo;t really want to do.&#xA;Sometimes with Posgres &lt;em&gt;(which it loves)&lt;/em&gt;.&#xA;Sometimes just plain ole&amp;rsquo; Elixir with no persistance.&lt;/p&gt;&#xA;&lt;p&gt;It &lt;em&gt;is&lt;/em&gt; realllllly fun!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meteor and Elixir (part one) A Rocky Courtship</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</guid>
+      <description>&lt;p&gt;I have been watching Elixir for almost 2 years now, and debating if it&amp;rsquo;s mature enough for me to invest in.&lt;/p&gt;&#xA;&lt;p&gt;Obviously Erlang is super-mature, and Elixir is quite stable, but it&amp;rsquo;s a question of &amp;ldquo;is the community mature enough yet?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;m now writing this, I believe it is &amp;ldquo;ready&amp;rdquo;, and I&amp;rsquo;m beginning a journey to build out some services in Elixir&#xA;to stand up next to existing node services (meteorjs) and slow move funcitonality over to to Elixir.&lt;/p&gt;&#xA;&lt;p&gt;Chapter One: &lt;strong&gt;Proof of Concept, Mongo is supposed to be Simple.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2017 06 14 Pdfjs Ui Simple Proof Of Concept</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/2017-06-14-pdfjs-ui-simple-proof-of-concept/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/2017-06-14-pdfjs-ui-simple-proof-of-concept/</guid>
+      <description>+++ draft = true author = &amp;quot;&amp;quot; categories = [] date = &amp;ldquo;2017-06-23T13:27:38-04:00&amp;rdquo; description = &amp;quot;&amp;quot; featured = &amp;quot;&amp;quot; featuredalt = &amp;quot;&amp;quot; featuredpath = &amp;quot;&amp;quot; linktitle = &amp;quot;&amp;quot; title = &amp;ldquo;2017 06 14 pdfjs ui simple proof of concept&amp;rdquo;&#xA;+++</description>
+    </item>
+    <item>
+      <title>Meteor 1.5 ~ Bundle Optimization &#43; Examples</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/meteor-1.5-~-bundle-optimization--examples/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/meteor-1.5-~-bundle-optimization--examples/</guid>
+      <description>&lt;p&gt;I have been playing with &lt;a href=&#34;https://meteor.com/&#34;&gt;Meteor&lt;/a&gt; 1.5 and it&amp;rsquo;s dynamic imports,&#xA;which can be used to reduce the amount of javascript code sent to the browser.&lt;/p&gt;&#xA;&lt;p&gt;This article is a deep dive into how to profile and optimize your client side code&#xA;to make smarter use of the new dynamic imports&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Which will make &lt;strong&gt;meteor load faster for your users&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2017 05 29 Memorial Day Homework</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/2017-05-29-memorial-day-homework/</link>
+      <pubDate>Mon, 29 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/2017-05-29-memorial-day-homework/</guid>
+      <description>+++ date = &amp;ldquo;2017-05-29T18:28:04-04:00&amp;rdquo; description = &amp;ldquo;project time, memorial day, and website hugoized&amp;rdquo; tags = [&amp;ldquo;homework&amp;rdquo;, &amp;ldquo;kids&amp;rdquo;,&amp;ldquo;code&amp;rdquo;] title = &amp;ldquo;2017 memorial day homework&amp;rdquo; +++&#xA;I have made the formal household declaration that all screen time will be matched, hour-for-hour with project time. Yesterday we cleaned the 1st floor, mopped and everything. Today we went grocery shopping, made lunch, and then started on homework time.&#xA;To say that I am unpopular here, would be an understatement.</description>
+    </item>
+    <item>
+      <title>2017 01 01 Nerd Goals</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/01/2017-01-01-nerd-goals/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/01/2017-01-01-nerd-goals/</guid>
+      <description>+++ author = &amp;ldquo;alan&amp;rdquo; categories = [&amp;ldquo;nerd&amp;rdquo;, &amp;ldquo;elixir&amp;rdquo;, &amp;ldquo;machine learning&amp;rdquo;, &amp;ldquo;advocacy&amp;rdquo;] date = &amp;ldquo;2017-01-01T23:37:35-04:00&amp;rdquo; description = &amp;ldquo;My goals as a nerd, in 2017&amp;rdquo; featured = &amp;quot;&amp;quot; featuredalt = &amp;quot;&amp;quot; featuredpath = &amp;quot;&amp;quot; linktitle = &amp;quot;&amp;quot; title = &amp;ldquo;2017 nerd goals&amp;rdquo;&#xA;+++&#xA;Personal Nerd Goals publish - rejuvinate a history of developer advocacy learn elixir - build a couple of projects from a couple of angles learn machine learning basics </description>
+    </item>
+    <item>
+      <title>2017 05 39 Why Wait To Adopt Hugo</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/1/01/2017-05-39-why-wait-to-adopt-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/1/01/2017-05-39-why-wait-to-adopt-hugo/</guid>
+      <description>+++ author = &amp;ldquo;alan&amp;rdquo; tags = [&amp;ldquo;nerd&amp;rdquo;, &amp;ldquo;wordpress&amp;rdquo;, &amp;ldquo;hugo&amp;rdquo;, &amp;ldquo;static site&amp;rdquo;, &amp;ldquo;go&amp;rdquo;] date = &amp;ldquo;2017-05-29T23:39:00-04:00&amp;rdquo; description = &amp;ldquo;Static Site Generation with Hugo - it is so freakin easy!&amp;rdquo; featured = &amp;quot;&amp;quot; featuredalt = &amp;quot;&amp;quot; featuredpath = &amp;quot;&amp;quot; linktitle = &amp;quot;&amp;quot; title = &amp;ldquo;Why wait? Adopt hugo for Static Site Generation&amp;rdquo;&#xA;+++&#xA;Why&amp;hellip; oh why&amp;hellip; why did I wait so long?&#xA;I&amp;rsquo;ve been talking about switching to a static site generator for years, since jekyllrb started gaining popularity.</description>
+    </item>
+  </channel>
+</rss>

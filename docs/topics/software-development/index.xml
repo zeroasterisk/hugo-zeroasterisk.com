@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/topics/software-development/</link>
+    <description>Recent content in Software Development on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/topics/software-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing with Elixir is just FUN</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</guid>
+      <description>Playing with Elixir is just FUN I&amp;rsquo;ve been using Elixir for a few weeks now, and I have to say - it really lives up to the hype. The functional programming paradigms, the actor model with OTP, and the fault-tolerant design make it a joy to work with.&#xA;What Makes Elixir Special Pattern Matching: One of the most elegant features. Instead of complex conditionals, you can pattern match directly in function definitions:</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2009 on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2009/</link>
+    <description>Recent content in 2009 on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Dec 2009 04:54:29 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2009/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fanout, a super useful linux script if you manage multiple, similar servers</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</link>
+      <pubDate>Thu, 24 Dec 2009 04:54:29 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</guid>
+      <description>I love this fanout script for running the same command on multiple servers, just in case you’re interested:&#xA;http://www.stearns.org/fanout/fanout&#xA;[root@199564-6 scripts]# fanout &amp;quot;$SERVERS&amp;quot; &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Starting root@db1&amp;lt;br /&amp;gt; Starting root@db2&amp;lt;br /&amp;gt; Starting root@nas&amp;lt;br /&amp;gt; Starting root@www1&amp;lt;br /&amp;gt; Starting root@www2&amp;lt;br /&amp;gt; Starting root@www3&amp;lt;br /&amp;gt; Fanout executing &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Start time Wed Dec 23 23:45:35 EST 2009 , End time Wed Dec 23 23:45:47 EST 2009&amp;lt;br /&amp;gt; ==== As root on db1 ====</description>
+    </item>
+    <item>
+      <title>DarkAuth for the win!</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/</link>
+      <pubDate>Wed, 02 Dec 2009 16:37:33 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/</guid>
+      <description>I’ve been working with CakePHP for a few years now and am very happy with it. I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the Auth and ACL core components.&#xA;I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect. So after some research, I switched to the DarkAuth component, which was much better suited to my needs.</description>
+    </item>
+    <item>
+      <title>A CakePHP gotcha for migrating from 1.1 to 1.2&#43; on Model-&gt;create()</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-cakephp-gotcha-for-migrating-from-1.1-to-1.2-on-model-create/</link>
+      <pubDate>Mon, 30 Nov 2009 16:15:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-cakephp-gotcha-for-migrating-from-1.1-to-1.2-on-model-create/</guid>
+      <description>I reported this as a ticket, but as it turns out, it’s a design choice.. but it’s enough of a gotcha that I thought I should report it.&#xA;What happened The $this-&amp;gt;ModelName-&amp;gt;create() set the defaults for the next save, which is what I would expect. But on my database there’s a default value set for the ‘created’ field (the standard for datetime columns in PHPmyAdmin) as well as the ‘modified’ and ‘updated’ fields.</description>
+    </item>
+    <item>
+      <title>Autosearch Craigslist with Google Alerts</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/autosearch-craigslist-with-google-alerts/</link>
+      <pubDate>Mon, 23 Nov 2009 22:05:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/autosearch-craigslist-with-google-alerts/</guid>
+      <description>Sometimes, I want something only if it’s on the cheap, second hand, and easy… that’s usually Craigslist.&#xA;Often what I want isn’t available when I think of it… but it might show up sometime… I don’t want to have to look at craigslist every day (because I wont).&#xA;Google Alerts to the rescue.&#xA;If I’m in Louisville KY and I’m looking for an iPod (for example) I just setup an alert for: “site:louisville.</description>
+    </item>
+    <item>
+      <title>A Month of Site-Downtime</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-month-of-site-downtime/</link>
+      <pubDate>Mon, 23 Nov 2009 14:17:58 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-month-of-site-downtime/</guid>
+      <description>So the website has been down from Oct 21st to Nov 23rd. The old server got hacked (or really, a sister-server) and due to security concerns, we didn’t know what got owned and what was safe. We already had a different server hardware to put in place, just had to set it up. So we got that installed and up and running, but it took me a few more days to get around to implementing something on my site.</description>
+    </item>
+    <item>
+      <title>Our Trip to California</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/09/our-trip-to-california/</link>
+      <pubDate>Wed, 09 Sep 2009 15:22:44 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/09/our-trip-to-california/</guid>
+      <description>We are home again, from a trip to San Francisco and Sonoma, California. (map)&#xA;The trip was for April’s wedding (Anita’s sister) to Billie one of our best friends from our three years in Columbus, OH.&#xA;We started out by going to Salt Point State Park and camping. We were able to hike to the beautiful (but cold) cliff-lined-coast and watch seals and waves alike. On our way back from camping we visited Fort Ross, the oldest establishment on the west coast, and old Russian trading post.</description>
+    </item>
+    <item>
+      <title>poppy’s first day of school</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/08/poppys-first-day-of-school/</link>
+      <pubDate>Wed, 19 Aug 2009 16:02:58 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/08/poppys-first-day-of-school/</guid>
+      <description>Poppy’s really thinned out and sped up. At 18 months, she’s about the same height as she was at 14 months, but seems much more thin. Must be all the running, jumping, and climbing she does. She can happily run in a circle for 15 minutes, or bounce on a bed for 30.&#xA;She’s started school at “The Friend’s School” this week, in the 1 year old class three days a week for three hours each day.</description>
+    </item>
+    <item>
+      <title>pick-your-own-fruit-photos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/07/pick-your-own-fruit-photos/</link>
+      <pubDate>Wed, 15 Jul 2009 16:22:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/07/pick-your-own-fruit-photos/</guid>
+      <description>I finally uploaded some of the photos we’ve recently taken… Here are our two trips to various “pick your own” farms, for strawberries and blueberries.&#xA;2009.06.05 – Strawberry Picking at Huber’s Farm&#xA;2009.06.20 – Blueberry Picking</description>
+    </item>
+    <item>
+      <title>WolframAlpha &amp; Google Chrome OS</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/07/wolframalpha-google-chrome-os/</link>
+      <pubDate>Wed, 08 Jul 2009 16:58:09 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/07/wolframalpha-google-chrome-os/</guid>
+      <description>I recently came across wolframalpha which is really fantastic. It provides a much of data for a very wide variety of searches… basically the neat part is it’s conversion of English statements into data-based queries and graphs… It works across tons and tons of datatypes, including one of the most useful weather reports I’ve seen… simple and obvious and useful data across the board. (perhaps I just like graphs too much) It also has good financial data, though I still prefer google finance.</description>
+    </item>
+    <item>
+      <title>Potty Time</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/07/potty-time/</link>
+      <pubDate>Mon, 06 Jul 2009 03:09:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/07/potty-time/</guid>
+      <description>Poppy is now using her potty.&#xA;She’s been sitting on it for a while, but this weekend was the first time she actually used it successfully (twice so far). We, of course, cheered and encouraged her… But I think it just clicked in her brain that was what she was supposed to do. I don’t expect that we’re going to have a terribly high success rate right away, but it’s great to be on that path.</description>
+    </item>
+    <item>
+      <title>Running and Talking and Loud</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/06/running-and-talking-and-loud/</link>
+      <pubDate>Sun, 21 Jun 2009 03:15:20 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/06/running-and-talking-and-loud/</guid>
+      <description>Poppy has stopped walking and is pretty much either running to places, or stumble-running. I’m sure that’s an exaggeration, but it is certainly what it seems like.&#xA;Likewise, she’s still babbling incoherently – but she’s doing so loudly. Also – her speech patterns are much closer to English. We don’t know what she’s saying, but she sure does and, by god, she means it. Her actual vocabulary has increased to maybe a dozen words and phrases:</description>
+    </item>
+    <item>
+      <title>Poppy Update, 15.5 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-update-15.5-months/</link>
+      <pubDate>Sun, 10 May 2009 16:58:47 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-update-15.5-months/</guid>
+      <description>Poppy is starting to really put things together. She’s long been understanding much more than we would have expected, occasionally doing things we ask her to do which we would never anticipate her doing (like asking her to throw something away in another room, and her doing so). Now she’s starting to say a few more words, do a few more signs, and saying/signing more clearly.&#xA;She’s had a bit of a rough month, all four of her I-Teeth are coming in.</description>
+    </item>
+    <item>
+      <title>Poppy at 15 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-at-15-months/</link>
+      <pubDate>Mon, 04 May 2009 14:33:39 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-at-15-months/</guid>
+      <description> &amp;lt;div class=&amp;quot;goog-inline-block goog-icon-list-icon&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;goog-icon-list-icon-img-div&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;goog-icon-list-icon-meta&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://picasaweb.google.com/cathypennington/409PoppyVisitZooHotAirBalloonsFriendsFamilyGamesTheMarathon&amp;quot;&amp;gt;more photos&amp;lt;/a&amp;gt; (from mom, I have yet to process this month&amp;amp;#8217;s photos from my camera) &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;goog-inline-block goog-icon-list-icon&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    <item>
+      <title>Poppy Update – Fast and Furious</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/04/poppy-update-fast-and-furious/</link>
+      <pubDate>Thu, 02 Apr 2009 17:28:11 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/04/poppy-update-fast-and-furious/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Poppy spinning</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-spinning/</link>
+      <pubDate>Mon, 16 Mar 2009 19:38:45 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-spinning/</guid>
+      <description>Poppy has long been termed as a “rough neck” and she certainly earns that title, loving to be thrown around and tickled and rough housing with her peers or adults alike.&#xA;She has just started spinning around in circles to get herself dizzy. It’s one of the cutest things I’ve ever witnessed.&#xA;The downside is that she already staggers like a drunk anytime she’s tired and sometimes when she’s not… so this just adds to the appearance that she is seconds away from being face-down on the ground.</description>
+    </item>
+    <item>
+      <title>SVN Merge, making sure a branch is updated from trunk, then merging back to trunk</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/03/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/</link>
+      <pubDate>Thu, 05 Mar 2009 17:49:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/03/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/</guid>
+      <description>So I’ve just fought a battle w/ SVN merge and thought I’d post the solution in case others might find it…&#xA;Scenario&#xA;Our stable code is in trunk svn://svn.domain.tld/repository/trunk&#xA;I’ve got a branch of trunk svn://svn.domain.tld/repository/branches/dev&#xA;Changes have been made to my branch and changes have been made to trunk, since I branched.&#xA;I’m ready to merge my branch back into trunk.&#xA;Approach / Overview&#xA;Basically, to be safe, I need to first update my branch with the changes from trunk and resolve any conflicts.</description>
+    </item>
+    <item>
+      <title>Mom and Sam’s Visit to Lousiville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/mom-and-sams-visit-to-lousiville/</link>
+      <pubDate>Thu, 05 Mar 2009 16:02:31 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/mom-and-sams-visit-to-lousiville/</guid>
+      <description>Mom and Sam drove to Louisville for a few days this past weekend+ (Friday – Tuesday).&#xA;We all had a wonderful visit and they played with poppy almost nonstop… as expected. We took full advantage of the free babysitting and went out a few nights and on the whole, were less than adequate hosts, but they didn’t seem to mind.&#xA;Mom’s posted her photos here, and below is a slideshow</description>
+    </item>
+    <item>
+      <title>Poppy Update – 13 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-update-13-months/</link>
+      <pubDate>Sun, 01 Mar 2009 16:35:51 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-update-13-months/</guid>
+      <description>Poppy is:&#xA;walking well, though she still staggers like she’s drunk when she’s tired. sometimes eating vegetables, often not – but always eating fruit and crackers are much better starting to learn a few signs… she’s known “more” for a while now, but now she can do eat and drink and occasionally a few others. certainly understands many words and phrases and tones of voice, and is starting to mimic more often… sometimes putting a word in context a bit… though it’s a stretch and only her family would recognize these accomplishments.</description>
+    </item>
+    <item>
+      <title>Winter Weather hits Louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/02/winter-weather-hits-louisville/</link>
+      <pubDate>Tue, 03 Feb 2009 05:36:05 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/02/winter-weather-hits-louisville/</guid>
+      <description>It’s been a crazy winter, the last week. The ice storm which took out most of KY’s power only kept us out for a couple of days, but still has some friends down. It was crazy to see all of the trees weighed down and drooping, beautiful and terrible. The ice coated everything, and when the wind blew all of the ice-coated limbs and branched clinked with each other.&#xA;Here’s a great photo from a friend of mine, mitch:</description>
+    </item>
+    <item>
+      <title>Op-Ed Wall Street’s Jet Setters</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/op-ed-wall-streets-jet-setters/</link>
+      <pubDate>Fri, 30 Jan 2009 19:23:10 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/op-ed-wall-streets-jet-setters/</guid>
+      <description>Wall Street’s Socialist Jet-Setters By MAUREEN DOWD – Published: January 27, 2009&#xA;How are these ruthless, careless ghouls who murdered the economy still walking around (not to mention that sociopathic sadist Bernie Madoff?) — and not as perps?&#xA;Bring on the shackles. Let the show trials begin.&#xA;Very frustrating indeed, but I don’t know of any means of invoking a change. We can complain on the net and raise virtual pitchforks in anger… but there’s nothing which will come of it.</description>
+    </item>
+    <item>
+      <title>Poppy’s First Birthday</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/poppys-first-birthday/</link>
+      <pubDate>Sun, 25 Jan 2009 03:46:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/poppys-first-birthday/</guid>
+      <description>We had a house full for Poppy’s first birthday. Friends came in from Columbus and Lexington, but otherwise we tried to keep it family only… even so we had almost 30 people over and had a wonderful time (at least those who were able to find seats).&#xA;She had her cake and ate it too. Anita expected that she might not take to the cake straight away, but she certainly dug in, as soon as she realized that it was food and she was allowed to eat it.</description>
+    </item>
+    <item>
+      <title>Re: Memo to All My Valued Employees</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/re-memo-to-all-my-valued-employees/</link>
+      <pubDate>Wed, 14 Jan 2009 19:54:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/re-memo-to-all-my-valued-employees/</guid>
+      <description>Here’s my response to the following “letter” which I received as a forward today:&#xA;Letter subject: “Memo to All My Valued Employees”&#xA;Basic gist of the letter:&#xA;Most of my time is now occupied with government mandates and regulations and all the accounting that goes with them. On October 15th, I wrote a check to the US Treasury for $288,000 for quarterly taxes. You know what my “stimulus” check was? Zero.</description>
+    </item>
+    <item>
+      <title>Poppy is babbling on all syllables</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/poppy-is-babbling-on-all-syllables/</link>
+      <pubDate>Wed, 14 Jan 2009 07:30:09 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/poppy-is-babbling-on-all-syllables/</guid>
+      <description>Penelope is really talking these days. There are still no really discernable words, and for the most part, no reliable mimicking. We can not prompt her and expect a desired response. But she is certainly mimicking speech patterns on her own including intonation and cadence. She’ll do so while toddling around the house carrying a toy or article of clothing or piece of trash. She will also babble back to you, when you’re talking to her.</description>
+    </item>
+    <item>
+      <title>Photobooth photos from Scott and Tami’s wedding</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/photobooth-photos-from-scott-and-tamis-wedding/</link>
+      <pubDate>Mon, 12 Jan 2009 16:34:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/photobooth-photos-from-scott-and-tamis-wedding/</guid>
+      <description>Scott and Tami had a wonderful wedding in Columbus in late fall 2008. We went with Poppy and my mom Cathy. At the wedding they had a photobooth set up and some of the photos went into a scrapbook and some we took home… here are the took home ones.</description>
+    </item>
+    <item>
+      <title>Poppy’s Room, now with mural</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/poppys-room-now-with-mural/</link>
+      <pubDate>Mon, 05 Jan 2009 21:39:53 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/01/poppys-room-now-with-mural/</guid>
+      <description>My mom and her friend Joanne painted a wonderful mural on Poppy’s room. I decided to play with a very fun tool called photosynth to stitch together several photos into one unified picture or the room in 3-D (sort of). It will not work except on IE and FF and you may need to install a viewer (it’s safe, but an annoyance). Regardless, this is my first photosynth and I may make more… not sure at the moment.</description>
+    </item>
+  </channel>
+</rss>

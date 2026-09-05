@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongodb on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/mongodb/</link>
+    <description>Recent content in mongodb on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meteor and Elixir (part one) A Rocky Courtship</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</guid>
+      <description>&lt;p&gt;I have been watching Elixir for almost 2 years now, and debating if it&amp;rsquo;s mature enough for me to invest in.&lt;/p&gt;&#xA;&lt;p&gt;Obviously Erlang is super-mature, and Elixir is quite stable, but it&amp;rsquo;s a question of &amp;ldquo;is the community mature enough yet?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;m now writing this, I believe it is &amp;ldquo;ready&amp;rdquo;, and I&amp;rsquo;m beginning a journey to build out some services in Elixir&#xA;to stand up next to existing node services (meteorjs) and slow move funcitonality over to to Elixir.&lt;/p&gt;&#xA;&lt;p&gt;Chapter One: &lt;strong&gt;Proof of Concept, Mongo is supposed to be Simple.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

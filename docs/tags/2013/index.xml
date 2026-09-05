@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2013 on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2013/</link>
+    <description>Recent content in 2013 on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Aug 2013 02:49:23 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2013/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meteor &#43; PhoneGap/Cordova (Roundup – Fall 2013)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/08/meteor--phonegap/cordova-roundup-fall-2013/</link>
+      <pubDate>Fri, 23 Aug 2013 02:49:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/08/meteor--phonegap/cordova-roundup-fall-2013/</guid>
+      <description>UPDATE: see meteor-core-cordova-support-alpha-release-is-out (2014-08-25) for new information&#xA;About Meteor and PhoneGap / Cordova Meteor is a rapid server/client development framework, written in JS – makes very interactive apps easy to build. http://meteor.com&#xA;PhoneGap / Cordova is a project to allow developers to use HTML, CSS, and JS to build mobile apps for all major devices. http://phonegap.com&#xA;Basics of Integrating Meteor + PhoneGap / Cordova The basic idea here is to use PhoneGap / Cordova to create a mobile App on several different platforms at once and it gives device hardware access; then “load” your Meteor application, which handles all of the rest of whatever you want your app to do.</description>
+    </item>
+    <item>
+      <title>Looking for a new blog platform</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/08/looking-for-a-new-blog-platform/</link>
+      <pubDate>Fri, 02 Aug 2013 02:50:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/08/looking-for-a-new-blog-platform/</guid>
+      <description>I’m working too much to afford the time to build one right now, but I’m looking into a MeteorJS bloging system…. Anyone got a recommendation? @zeroasterisk</description>
+    </item>
+    <item>
+      <title>MOSSCON 2013 was lots of fun</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/05/mosscon-2013-was-lots-of-fun/</link>
+      <pubDate>Sun, 19 May 2013 10:53:59 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2013/05/mosscon-2013-was-lots-of-fun/</guid>
+      <description>I had a great time attending and presenting at moscon.&#xA;http://mosscon.org/&#xA;May 18 – 19, 2013 | University of Louisville | Louisville, Kentucky&#xA;I know it was a lot of work for the people who set it up, but you did a great job and I look forward to attending again in another year.&#xA;(if I present again next time, my slides will be more readable, I promise…)</description>
+    </item>
+  </channel>
+</rss>

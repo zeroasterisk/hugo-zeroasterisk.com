@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="generator" content="Hugo 0.121.1">
+    
+    <title>SVN Merge, making sure a branch is updated from trunk, then merging back to trunk | Alan Blount | AI/ML Engineer at Google</title>
+    
+    
+    <meta name="description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    
+    
+    <meta name="author" content="Alan Blount">
+    
+    
+    
+    <meta property="og:title" content="SVN Merge, making sure a branch is updated from trunk, then merging back to trunk">
+    <meta property="og:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/03/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/">
+    <meta property="og:site_name" content="Alan Blount | AI/ML Engineer at Google">
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/03/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/">
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SVN Merge, making sure a branch is updated from trunk, then merging back to trunk">
+    <meta name="twitter:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    <meta name="twitter:creator" content="@zeroasterisk">
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2009/03/svn-merge-making-sure-a-branch-is-updated-from-trunk-then-merging-back-to-trunk/">
+    
+    
+    <link rel="stylesheet" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/css/main.css">
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2011466-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2011466-1');
+    </script>
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/" class="brand-link">
+                    <strong>Alan Blount</strong>
+                    <span class="brand-subtitle">AI/ML Engineer at Google</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/posts/" class="nav-link">
+                    Tech
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/" class="nav-link">
+                    Personal
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/about/" class="nav-link">
+                    About
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/" class="nav-link">
+                    Tags
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/search/" class="nav-link">
+                    Search
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+    
+    <main>
+        
+<article class="content-article crosspost-article">
+    <div class="container">
+        <header class="content-header">
+            
+            
+            
+            <h1 class="content-title">SVN Merge, making sure a branch is updated from trunk, then merging back to trunk</h1>
+            
+            <div class="content-meta">
+                <time class="content-date">March 5, 2009</time>
+                
+                <div class="content-tags">
+                    
+                    <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2009/" class="tag">2009</a>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+        </header>
+
+        <div class="content-body">
+            <p>So I’ve just fought a battle w/ SVN merge and thought I’d post the solution in case others might find it…</p>
+<p><strong>Scenario</strong></p>
+<p>Our stable code is in trunk svn://svn.domain.tld/repository/trunk</p>
+<p>I’ve got a branch of trunk svn://svn.domain.tld/repository/branches/dev</p>
+<p>Changes have been made to my branch and changes have been made to trunk, since I branched.</p>
+<p>I’m ready to merge my branch back into trunk.</p>
+<p><strong>Approach / Overview</strong></p>
+<p>Basically, to be safe, I need to first update my branch with the changes from trunk and resolve any conflicts. Then test my branch and code again (since I will likely have resolved conflicts and thus made changes to my code). Then finally, merge my updated branch into trunk.</p>
+<p><strong>Step 1 – update/merge branch from trunk</strong></p>
+<p>`# cd /path-to-my-working-copy-of-the-dev-branch<!-- raw HTML omitted --></p>
+<h1 id="svn-upbr-">svn up<!-- raw HTML omitted --></h1>
+<h1 id="svn-log--q---stop-on-copy">svn log -q &ndash;stop-on-copy`</h1>
+<p>if the last revision listed is something like r999, the branch was created at revision 999… take note of this number in your case. Anytime you see me use “999” you’ll want to replace it with your own revision number.</p>
+<p><code># svn merge --dry-run -r 999:HEAD svn://svn.domain.tld/repository/trunk</code></p>
+<p>review the results… conflicts will be prefaced with a C. If you’ve got a long list, you can send the results of the dry-run to a text file and review the results there</p>
+<p><code># svn merge --dry-run -r 999:HEAD svn://svn.domain.tld/repository/trunk &gt; ../merge-results.txt</code></p>
+<p>after being sure you want to do this, do the merge, updating the branch with changes from trunk</p>
+<p><code># svn merge -r 999:HEAD svn://svn.domain.tld/repository/trunk</code></p>
+<p>SVN tries to automatically merge changed files as best it can. As conflicts are found, it will prompt you, asking you how you want to handle them. If you are sure your version in the branch is correct, you can use “mf” (mine full) to resolve this conflict… if you are sure the trunk version is correct, you can use “tf” (theirs full) to resolve this conflict. More often than not, though, the differences will take manual looking at and sometimes manual editing. You can use “df” or “e” to do so in the console, but I usually use “p” to postone conflict resolution, which creates some extra files and breaks the conflicted file till resolved.</p>
+<p>You’ll probably have several conflicts… that’s fine, postpone as much as you need to and we will clean them up when done.</p>
+<p>When done, lets get a list of conflicts</p>
+<p><code># svn st | grep C</code></p>
+<p>For each of those files, you’re going to need to fix the conflict. Open them in your favorite editor and look for a line starting with</p>
+<p>    <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; .merge-right.r###</code> or something like that… that’s where one version starts, at a line starting with</p>
+<p>    <code>=======</code> is where that version ends and the next starts, and that one goes until the next</p>
+<p>    <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; .merge-right.r###</code>.</p>
+<p>You can also diff the other file-copies it will create with different suffixes… Basically, your goal is to FIX the file in question, it doesn’t matter what you do with the other file-copies with different suffixes, because the next step will remove them automatically.</p>
+<p><code># svn resolved ./path-to/file-in-conflict-state.ext</code></p>
+<p>Keep checking for conflicts, and resolving them manually (this is the tedious part)</p>
+<p><code># svn st | grep C</code></p>
+<p>Once you get all of the conflicts resolved, just to be safe, check out the differences/status of the working copy</p>
+<p><code># svn st</code></p>
+<p>Test your code</p>
+<p>If that looks correct and your code passes QA, lets commit the branch… finalizing our update/merge</p>
+<p><code># svn ci -m &quot;MERGED: updated ./branches/dev with the latest from ./trunk&quot;</code></p>
+<p><strong>Step 2 – update/merge trunk from branch</strong></p>
+<p><code># cd /path-to-my-working-copy-of-the-trunk</code></p>
+<p><code># svn up</code></p>
+<p>Remember the revision where we created our branch, from step one? Anytime you see me use “999” you’ll want to replace it with your own revision number.</p>
+<p><code># svn merge --dry-run -r 999:HEAD svn://svn.domain.tld/repository/branches/dev</code></p>
+<p><code># svn merge -r 999:HEAD svn://svn.domain.tld/repository/branches/dev</code></p>
+<p><code># svn st | grep C</code></p>
+<p>Fix all of your conflicts. Usually, you can use “tf” (theirs full) to accept the version from your branch to overwrite the version in your trunk… since you’ve just gone through the trouble of resolving conflicts on your branch… but if you’re not 100% sure, manually review them as discussed in step 1.</p>
+<p>Once you get all of the conflicts resolved, just to be safe, check out the differences/status of the working copy</p>
+<p><code># svn st</code></p>
+<p>Test your code</p>
+<p>If that looks correct and your code passes QA, lets commit the trunk… finalizing our update/merge</p>
+<p><code># svn ci -m &quot;MERGED: updated ./trunk with the latest from ./branches/dev&quot;</code></p>
+<p>That’s it.</p>
+<p>Easy right?</p>
+<p>Not quite.</p>
+<p>But, I firmly believe the benefits to using SVN far outweigh the headaches. If you’re sick and tired of complicated merge-processes, you should checkout <a href="http://git-scm.com/">GIT</a>… an alternative to SVN which handles merges and branching and whatnot much much easier and simpler. We are sticking w/ SVN for now because we’re already committed, but I’ve heard nothing but good things about GIT.</p>
+
+        </div>
+        
+        
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Alan Blount. All rights reserved.</p>
+                <p class="footer-description">AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.</p>
+            </div>
+            
+            <div class="footer-links">
+                
+                <a href="https://github.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                
+                
+                <a href="https://twitter.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                
+                
+                <a href="https://linkedin.com/in/alanblount" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://zeroasterisk.github.io/zeroasterisk-unified-preview/js/main.js"></script>
+</body>
+</html>

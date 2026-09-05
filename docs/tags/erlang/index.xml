@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>erlang on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/erlang/</link>
+    <description>Recent content in erlang on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing with Elixir is just FUN</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/07/playing-with-elixir-is-just-fun/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using Elixir for a few weeks now, sometimes&#xA;&lt;a href=&#34;https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-rocky-courtship/&#34;&gt;forcing it to play nice with Mongodb/Meteor&lt;/a&gt;&#xA;, which it doesn&amp;rsquo;t really want to do.&#xA;Sometimes with Posgres &lt;em&gt;(which it loves)&lt;/em&gt;.&#xA;Sometimes just plain ole&amp;rsquo; Elixir with no persistance.&lt;/p&gt;&#xA;&lt;p&gt;It &lt;em&gt;is&lt;/em&gt; realllllly fun!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meteor and Elixir (part one) A Rocky Courtship</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/</guid>
+      <description>&lt;p&gt;I have been watching Elixir for almost 2 years now, and debating if it&amp;rsquo;s mature enough for me to invest in.&lt;/p&gt;&#xA;&lt;p&gt;Obviously Erlang is super-mature, and Elixir is quite stable, but it&amp;rsquo;s a question of &amp;ldquo;is the community mature enough yet?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;m now writing this, I believe it is &amp;ldquo;ready&amp;rdquo;, and I&amp;rsquo;m beginning a journey to build out some services in Elixir&#xA;to stand up next to existing node services (meteorjs) and slow move funcitonality over to to Elixir.&lt;/p&gt;&#xA;&lt;p&gt;Chapter One: &lt;strong&gt;Proof of Concept, Mongo is supposed to be Simple.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

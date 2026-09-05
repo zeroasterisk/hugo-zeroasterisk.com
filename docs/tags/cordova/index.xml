@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cordova on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/cordova/</link>
+    <description>Recent content in cordova on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/cordova/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meteor 092rc1 with Cordova</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2014/09/meteor-092rc1-with-cordova/</link>
+      <pubDate>Tue, 09 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2014/09/meteor-092rc1-with-cordova/</guid>
+      <description>Meteor 0.9.2-rc1 is fun to play with, Cordova support functional Last night I started playing with meteor &amp;ndash;release 0.9.2-rc1.&#xA;It&amp;rsquo;s wonderful! The local development and hot-code-push is a great improvement. Builds were painless (mostly).&#xA;The hot code push works brilliantly in the simulator. This is going to be a game changer for mobile development with Meteor.</description>
+    </item>
+  </channel>
+</rss>

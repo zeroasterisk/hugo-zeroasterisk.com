@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="tag-page">
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">Posts tagged: {{ .Title }}</h1>
+            <p class="page-description">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} tagged with "{{ .Title }}"</p>
+        </header>
+        
+        <div class="content-list">
+            {{ range .Pages.ByDate.Reverse }}
+            <article class="content-item">
+                <div class="item-meta">
+                    <span class="item-type">{{ if eq .Type "posts" }}Tech{{ else }}Personal{{ end }}</span>
+                    <time class="item-date">{{ .Date.Format "2006-01-02" }}</time>
+                </div>
+                
+                <h2 class="item-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                
+                {{ with .Summary }}
+                <div class="item-summary">
+                    {{ . }}
+                </div>
+                {{ end }}
+                
+                {{ with .Params.tags }}
+                <div class="item-tags">
+                    {{ range . }}
+                    <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+                
+                <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+            </article>
+            {{ end }}
+        </div>
+        
+        <div class="tag-navigation">
+            <a href="/tags/" class="btn-link">← Browse All Tags</a>
+        </div>
+    </div>
+</div>
+{{ end }}

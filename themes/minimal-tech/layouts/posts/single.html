@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="content-article crosspost-article">
+    <div class="container">
+        <header class="content-header">
+            <!-- Crosspost Notice -->
+            {{ if .Params.crosspost }}
+            <div class="crosspost-notice">
+                <span class="crosspost-label">📄 Cross-post</span>
+                <span class="external-source">from {{ .Params.external_source }}</span>
+            </div>
+            {{ end }}
+            
+            <h1 class="content-title">{{ .Title }}</h1>
+            
+            <div class="content-meta">
+                <time class="content-date">{{ .Date.Format "January 2, 2006" }}</time>
+                {{ with .Params.tags }}
+                <div class="content-tags">
+                    {{ range . }}
+                    <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            
+            <!-- Canonical Link Notice -->
+            {{ with .Params.canonical_url }}
+            <div class="canonical-notice">
+                <p><strong>Originally published:</strong> <a href="{{ . }}" target="_blank" rel="canonical nofollow">{{ . }}</a></p>
+            </div>
+            {{ end }}
+        </header>
+
+        <div class="content-body">
+            {{ .Content }}
+        </div>
+        
+        {{ if .Params.crosspost }}
+        <footer class="crosspost-footer">
+            <div class="original-link">
+                <h3>Read the Original</h3>
+                <p>This is a cross-post summary. For the complete content, visit:</p>
+                <a href="{{ .Params.canonical_url }}" target="_blank" rel="canonical nofollow" class="external-link">
+                    {{ .Params.canonical_url }}
+                </a>
+            </div>
+        </footer>
+        {{ end }}
+    </div>
+</article>
+{{ end }}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="generator" content="Hugo 0.121.1">
+    
+    <title>CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key | Alan Blount | AI/ML Engineer at Google</title>
+    
+    
+    <meta name="description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    
+    
+    <meta name="author" content="Alan Blount">
+    
+    
+    
+    <meta property="og:title" content="CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key">
+    <meta property="og:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/02/cakephp-beforesave-gotcha-need-to-set-this-__exists-to-true-if-setting-a-primary-key/">
+    <meta property="og:site_name" content="Alan Blount | AI/ML Engineer at Google">
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/02/cakephp-beforesave-gotcha-need-to-set-this-__exists-to-true-if-setting-a-primary-key/">
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key">
+    <meta name="twitter:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    <meta name="twitter:creator" content="@zeroasterisk">
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/02/cakephp-beforesave-gotcha-need-to-set-this-__exists-to-true-if-setting-a-primary-key/">
+    
+    
+    <link rel="stylesheet" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/css/main.css">
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2011466-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2011466-1');
+    </script>
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/" class="brand-link">
+                    <strong>Alan Blount</strong>
+                    <span class="brand-subtitle">AI/ML Engineer at Google</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/posts/" class="nav-link">
+                    Tech
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/" class="nav-link">
+                    Personal
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/about/" class="nav-link">
+                    About
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/" class="nav-link">
+                    Tags
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/search/" class="nav-link">
+                    Search
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+    
+    <main>
+        
+<article class="content-article crosspost-article">
+    <div class="container">
+        <header class="content-header">
+            
+            
+            
+            <h1 class="content-title">CakePHP beforeSave() gotcha: need to set $this-&gt;__exists to true if setting a primary key</h1>
+            
+            <div class="content-meta">
+                <time class="content-date">February 19, 2010</time>
+                
+                <div class="content-tags">
+                    
+                    <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2010/" class="tag">2010</a>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+        </header>
+
+        <div class="content-body">
+            <p>I added an update to <a href="http://book.cakephp.org/view/76/Callback-Methods">CakePHP Book: beforeSave()</a></p>
+<blockquote>
+<p>Also, if you add a primary key which would turn an “insert” into an “update” within beforeSave() you’ll need to set <code>$this-&gt;__exists = true;</code>… the call to <a href="http://api12.cakephp.org/view_source/model/#line-1159">$this-&gt;exists();</a> happens in model.php before the callback to <a href="http://api12.cakephp.org/view_source/model/#line-1191">beforeSave()</a>.</p>
+<!-- raw HTML omitted -->
+</blockquote>
+<pre><code>if (!isset($this-&amp;gt;data[$this-&amp;gt;name]['id']) &amp;&amp; isset($this-&amp;gt;data[$this-&amp;gt;name]['unique_field'])) {
+	$found = $this-&amp;gt;find(&quot;first&quot;,array(
+			&quot;recursive&quot; =&amp;gt; -1,
+			&quot;fields&quot; =&amp;gt; array(&quot;id&quot;),
+			&quot;conditions&quot; =&amp;gt; array(&quot;unique_field&quot; =&amp;gt; $this-&amp;gt;data[$this-&amp;gt;name]['unique_field'])));
+	if (!empty($found) &amp;&amp; isset($found[$this-&amp;gt;name]['id'])) {
+		$this-&amp;gt;id = $this-&amp;gt;data[$this-&amp;gt;name]['id'] = $found[$this-&amp;gt;name]['id'];
+		&lt;strong&gt;$this-&amp;gt;__exists = true;&lt;/strong&gt;
+	}
+}
+return parent::beforeSave();
+</code></pre>
+<p>}<!-- raw HTML omitted --></p>
+<p>That’s been confusing me a bit recently – setting the ID of a row within beforesave() should change the save to an update, but it was trying to insert with a specified ID and thus, failing… glad to have a simple solution that makes sense… hope that helps someone else…</p>
+<!-- raw HTML omitted -->
+
+        </div>
+        
+        
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Alan Blount. All rights reserved.</p>
+                <p class="footer-description">AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.</p>
+            </div>
+            
+            <div class="footer-links">
+                
+                <a href="https://github.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                
+                
+                <a href="https://twitter.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                
+                
+                <a href="https://linkedin.com/in/alanblount" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://zeroasterisk.github.io/zeroasterisk-unified-preview/js/main.js"></script>
+</body>
+</html>

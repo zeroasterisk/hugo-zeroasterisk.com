@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bundle-size on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/bundle-size/</link>
+    <description>Recent content in bundle-size on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/bundle-size/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meteor 1.5 ~ Bundle Optimization &#43; Examples</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/meteor-1.5-~-bundle-optimization--examples/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/05/meteor-1.5-~-bundle-optimization--examples/</guid>
+      <description>&lt;p&gt;I have been playing with &lt;a href=&#34;https://meteor.com/&#34;&gt;Meteor&lt;/a&gt; 1.5 and it&amp;rsquo;s dynamic imports,&#xA;which can be used to reduce the amount of javascript code sent to the browser.&lt;/p&gt;&#xA;&lt;p&gt;This article is a deep dive into how to profile and optimize your client side code&#xA;to make smarter use of the new dynamic imports&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Which will make &lt;strong&gt;meteor load faster for your users&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

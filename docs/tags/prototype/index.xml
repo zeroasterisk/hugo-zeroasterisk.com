@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prototype on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/prototype/</link>
+    <description>Recent content in prototype on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/prototype/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF.js UI - Simple Proof of Concept</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/pdf.js-ui-simple-proof-of-concept/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2017/06/pdf.js-ui-simple-proof-of-concept/</guid>
+      <description>PDF.js UI - Simple Proof of Concept Working on a simple proof of concept for PDF.js integration with a custom UI layer.&#xA;More details coming soon&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>

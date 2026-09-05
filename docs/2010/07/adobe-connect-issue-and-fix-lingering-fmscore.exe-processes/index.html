@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="generator" content="Hugo 0.121.1">
+    
+    <title>Adobe Connect Issue and Fix: Lingering FMSCore.exe processes | Alan Blount | AI/ML Engineer at Google</title>
+    
+    
+    <meta name="description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    
+    
+    <meta name="author" content="Alan Blount">
+    
+    
+    
+    <meta property="og:title" content="Adobe Connect Issue and Fix: Lingering FMSCore.exe processes">
+    <meta property="og:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/07/adobe-connect-issue-and-fix-lingering-fmscore.exe-processes/">
+    <meta property="og:site_name" content="Alan Blount | AI/ML Engineer at Google">
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/07/adobe-connect-issue-and-fix-lingering-fmscore.exe-processes/">
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Adobe Connect Issue and Fix: Lingering FMSCore.exe processes">
+    <meta name="twitter:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    <meta name="twitter:creator" content="@zeroasterisk">
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2010/07/adobe-connect-issue-and-fix-lingering-fmscore.exe-processes/">
+    
+    
+    <link rel="stylesheet" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/css/main.css">
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2011466-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2011466-1');
+    </script>
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/" class="brand-link">
+                    <strong>Alan Blount</strong>
+                    <span class="brand-subtitle">AI/ML Engineer at Google</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/posts/" class="nav-link">
+                    Tech
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/" class="nav-link">
+                    Personal
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/about/" class="nav-link">
+                    About
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/" class="nav-link">
+                    Tags
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/search/" class="nav-link">
+                    Search
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+    
+    <main>
+        
+<article class="content-article crosspost-article">
+    <div class="container">
+        <header class="content-header">
+            
+            
+            
+            <h1 class="content-title">Adobe Connect Issue and Fix: Lingering FMSCore.exe processes</h1>
+            
+            <div class="content-meta">
+                <time class="content-date">July 23, 2010</time>
+                
+                <div class="content-tags">
+                    
+                    <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2010/" class="tag">2010</a>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+        </header>
+
+        <div class="content-body">
+            <p>We’ve setup Connect to expire the FMSCore processes after 2 hours, but if someone is still connected to a recording, it will keep the old zombie FMSCore process until that person disconnects.</p>
+<p>It often happens that doesn’t work – and there’s seemingly no garbage collection in place to clean up old FMSCore.</p>
+<p>So we created a simple AutoIt script which can be compiled to an EXE which works, but it has some dependancies…</p>
+<p>The following dependencies / commands must all be in place:</p>
+<ul>
+<li>c:\Windows\system32[pv.exe]<a href="http://www.teamcti.com/pview/prcview.htm">1</a></li>
+<li>c:\Windows\system32[pslist.exe]<a href="http://technet.microsoft.com/en-us/sysinternals/bb896682.aspx">2</a></li>
+<li>c:\Windows\system32[pskill.exe]<a href="http://technet.microsoft.com/en-us/sysinternals/bb896683.aspx">3</a></li>
+</ul>
+<p>How it works</p>
+<ul>
+<li>the script uses pv.exe to find all FMS Core processes which have a command line argument that includes “flvplayerapp” (which is only for recorded courses)</li>
+<li>for each of the returned process ids</li>
+<li>it uses pslist to list details which include the age of the process</li>
+<li>it uses a regex match find the “hours it’s been running”</li>
+<li>if longer than 5 hours (a configurable parameter) it uses pskill to kill the process.</li>
+</ul>
+<p>So we set this up on an hourly scheduled task and it handles garbage collection for us.</p>
+<p>Source:  <a href="https://zeroasterisk.com/wp-content/uploads/2010/07/fmscore-killer-source.au3_.txt">fmscore-killer-source.au3</a></p>
+<!-- raw HTML omitted -->
+
+        </div>
+        
+        
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Alan Blount. All rights reserved.</p>
+                <p class="footer-description">AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.</p>
+            </div>
+            
+            <div class="footer-links">
+                
+                <a href="https://github.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                
+                
+                <a href="https://twitter.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                
+                
+                <a href="https://linkedin.com/in/alanblount" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://zeroasterisk.github.io/zeroasterisk-unified-preview/js/main.js"></script>
+</body>
+</html>

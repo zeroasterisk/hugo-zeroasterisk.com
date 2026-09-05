@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="generator" content="Hugo 0.121.1">
+    
+    <title>210 hours in 3 weeks…. i’m afraid so. | Alan Blount | AI/ML Engineer at Google</title>
+    
+    
+    <meta name="description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    
+    
+    <meta name="author" content="Alan Blount">
+    
+    
+    
+    <meta property="og:title" content="210 hours in 3 weeks…. i’m afraid so.">
+    <meta property="og:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2006/11/210-hours-in-3-weeks.-im-afraid-so./">
+    <meta property="og:site_name" content="Alan Blount | AI/ML Engineer at Google">
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2006/11/210-hours-in-3-weeks.-im-afraid-so./">
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="210 hours in 3 weeks…. i’m afraid so.">
+    <meta name="twitter:description" content="AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.">
+    
+    <meta name="twitter:creator" content="@zeroasterisk">
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="canonical" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/2006/11/210-hours-in-3-weeks.-im-afraid-so./">
+    
+    
+    <link rel="stylesheet" href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/css/main.css">
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2011466-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2011466-1');
+    </script>
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="brand">
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/" class="brand-link">
+                    <strong>Alan Blount</strong>
+                    <span class="brand-subtitle">AI/ML Engineer at Google</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/posts/" class="nav-link">
+                    Tech
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/" class="nav-link">
+                    Personal
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/about/" class="nav-link">
+                    About
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/" class="nav-link">
+                    Tags
+                </a>
+                
+                <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/search/" class="nav-link">
+                    Search
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+    
+    <main>
+        
+<article class="content-article crosspost-article">
+    <div class="container">
+        <header class="content-header">
+            
+            
+            
+            <h1 class="content-title">210 hours in 3 weeks…. i’m afraid so.</h1>
+            
+            <div class="content-meta">
+                <time class="content-date">November 30, 2006</time>
+                
+                <div class="content-tags">
+                    
+                    <a href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/2006/" class="tag">2006</a>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+        </header>
+
+        <div class="content-body">
+            <p>My past 3 weeks… I’ve worked ~210 hours… that averages to 70 hours per week… but really I worked almost 100 hours in one 7 day period.   One day, i worked from 6am – 2am, and one day I worked from 9am – 2am.  Always getting up and working the next day by 9am at the latest and working more than a full day… every day.</p>
+<p>Why would I do such horrendous work?</p>
+<p>Well, we did an upgrade from Livelink 9.2 to Livelink 9.5 and included was a change from proprietary Livelink authentication to AD authentication.  This didn’t work well for us because we have many other companies w/ access to our systems.  Domain trusts were established ahead of times, but their AD usernames were formatted differently than our Livelink username format.  We have been renaming accounts like mad (in fact, I setup a cool authentication failure logger and some tools to easily change the usernames directly in the KUAF table)… but it’s still a bear.   On top of this, we use Livelink authentication as the basis for a few downstream systems and those are slow to update (and I can’t change or control them).  And in addition, we have flaky windows servers which are complaining about the increased load (more users, more use, more work-per-page in LL9.5).</p>
+<p>All in all – it’s an improvement, but the company should have listened to me when I warned it would be aweful.  Too bad that’s the type of thing I know better than to say on a conference call… true as it may be.  If we had known what to rename all users to and did it ahead of time… we could have been in much better shape.  Also I suspect we would have been in better shape if we rebuilt our web servers from scratch instead of doing an upgrade of Livelink on Win 2000.</p>
+<p>Bleh!</p>
+<p>(yep, you should feel sorry for me.)</p>
+<p>I’m only getting to write this, because the VPN connection to work is down…  aside from that, I avoid this computer as much as possible.</p>
+<!-- raw HTML omitted -->
+
+        </div>
+        
+        
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Alan Blount. All rights reserved.</p>
+                <p class="footer-description">AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes.</p>
+            </div>
+            
+            <div class="footer-links">
+                
+                <a href="https://github.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                
+                
+                <a href="https://twitter.com/zeroasterisk" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                
+                
+                <a href="https://linkedin.com/in/alanblount" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://zeroasterisk.github.io/zeroasterisk-unified-preview/js/main.js"></script>
+</body>
+</html>

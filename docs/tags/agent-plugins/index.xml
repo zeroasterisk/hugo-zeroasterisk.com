@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agent-plugins on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/agent-plugins/</link>
+    <description>Recent content in agent-plugins on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/agent-plugins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent Plugins Package Your Skills, Tools, and More</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/08/agent-plugins-package-your-skills-tools-and-more/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/08/agent-plugins-package-your-skills-tools-and-more/</guid>
+      <description>Agent Plugins Package Your Skills, Tools, and More Originally published on Google Developers Blog - August 6, 2026&#xA;Google has announced Agent Plugins 1.0.0, a new vendor-neutral directory specification backed by major tech companies including Google, Amazon, and Microsoft. This standard aims to package Agent Skills and MCP (Model Context Protocol) servers into portable, interoperable units.&#xA;Key Highlights The specification standardizes the manifest (plugin.json) and utilizes a fixed directory layout, eliminating the need for developers to maintain separate wrappers or configurations to support different AI coding agents and IDEs.</description>
+    </item>
+  </channel>
+</rss>

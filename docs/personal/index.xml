@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personals on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/</link>
+    <description>Recent content in Personals on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2010 17:02:53 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poppy is 1000 days old today</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2010/10/poppy-is-1000-days-old-today/</link>
+      <pubDate>Wed, 20 Oct 2010 17:02:53 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2010/10/poppy-is-1000-days-old-today/</guid>
+      <description>Poppy is 1000 days old today!</description>
+    </item>
+    <item>
+      <title>fanout, a super useful linux script if you manage multiple, similar servers</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</link>
+      <pubDate>Thu, 24 Dec 2009 04:54:29 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/fanout-a-super-useful-linux-script-if-you-manage-multiple-similar-servers/</guid>
+      <description>I love this fanout script for running the same command on multiple servers, just in case you’re interested:&#xA;http://www.stearns.org/fanout/fanout&#xA;[root@199564-6 scripts]# fanout &amp;quot;$SERVERS&amp;quot; &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Starting root@db1&amp;lt;br /&amp;gt; Starting root@db2&amp;lt;br /&amp;gt; Starting root@nas&amp;lt;br /&amp;gt; Starting root@www1&amp;lt;br /&amp;gt; Starting root@www2&amp;lt;br /&amp;gt; Starting root@www3&amp;lt;br /&amp;gt; Fanout executing &amp;quot;cp /root/.ssh/authorized_keys /home/user/.ssh/&amp;quot;&amp;lt;br /&amp;gt; Start time Wed Dec 23 23:45:35 EST 2009 , End time Wed Dec 23 23:45:47 EST 2009&amp;lt;br /&amp;gt; ==== As root on db1 ====</description>
+    </item>
+    <item>
+      <title>DarkAuth for the win!</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/</link>
+      <pubDate>Wed, 02 Dec 2009 16:37:33 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/12/darkauth-for-the-win/</guid>
+      <description>I’ve been working with CakePHP for a few years now and am very happy with it. I’ve been working with the 1.2 version for a few months (since it went stable) and playing with the Auth and ACL core components.&#xA;I’ve decided that ACL is too complicated for most setups, and Auth is fine, but not perfect. So after some research, I switched to the DarkAuth component, which was much better suited to my needs.</description>
+    </item>
+    <item>
+      <title>A CakePHP gotcha for migrating from 1.1 to 1.2&#43; on Model-&gt;create()</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-cakephp-gotcha-for-migrating-from-1.1-to-1.2-on-model-create/</link>
+      <pubDate>Mon, 30 Nov 2009 16:15:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-cakephp-gotcha-for-migrating-from-1.1-to-1.2-on-model-create/</guid>
+      <description>I reported this as a ticket, but as it turns out, it’s a design choice.. but it’s enough of a gotcha that I thought I should report it.&#xA;What happened The $this-&amp;gt;ModelName-&amp;gt;create() set the defaults for the next save, which is what I would expect. But on my database there’s a default value set for the ‘created’ field (the standard for datetime columns in PHPmyAdmin) as well as the ‘modified’ and ‘updated’ fields.</description>
+    </item>
+    <item>
+      <title>Autosearch Craigslist with Google Alerts</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/autosearch-craigslist-with-google-alerts/</link>
+      <pubDate>Mon, 23 Nov 2009 22:05:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/autosearch-craigslist-with-google-alerts/</guid>
+      <description>Sometimes, I want something only if it’s on the cheap, second hand, and easy… that’s usually Craigslist.&#xA;Often what I want isn’t available when I think of it… but it might show up sometime… I don’t want to have to look at craigslist every day (because I wont).&#xA;Google Alerts to the rescue.&#xA;If I’m in Louisville KY and I’m looking for an iPod (for example) I just setup an alert for: “site:louisville.</description>
+    </item>
+    <item>
+      <title>A Month of Site-Downtime</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-month-of-site-downtime/</link>
+      <pubDate>Mon, 23 Nov 2009 14:17:58 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/11/a-month-of-site-downtime/</guid>
+      <description>So the website has been down from Oct 21st to Nov 23rd. The old server got hacked (or really, a sister-server) and due to security concerns, we didn’t know what got owned and what was safe. We already had a different server hardware to put in place, just had to set it up. So we got that installed and up and running, but it took me a few more days to get around to implementing something on my site.</description>
+    </item>
+    <item>
+      <title>poppy’s first day of school</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/08/poppys-first-day-of-school/</link>
+      <pubDate>Wed, 19 Aug 2009 16:02:58 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/08/poppys-first-day-of-school/</guid>
+      <description>Poppy’s really thinned out and sped up. At 18 months, she’s about the same height as she was at 14 months, but seems much more thin. Must be all the running, jumping, and climbing she does. She can happily run in a circle for 15 minutes, or bounce on a bed for 30.&#xA;She’s started school at “The Friend’s School” this week, in the 1 year old class three days a week for three hours each day.</description>
+    </item>
+    <item>
+      <title>pick-your-own-fruit-photos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/07/pick-your-own-fruit-photos/</link>
+      <pubDate>Wed, 15 Jul 2009 16:22:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/07/pick-your-own-fruit-photos/</guid>
+      <description>I finally uploaded some of the photos we’ve recently taken… Here are our two trips to various “pick your own” farms, for strawberries and blueberries.&#xA;2009.06.05 – Strawberry Picking at Huber’s Farm&#xA;2009.06.20 – Blueberry Picking</description>
+    </item>
+    <item>
+      <title>Running and Talking and Loud</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/06/running-and-talking-and-loud/</link>
+      <pubDate>Sun, 21 Jun 2009 03:15:20 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/06/running-and-talking-and-loud/</guid>
+      <description>Poppy has stopped walking and is pretty much either running to places, or stumble-running. I’m sure that’s an exaggeration, but it is certainly what it seems like.&#xA;Likewise, she’s still babbling incoherently – but she’s doing so loudly. Also – her speech patterns are much closer to English. We don’t know what she’s saying, but she sure does and, by god, she means it. Her actual vocabulary has increased to maybe a dozen words and phrases:</description>
+    </item>
+    <item>
+      <title>Poppy Update, 15.5 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-update-15.5-months/</link>
+      <pubDate>Sun, 10 May 2009 16:58:47 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-update-15.5-months/</guid>
+      <description>Poppy is starting to really put things together. She’s long been understanding much more than we would have expected, occasionally doing things we ask her to do which we would never anticipate her doing (like asking her to throw something away in another room, and her doing so). Now she’s starting to say a few more words, do a few more signs, and saying/signing more clearly.&#xA;She’s had a bit of a rough month, all four of her I-Teeth are coming in.</description>
+    </item>
+    <item>
+      <title>Poppy at 15 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-at-15-months/</link>
+      <pubDate>Mon, 04 May 2009 14:33:39 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/05/poppy-at-15-months/</guid>
+      <description> &amp;lt;div class=&amp;quot;goog-inline-block goog-icon-list-icon&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;goog-icon-list-icon-img-div&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;goog-icon-list-icon-meta&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://picasaweb.google.com/cathypennington/409PoppyVisitZooHotAirBalloonsFriendsFamilyGamesTheMarathon&amp;quot;&amp;gt;more photos&amp;lt;/a&amp;gt; (from mom, I have yet to process this month&amp;amp;#8217;s photos from my camera) &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;goog-inline-block goog-icon-list-icon&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    <item>
+      <title>Poppy Update – Fast and Furious</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/04/poppy-update-fast-and-furious/</link>
+      <pubDate>Thu, 02 Apr 2009 17:28:11 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/04/poppy-update-fast-and-furious/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Poppy spinning</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-spinning/</link>
+      <pubDate>Mon, 16 Mar 2009 19:38:45 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-spinning/</guid>
+      <description>Poppy has long been termed as a “rough neck” and she certainly earns that title, loving to be thrown around and tickled and rough housing with her peers or adults alike.&#xA;She has just started spinning around in circles to get herself dizzy. It’s one of the cutest things I’ve ever witnessed.&#xA;The downside is that she already staggers like a drunk anytime she’s tired and sometimes when she’s not… so this just adds to the appearance that she is seconds away from being face-down on the ground.</description>
+    </item>
+    <item>
+      <title>Mom and Sam’s Visit to Lousiville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/mom-and-sams-visit-to-lousiville/</link>
+      <pubDate>Thu, 05 Mar 2009 16:02:31 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/mom-and-sams-visit-to-lousiville/</guid>
+      <description>Mom and Sam drove to Louisville for a few days this past weekend+ (Friday – Tuesday).&#xA;We all had a wonderful visit and they played with poppy almost nonstop… as expected. We took full advantage of the free babysitting and went out a few nights and on the whole, were less than adequate hosts, but they didn’t seem to mind.&#xA;Mom’s posted her photos here, and below is a slideshow</description>
+    </item>
+    <item>
+      <title>Poppy Update – 13 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-update-13-months/</link>
+      <pubDate>Sun, 01 Mar 2009 16:35:51 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/03/poppy-update-13-months/</guid>
+      <description>Poppy is:&#xA;walking well, though she still staggers like she’s drunk when she’s tired. sometimes eating vegetables, often not – but always eating fruit and crackers are much better starting to learn a few signs… she’s known “more” for a while now, but now she can do eat and drink and occasionally a few others. certainly understands many words and phrases and tones of voice, and is starting to mimic more often… sometimes putting a word in context a bit… though it’s a stretch and only her family would recognize these accomplishments.</description>
+    </item>
+    <item>
+      <title>Winter Weather hits Louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/02/winter-weather-hits-louisville/</link>
+      <pubDate>Tue, 03 Feb 2009 05:36:05 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/02/winter-weather-hits-louisville/</guid>
+      <description>It’s been a crazy winter, the last week. The ice storm which took out most of KY’s power only kept us out for a couple of days, but still has some friends down. It was crazy to see all of the trees weighed down and drooping, beautiful and terrible. The ice coated everything, and when the wind blew all of the ice-coated limbs and branched clinked with each other.&#xA;Here’s a great photo from a friend of mine, mitch:</description>
+    </item>
+    <item>
+      <title>Poppy’s First Birthday</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/poppys-first-birthday/</link>
+      <pubDate>Sun, 25 Jan 2009 03:46:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/poppys-first-birthday/</guid>
+      <description>We had a house full for Poppy’s first birthday. Friends came in from Columbus and Lexington, but otherwise we tried to keep it family only… even so we had almost 30 people over and had a wonderful time (at least those who were able to find seats).&#xA;She had her cake and ate it too. Anita expected that she might not take to the cake straight away, but she certainly dug in, as soon as she realized that it was food and she was allowed to eat it.</description>
+    </item>
+    <item>
+      <title>Photobooth photos from Scott and Tami’s wedding</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/photobooth-photos-from-scott-and-tamis-wedding/</link>
+      <pubDate>Mon, 12 Jan 2009 16:34:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2009/01/photobooth-photos-from-scott-and-tamis-wedding/</guid>
+      <description>Scott and Tami had a wonderful wedding in Columbus in late fall 2008. We went with Poppy and my mom Cathy. At the wedding they had a photobooth set up and some of the photos went into a scrapbook and some we took home… here are the took home ones.</description>
+    </item>
+    <item>
+      <title>Crazy Base Jumping Video with Wing Suits</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/crazy-base-jumping-video-with-wing-suits/</link>
+      <pubDate>Mon, 29 Dec 2008 14:55:50 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/crazy-base-jumping-video-with-wing-suits/</guid>
+      <description>This is an absolutely crazy base-jumping video, with wing suits. If I didn’t have the life and family I have now, I could see myself wanting to do this, but there’s too much risk involved for me and I’ve got too much to loose. Still – it’s awesome to see.&#xA;wingsuit base jumping from Ali on Vimeo.</description>
+    </item>
+    <item>
+      <title>Wonderful Subversive Advertising</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/wonderful-subversive-advertising/</link>
+      <pubDate>Fri, 19 Dec 2008 18:01:18 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/wonderful-subversive-advertising/</guid>
+      <description>15 Ingenious Humanitarian Subvertisements: Creative Advertisements that Advocate Global Causes&#xA;more: http://weburbanist.com/2008/02/05/15-ingenious-humanitarian-subvertisements-creative-advertisements-that-advocate-global-causes/</description>
+    </item>
+    <item>
+      <title>It’s been a busy couple of years…</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/its-been-a-busy-couple-of-years/</link>
+      <pubDate>Wed, 17 Dec 2008 04:20:16 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/its-been-a-busy-couple-of-years/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>The Mates of State, the story of taking the family on tour</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/the-mates-of-state-the-story-of-taking-the-family-on-tour/</link>
+      <pubDate>Sat, 13 Dec 2008 06:35:35 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/12/the-mates-of-state-the-story-of-taking-the-family-on-tour/</guid>
+      <description>There’s a great video done by Dan Harris of ABC news on the Mates of State and what the family does when they go on tour.&#xA;I love the wholesomeness of it and it fits right in with what I think they would be like. This band is one of my absolute favorites and that’s only encouraged by this peak into their good parenting and family priorities.&#xA;http://abcnews.go.com/video/playerindex?id=6318255&#xA;http://www.facebook.com/note.php?note_id=37203373110&amp;amp;ref=mf</description>
+    </item>
+    <item>
+      <title>Mantis to Basecamp to-do(s)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/11/mantis-to-basecamp-to-dos/</link>
+      <pubDate>Thu, 13 Nov 2008 18:36:39 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/11/mantis-to-basecamp-to-dos/</guid>
+      <description>I just created a handy little script to create todos in basecamp for unresovled tickets in mantis.&#xA;You can see the open sourced code/project: http://code.google.com/p/mantis2basecamp-todo/.&#xA;This is something we found useful, if you use both tools, you might find it useful as well.</description>
+    </item>
+    <item>
+      <title>Poppy the talker</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/10/poppy-the-talker/</link>
+      <pubDate>Tue, 21 Oct 2008 06:06:49 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/10/poppy-the-talker/</guid>
+      <description>Anita recently pointed out to me that Poppy has been talking to herself for weeks. I noticed it and never remarked on it because it seemed normal, but it is worth remarking on.&#xA;She will be crawling around, or cruising, or riding in a carrier or playing with a toy… often during a period or play or concentration, she will start babbling really quietly. A lot like talking to yourself, she just talks away while she’s working on whatever she’s working on.</description>
+    </item>
+    <item>
+      <title>most of the poppy photos from September are uploaded</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/10/most-of-the-poppy-photos-from-september-are-uploaded/</link>
+      <pubDate>Sun, 19 Oct 2008 05:39:38 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/10/most-of-the-poppy-photos-from-september-are-uploaded/</guid>
+      <description>I have uploaded most of the photos from September and the first half of October. We have another card to process at some point, but this should be the majority.&#xA;September&#xA;October</description>
+    </item>
+    <item>
+      <title>a touching movie clip about selling the right message</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/a-touching-movie-clip-about-selling-the-right-message/</link>
+      <pubDate>Mon, 29 Sep 2008 21:21:45 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/a-touching-movie-clip-about-selling-the-right-message/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>money or lives, what do we care about in this country?</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/money-or-lives-what-do-we-care-about-in-this-country/</link>
+      <pubDate>Mon, 29 Sep 2008 21:14:17 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/money-or-lives-what-do-we-care-about-in-this-country/</guid>
+      <description>Something has come to me, in the light of the current financial crisis in this country…&#xA;Most people in this country are now aware that we are on the brink of a depression as serious as the one in the 1930s. People are up in arms, talking to their congressional representatives and it is all over the media. There’s action (or at least attempted and perhaps misguided action) in our government to fix some of the problems, and we are all sure the sky is falling and things need to be done.</description>
+    </item>
+    <item>
+      <title>Kentucky Homeschoolers on Parent’s magazine</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/kentucky-homeschoolers-on-parents-magazine/</link>
+      <pubDate>Mon, 22 Sep 2008 03:08:19 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/kentucky-homeschoolers-on-parents-magazine/</guid>
+      <description>I saw the following article on a list serve I’ve been lurking on; a simple overview of personal experience with homeschooling… but it’s nice to see local examples get national coverage. Homeschool Diaries: How 3 Families Teach Kids at Home</description>
+    </item>
+    <item>
+      <title>Satirical voting republican</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/satirical-voting-republican/</link>
+      <pubDate>Mon, 22 Sep 2008 02:56:20 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/satirical-voting-republican/</guid>
+      <description>www.ImVotingRepublican.com&#xA;I’m Voting Republican is a satirical look at the likely outcome of another four years of Republican government. The not-so-subtle message behind the film is the importance of a united bloc of citizens willing to take the time and effort to vote Democrat in order to improve America’s domestic and foreign policy.</description>
+    </item>
+    <item>
+      <title>Pirate name for “Talk Like a Pirate Day”</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/pirate-name-for-talk-like-a-pirate-day/</link>
+      <pubDate>Fri, 19 Sep 2008 14:36:56 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/pirate-name-for-talk-like-a-pirate-day/</guid>
+      <description>&amp;lt;td&amp;gt; : &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; &amp;lt;b&amp;gt;Alan Blount&amp;lt;/b&amp;gt; &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; : &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; &amp;lt;b&amp;gt;Baginda Mugsy Gladden&amp;lt;/b&amp;gt; &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; : &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; &amp;lt;b&amp;gt;Queen Licia Red Cobra&amp;lt;/b&amp;gt; &amp;lt;/td&amp;gt; Source: www.piratename.net</description>
+    </item>
+    <item>
+      <title>Mom has left the state</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/mom-has-left-the-state/</link>
+      <pubDate>Thu, 04 Sep 2008 04:33:10 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/mom-has-left-the-state/</guid>
+      <description>My mom (Poppy’s Grannie C) has visited us for a week and a half and it couldn’t have been timed better. With all of Poppy’s recent accomplishments, it was kind-of like meeting a whole new grandchild… at least a new set of things to watch out for when poppy-sitting.&#xA;Mom painted 80% of a wonderful mural in Poppy’s room, which I get to finish up over the next week or so (looking forward to doing a photo-synth of it, when done).</description>
+    </item>
+    <item>
+      <title>Poppy – the dawning of the era of mobility</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/poppy-the-dawning-of-the-era-of-mobility/</link>
+      <pubDate>Thu, 04 Sep 2008 04:27:06 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/09/poppy-the-dawning-of-the-era-of-mobility/</guid>
+      <description>Poppy is over seven months old now. 223 days. She’s old.&#xA;In her first week of being 6 months old, she started getting her first tooth and started crawling. She quickly realized that through crawling is reliable, it’s not as great as pulling up to standing and trying to coax someone or anything into keeping her upright while she staggers towards any object of her desire. Basically, we spend a lot of time with her holding onto our fingers as we stoop over and walk her around… she sits when she’s near something she wants.</description>
+    </item>
+    <item>
+      <title>Modern Internet Identity Theft by Andrew Patrick</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/modern-internet-identity-theft-by-andrew-patrick/</link>
+      <pubDate>Fri, 29 Aug 2008 21:49:44 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/modern-internet-identity-theft-by-andrew-patrick/</guid>
+      <description>A recent report from Don Jackson at SecureWorks (dated March 20 2007) examines a new Trojan and provides some alarming insights on Internet Identity Theft. It is worth reviewing this case carefully to understand how sophisticated modern identity theft schemes have become, and how difficult it can be to investigate and prevent them.What makes this Trojan interesting is that it:&#xA;is installed automatically simply by visiting an infected web site is invisible to the user is often missed by anti-virus software is able to steal identity information even if it is encrypted using https efficiently collects large amounts of information and sends it to a “mother ship” provides an interface for fraudsters to easily purchase the stolen data is been used to collect thousands of login credentials at major banks and government agencies has not been shut down is only one of many such programs that are now offered as kits source: http://www.</description>
+    </item>
+    <item>
+      <title>Anita’s just passed her boards</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/anitas-just-passed-her-boards/</link>
+      <pubDate>Thu, 28 Aug 2008 21:34:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/anitas-just-passed-her-boards/</guid>
+      <description>Anita has been going to school for her whole life. She’s 28, and she’s gone to school k-12, and then college for 9 years after that. She got her PharmD from OSU and became a Dr. of Pharmacy… but all of that is for naught without passing a national board and a state law board.&#xA;Well – she’s passed both on her first attempt and is now, a bonafide (licensed) Pharmacist.</description>
+    </item>
+    <item>
+      <title>Gmail users should go SSL</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/gmail-users-should-go-ssl/</link>
+      <pubDate>Thu, 21 Aug 2008 21:13:40 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/gmail-users-should-go-ssl/</guid>
+      <description>Why You Should Turn Gmail’s SSL Feature On Now&#xA;Let’s talk security and why you should take advantage of Gmail’s recent SSL feature, and why you might want to be careful using other non-SSL webmail services.&#xA;But first, make sure your connection is secured using SSL.&#xA;How do you know a connection is secured by SSL? The handy “s” after “http” will tell you. For example, https://mail.google.com is encrypted while http://mail.</description>
+    </item>
+    <item>
+      <title>Poppy: babbling, teething, and growing</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/poppy-babbling-teething-and-growing/</link>
+      <pubDate>Mon, 18 Aug 2008 05:15:44 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/poppy-babbling-teething-and-growing/</guid>
+      <description>Poppy is growing up way too quickly. Anita cried a couple nights ago&#xA;watching her sleep, and I can certainly understand… She hasn’t&#xA;technically doubled in size, but she seems like she is at least twice&#xA;as big as she was at birth and many hundred fold more&#xA;capable/developed/skilled/aware.&#xA;She’s babbling a lot, starting this weekend and she has a second tooth just under the surface ready to come out.</description>
+    </item>
+    <item>
+      <title>Penelope Lou is movin and shaking (anything she can grasp)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/penelope-lou-is-movin-and-shaking-anything-she-can-grasp/</link>
+      <pubDate>Fri, 08 Aug 2008 03:41:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/penelope-lou-is-movin-and-shaking-anything-she-can-grasp/</guid>
+      <description>Poppy is a feirce 6 months now. She is sitting and crawling and talking a lot (though still mostly in vowels only).&#xA;What’s funny is to see her grab ahold of something (anything) and shake it.&#xA;“What does this do? How about if I beat it against the floor for 5 minutes? hmmm… What about after another 5 minutes?”&#xA;She is so much fun to watch and interact with… all she’s doing is sitting or crawling and violently shaking/beating/eating whatever is in her little hands… but that’s more than enough to keep us watching.</description>
+    </item>
+    <item>
+      <title>Dell is now shipping computers with Ubuntu installed</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/dell-is-now-shipping-computers-with-ubuntu-installed/</link>
+      <pubDate>Wed, 06 Aug 2008 18:02:27 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/dell-is-now-shipping-computers-with-ubuntu-installed/</guid>
+      <description>Here’s a list of computers being shipped by Dell with Ubuntu… decent savings, good systems, and pro linux… makes me really happy.</description>
+    </item>
+    <item>
+      <title>We are moved in… YAY</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/we-are-moved-in-yay/</link>
+      <pubDate>Sun, 03 Aug 2008 02:11:04 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/08/we-are-moved-in-yay/</guid>
+      <description>I’ve gone for 72 hours without checking my email or getting online. Wonders will never cease.&#xA;We’ve been finishing up packing and moving into our new house!&#xA;As such – things are of course – crazy and i’m beaten down (in fact, I&#xA;might have very very mild heat stroke) – but we’re both really happy to&#xA;be here and get this house… we’ll be getting things setup as we can</description>
+    </item>
+    <item>
+      <title>Poppy Photos – Early July</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/poppy-photos-early-july/</link>
+      <pubDate>Fri, 11 Jul 2008 14:34:03 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/poppy-photos-early-july/</guid>
+      <description>photo-page / slideshow&#xA;Poppy ate some broccoli {.image_link}{.image_link}&#xA;Poppy slept with her papa and walked with her mama And played with her bear and in her crib And then Poppy and Anita and several other friends went to Tyler Park for the afternoon&#xA;{.image_link}</description>
+    </item>
+    <item>
+      <title>Poppy Accomplishment, sitting</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/poppy-accomplishment-sitting/</link>
+      <pubDate>Wed, 09 Jul 2008 18:31:29 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/poppy-accomplishment-sitting/</guid>
+      <description>Most changes are gradual – including this one… Poppy is sitting up pretty well now. Over the last two weeks she’s been getting closet to sitting unaided and most of this week, as long as there’s a pillow to protect her from occasionally flailing backwards – she’s a solid sitter. Amazing how proud I can be over such simple accomplishments.</description>
+    </item>
+    <item>
+      <title>Our House on Coral</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/our-house-on-coral/</link>
+      <pubDate>Wed, 02 Jul 2008 16:58:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/07/our-house-on-coral/</guid>
+      <description>We have made an offer on 183 Coral Ave. and it was accepted (finally).&#xA;You may have heard about the problems we had with the last house we were interested in, so were were trying not to get our hopes up too much – but now we are signed and contracted… good to go.&#xA;The house is big enough with a little expansion room in the basement, across the street from a great park and on an almost double lot.</description>
+    </item>
+    <item>
+      <title>Penelope Lou – 5 months old</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/penelope-lou-5-months-old/</link>
+      <pubDate>Wed, 25 Jun 2008 04:10:16 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/penelope-lou-5-months-old/</guid>
+      <description>Our daughter is 5 months old today. The milestones of time help me take account of the monumental changes which have happened. We have a fully fledged baby – nobody would call her an infant… she will never be an infant again.&#xA;This is both wonderful and tragic – but luckily more on the wonderful side.&#xA;She’s starting to teeth occasionally, but it seems to bother her for a couple of days here and there.</description>
+    </item>
+    <item>
+      <title>Sadness, no home for the blounts</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/sadness-no-home-for-the-blounts/</link>
+      <pubDate>Mon, 23 Jun 2008 03:31:24 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/sadness-no-home-for-the-blounts/</guid>
+      <description>We had gotten VERY excited about a house we were going to buy.&#xA;We made an offer, they countered, we accepted… all today (Sunday). We were waiting on the counter-offer-paperwork to sign and send back… well, instead of getting that, we actually got notified that the offer was retracted. Someone else made a better offer and we weren’t given an option to bid back.&#xA;Of course, this was after we’d told everyone and after we’d gotten really, really excited about this house.</description>
+    </item>
+    <item>
+      <title>Holy Hand Grenades, Firefox3 &#43; Firebug1.2 = amazing!</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/holy-hand-grenades-firefox3--firebug1.2-amazing/</link>
+      <pubDate>Fri, 20 Jun 2008 17:53:58 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/holy-hand-grenades-firefox3--firebug1.2-amazing/</guid>
+      <description>I’ve been putting off upgrading to FF3 because I was afraid of plugins which wouldn’t work and at this point, I live by many of my FF addons.&#xA;Well I feel silly now – having updated… Things seem to be as smooth as possible and FF is much more responsive. YAY MOZILLA!</description>
+    </item>
+    <item>
+      <title>poppy, age 4 months – 4 days in colorado</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/poppy-age-4-months-4-days-in-colorado/</link>
+      <pubDate>Fri, 06 Jun 2008 04:13:06 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/06/poppy-age-4-months-4-days-in-colorado/</guid>
+      <description>Poppy at Month four:&#xA;This month has been quite productive. She has been growing by leaps and bounds, like&#xA;normal. She’s now reaching for everything and&#xA;putting it all in her mouth and dropping it on the floor. Nothing is safe within a foot and a half of her. She is sitting up well, if you help her&#xA;out. She’s standing well, if you help her out. I think she is just</description>
+    </item>
+    <item>
+      <title>Date Night == Ethiopian &amp; Iron Man</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/date-night-ethiopian-iron-man/</link>
+      <pubDate>Fri, 16 May 2008 14:49:57 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/date-night-ethiopian-iron-man/</guid>
+      <description>we had a date last night (our first in 6+ months) and ate Ethiopian food and watched “Iron Man“. Both the food and the movie were fantastic!&#xA;Maybe it’s because we haven’t really had a night to ourselves in a while; maybe it’s because we haven’t seen a movie in a few months… but we both loved every second of our date and I personally will be re watching iron man a few times.</description>
+    </item>
+    <item>
+      <title>baby Sean</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/baby-sean/</link>
+      <pubDate>Thu, 15 May 2008 21:21:06 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/baby-sean/</guid>
+      <description>Jessie had his son (photos)</description>
+    </item>
+    <item>
+      <title>A wonderful investigation into Ubuntu usability</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/a-wonderful-investigation-into-ubuntu-usability/</link>
+      <pubDate>Mon, 12 May 2008 16:25:13 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/05/a-wonderful-investigation-into-ubuntu-usability/</guid>
+      <description>I think Ubuntu is great, easy to use, standardized, and built on Debian… what could be better? Apparently – there are certainly some things which could be better.&#xA;Here is a great experiment one geek and his girlfriend undertook:&#xA;I’ve toyed with Linux since 2002, when I first installed Mandrake. With the latest release of Ubuntu, I was interested to see how far Linux had come since then in terms of being used easily by the mainstream.</description>
+    </item>
+    <item>
+      <title>Poppy in the mirror – talking to herself</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-in-the-mirror-talking-to-herself/</link>
+      <pubDate>Sat, 19 Apr 2008 20:25:13 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-in-the-mirror-talking-to-herself/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poppy went swimming for the first time, today</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-went-swimming-for-the-first-time-today/</link>
+      <pubDate>Sat, 19 Apr 2008 18:49:21 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-went-swimming-for-the-first-time-today/</guid>
+      <description>Poppy went swimming for the first time in her cute little two piece + diaper. Mom and Grannie C and Papa all helped keep her afloat. She did great, not always sure she knew what was going on, but was happy and absorbed the new experience without drinking too much chlorinated water. All told, she was probably in the water for almost an hour.</description>
+    </item>
+    <item>
+      <title>Poppy Video at Grannie C’s, early April 2008</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-video-at-grannie-cs-early-april-2008/</link>
+      <pubDate>Fri, 11 Apr 2008 04:01:39 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-video-at-grannie-cs-early-april-2008/</guid>
+      <description>First, Poppy laughing – Then a longer segment where Grannie C is talking about stuff that Poppy will do, and then a look around the back deck, and finally a little bit of card playing. (6:44)</description>
+    </item>
+    <item>
+      <title>Poppy Lou Video on YouTube – Giggling</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-lou-video-on-youtube-giggling/</link>
+      <pubDate>Thu, 10 Apr 2008 23:21:57 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-lou-video-on-youtube-giggling/</guid>
+      <description>Note: updated on April 17th, with a second and longer laughing clip.</description>
+    </item>
+    <item>
+      <title>General update : in Houston, Poppy status = good</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/general-update-in-houston-poppy-status-good/</link>
+      <pubDate>Thu, 10 Apr 2008 17:44:17 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/general-update-in-houston-poppy-status-good/</guid>
+      <description>Update – we are in Houston for April and May. Staying w/ family and&#xA;Anita’s doing her last rotation at a hospital here. They are kicking&#xA;her ass and not even saying sorry… but it’s the home stretch till&#xA;she’s finally done with school forever! (YAY)&#xA;Poppy is big-tastic. She is holding her head up all the time,&#xA;laughing a little (when tickled or otherwise super-excited) and smiling&#xA;a lot. She’s almost on a schedule – which includes 15-30 min of crying</description>
+    </item>
+    <item>
+      <title>New Poppy photos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/new-poppy-photos/</link>
+      <pubDate>Tue, 08 Apr 2008 16:30:43 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/new-poppy-photos/</guid>
+      <description>New Poppy photos (videos coming sometime soon).&#xA;Poppy – 2008.03 </description>
+    </item>
+    <item>
+      <title>Poppy has laughed – for real – at almost 10 weeks</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-has-laughed-for-real-at-almost-10-weeks/</link>
+      <pubDate>Thu, 03 Apr 2008 16:15:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/poppy-has-laughed-for-real-at-almost-10-weeks/</guid>
+      <description>Penelope has laughed in her sleep and has done some sort-of laughs along the way, but last night, for the first time, she laughed. We got several giggles from her. We were tickling her and of course giggling ourselves, but regardless – she laughed. We were beside ourselves, as would be expected. She’s starting to make some syllable sounds, but it’s not very far along as of yet.</description>
+    </item>
+    <item>
+      <title>In houston for 2 months, the travel</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/in-houston-for-2-months-the-travel/</link>
+      <pubDate>Wed, 02 Apr 2008 16:09:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/04/in-houston-for-2-months-the-travel/</guid>
+      <description>The drive to Houston went wonderfully. We did have to stop several&#xA;times, but it was just less than what we had prepared for. An 8.5 hour&#xA;leg of the trip took 11 hours.&#xA;We got to stop in KC and see Karen, Aunt Sue, and Uncle Richard. We&#xA;stayed for breakfast and then drove to Gainsville and visited my uncle&#xA;Bob. That 7 hour drive took about 10. After staying the night with</description>
+    </item>
+    <item>
+      <title>Poppy is big at 2 months</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/poppy-is-big-at-2-months/</link>
+      <pubDate>Thu, 27 Mar 2008 16:11:42 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/poppy-is-big-at-2-months/</guid>
+      <description>Poppy is 24 inches and 12#10ozs at her 2 month appointment. That puts her in the 90th percent on bigness. He head is starting to catch up to her body ad it’s now in the 70th percentile.&#xA;{.tt-flickr}{.tt-flickr}</description>
+    </item>
+    <item>
+      <title>Bad time to want to buy a house</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/bad-time-to-want-to-buy-a-house/</link>
+      <pubDate>Tue, 18 Mar 2008 18:30:48 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/bad-time-to-want-to-buy-a-house/</guid>
+      <description>This Jan. we thought it would be a good time to start looking for houses, since the rates came down… but being slow and you know, having a child – we just recently got out and actually looked at houses.&#xA;By now the rates are over 6% for a standard 30yr mortgage. We have perfect credit and decent everything else… but the lenders are just not passing along the reduced rates.</description>
+    </item>
+    <item>
+      <title>me.dium – experiment</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/me.dium-experiment/</link>
+      <pubDate>Wed, 12 Mar 2008 02:30:20 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/me.dium-experiment/</guid>
+      <description>In theory, attached is a me.dium widget</description>
+    </item>
+    <item>
+      <title>Prescription drugs in drinking water</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/prescription-drugs-in-drinking-water/</link>
+      <pubDate>Tue, 11 Mar 2008 13:55:39 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/prescription-drugs-in-drinking-water/</guid>
+      <description>A vast array of pharmaceuticals — including antibiotics, anti-convulsants, mood stabilizers and sex hormones — have been found in the drinking water supplies of at least 41 million Americans, an Associated Press investigation shows&#xA;To be sure, the concentrations of these pharmaceuticals are tiny, measured in quantities of parts per billion or trillion, far below the levels of a medical dose. Also, utilities insist their water is safe.&#xA;But the presence of so many prescription drugs — and over-the-counter medicines like acetaminophen and ibuprofen — in so much of our drinking water is heightening worries among scientists of long-term consequences to human health.</description>
+    </item>
+    <item>
+      <title>Update from the snow</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/update-from-the-snow/</link>
+      <pubDate>Sun, 09 Mar 2008 19:13:20 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/03/update-from-the-snow/</guid>
+      <description>Uploaded photos of Poppy for the last several weeks (havn’t uploaded since early Feb.). You can go through the new ones (march and feb) or just look at the main stream of photos.&#xA;It snowed around 7 inches on Friday and Saturday, and we got to play in the snow some, but only very briefly. We both started to daydream about taking Poppy out for sledding adventures and hot chocolate afterwards.</description>
+    </item>
+    <item>
+      <title>Jonathan Coulton performs “You Ruined Everything” Unplugged</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/jonathan-coulton-performs-you-ruined-everything-unplugged/</link>
+      <pubDate>Tue, 26 Feb 2008 22:17:25 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/jonathan-coulton-performs-you-ruined-everything-unplugged/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mint.com – finance overviews</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/mint.com-finance-overviews/</link>
+      <pubDate>Mon, 18 Feb 2008 22:00:24 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/mint.com-finance-overviews/</guid>
+      <description>My buddy Jason Smithson recently posted something about mint.com and I decided to check it out. It’s a fantastic site, very easy to use, and provides a very simple overview of the categories of my spending.&#xA;So, I know I spend X% on food and Y% on rent…&#xA;I’ve been nothing but impressed.&#xA;There’s also a “how to save money” section which strikes me as advertising and I’ve dutifully ignored it.</description>
+    </item>
+    <item>
+      <title>Poppy is getting older quick</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/poppy-is-getting-older-quick/</link>
+      <pubDate>Fri, 08 Feb 2008 23:36:37 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/poppy-is-getting-older-quick/</guid>
+      <description>Ok – yeah, she’s only 15 days old today… sounds like nothing… but she is already changing. Her head is getting more solid and her face seems to be solidifying (for want of a better term).&#xA;Poppy is getting big. She’s still under 10 lbs, but she’s moving more, making want-to-be-crawling motions when on her belly… and is more prone to recognize people around her.&#xA;She’s starting to be unhappy when she realizes people aren’t holding her or at least around her… but that might not be new – it’s just new that people aren’t always holding her.</description>
+    </item>
+    <item>
+      <title>Poppy doing fine, new photos and videos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/poppy-doing-fine-new-photos-and-videos/</link>
+      <pubDate>Sat, 02 Feb 2008 17:07:01 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/02/poppy-doing-fine-new-photos-and-videos/</guid>
+      <description>Poppy is doing great – an absolute joy to have around 95% of the time. She can get fussy sometimes, but it’s not bad at all – and she’s so happy most of the time.&#xA;We’ve gotten better at giving baths and getting dressed and diapering. We’ve using about 50%/50% cloth and disposable diapers. We’d like to use more cloth, but they really don’t fit her yet, they are too big.</description>
+    </item>
+    <item>
+      <title>Baby Watch Update: 2008.01.23 @ 4pm</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/baby-watch-update-2008.01.23-@-4pm/</link>
+      <pubDate>Wed, 23 Jan 2008 23:17:50 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/baby-watch-update-2008.01.23-@-4pm/</guid>
+      <description>Baby Watch Update: 2008.01.23 @ 4pm&#xA;Anita’s been having some serious contraction for a while… it could be early labor or it could be pre-labor. Even if this isn’t it, we have an appointment tomorrow morning for induction since Penelope is probably pretty big, and Anita is not (relatively speaking).&#xA;So – tonight or tomorrow.&#xA;We’re at home now and likely to remain here until we’re convinced she’s in labor (contractions ~5 min apart for an hour, with a change in activity in between)… or until tomorrow morning at 9am.</description>
+    </item>
+    <item>
+      <title>Anita – 9 months pregnant</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/anita-9-months-pregnant/</link>
+      <pubDate>Mon, 21 Jan 2008 17:34:57 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/anita-9-months-pregnant/</guid>
+      <description>Anita – 9 months pregnant – photos taken by our friend Angie, in Louisville, KY.</description>
+    </item>
+    <item>
+      <title>Alan’s birthday – well wished, but no poppy</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/alans-birthday-well-wished-but-no-poppy/</link>
+      <pubDate>Thu, 17 Jan 2008 21:08:08 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/alans-birthday-well-wished-but-no-poppy/</guid>
+      <description>Perhaps there are just too many birthday reminders floating around, but I feel like everyone I’ve ever known has remembered my birthday this year. Not a big deal, but makes me feel good, regardless. Thanks to all the well wishers!&#xA;B-day has been great… a walk in the woods w/ Myra, followed by fantastic sushi lunch and great coffee… then to work (at work now)…&#xA;The only real complaint I have is that Penelope isn’t here yet.</description>
+    </item>
+    <item>
+      <title>Webcam of alan – in testing</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/webcam-of-alan-in-testing/</link>
+      <pubDate>Fri, 04 Jan 2008 06:25:54 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2008/01/webcam-of-alan-in-testing/</guid>
+      <description>In theory this image will stay current – periodically updated with new versions every few minutes… if it works out, I will add it to the header or sidebar or something.</description>
+    </item>
+    <item>
+      <title>Hubble Ultra Deep Field – a sense of proportion</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/12/hubble-ultra-deep-field-a-sense-of-proportion/</link>
+      <pubDate>Sat, 15 Dec 2007 16:31:29 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/12/hubble-ultra-deep-field-a-sense-of-proportion/</guid>
+      <description>As Douglas Adams put, humans really can’t deal with having a sense of proportion. We aren’t capable. But we can stretch for it…&#xA;(I can touch my toes, but I can’t bend further over… but I should try to)&#xA;Take 5 minutes and read this fantastic piece on an image from Hubble Ultra Deep Field. It’s a great reminder of what we know about space and a few tools to help you start to realize that you can’t ever come close to grasping a true sense of proportion.</description>
+    </item>
+    <item>
+      <title>Anita’s Baby Shower</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/12/anitas-baby-shower/</link>
+      <pubDate>Wed, 12 Dec 2007 14:42:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/12/anitas-baby-shower/</guid>
+      <description>I may well get around to uploading pictures of it myself, but until then… I’m going to ride on the accolades of giants… My mom flew into town and has already posted a bunch of photos with captions:&#xA;http://picasaweb.google.com/cathypennington/AnitaSBabyShower&#xA;Update: 2007.12.26&#xA;I finally got around to uploading the images for this babyshower in my photos.</description>
+    </item>
+    <item>
+      <title>New(ish) Job == AO &amp; HH == Great</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/11/newish-job-ao-hh-great/</link>
+      <pubDate>Sun, 25 Nov 2007 17:42:01 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/11/newish-job-ao-hh-great/</guid>
+      <description>I’ve been working part time for AudiologyOnline for months (after hours and on the weekends), and have finally started there full time as of Nov 15th. It’s been wonderful, not only has everyone been very nice and supportive, but I’ve ben able to jump in with both feet and get to work.&#xA;It’s meeting time central. I’m in LA for a conference on Local Search this week and in Dallas for a company meeting next week.</description>
+    </item>
+    <item>
+      <title>Hearthsong – cool toys and stuff for Penelope (in a couple of years)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/11/hearthsong-cool-toys-and-stuff-for-penelope-in-a-couple-of-years/</link>
+      <pubDate>Wed, 07 Nov 2007 14:39:19 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/11/hearthsong-cool-toys-and-stuff-for-penelope-in-a-couple-of-years/</guid>
+      <description>This site [hearthsong] looks like they have a lot of really cool stuff for kids… In a couple of years I suspect we’ll get a bunch of stuff from here – a lot of learning toys and slightly less corporate-nickelodeon commercialism (it seems).</description>
+    </item>
+    <item>
+      <title>Maido is open for &lt;$9 all you can eat Lunch Buffet</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/10/maido-is-open-for-9-all-you-can-eat-lunch-buffet/</link>
+      <pubDate>Wed, 17 Oct 2007 17:28:25 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/10/maido-is-open-for-9-all-you-can-eat-lunch-buffet/</guid>
+      <description>This is about the best news ever. (my stomach thinks so)&#xA;We just heard about this today, and went to Maido’s (in Louisville, KY – map)…. it was absolutely fantastic!&#xA;For less than $9, you get to pick over some of the best Japanese food in Louisville. As of now, it’s only been open for lunch for about a week and there were few people there. So go quick.&#xA;I suspect when word of this gets out, it will either stop or get ridiculously busy.</description>
+    </item>
+    <item>
+      <title>Update on the Blounts – Early October 2007</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/10/update-on-the-blounts-early-october-2007/</link>
+      <pubDate>Wed, 10 Oct 2007 18:02:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/10/update-on-the-blounts-early-october-2007/</guid>
+      <description>So, I’ve been remiss to put anything about us on here recently. I’m thinking that I might split the blog into two seperate blogs… one on the Blounts, and one on general stuff I feel like talking about… 2 weeks. (the perpetual two weeks)&#xA;Anyway…&#xA;Anita’s very pregnant… always holding her belly and still, gloriously asymptomatic. She’s working at a low cost mdeical center pharmacy for this month’s rotation. not very interesting for her.</description>
+    </item>
+    <item>
+      <title>“the Iraq war is largely about oil” — Alan Greenspan</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/the-iraq-war-is-largely-about-oil-alan-greenspan/</link>
+      <pubDate>Tue, 18 Sep 2007 14:06:21 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/the-iraq-war-is-largely-about-oil-alan-greenspan/</guid>
+      <description>Sadly for Bush and Cheney, Greenspan decided to put prudence aside in his new book, The Age of Turbulence, and answer the most neuralgic issue of our times – why the United States invaded Iraq.&#xA;Greenspan writes:&#xA;“I am saddened that it is politically inconvenient to acknowledge what everyone knows: the Iraq war is largely about oil.”&#xA;Everyone knows? Would that it were so. But it’s hardly everyone. Sometimes I think it’s hardly anyone.</description>
+    </item>
+    <item>
+      <title>60 yr old grandmother and Vietnam veteran, arrested for protesting the war, in Louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/60-yr-old-grandmother-and-vietnam-veteran-arrested-for-protesting-the-war-in-louisville/</link>
+      <pubDate>Thu, 13 Sep 2007 20:15:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/60-yr-old-grandmother-and-vietnam-veteran-arrested-for-protesting-the-war-in-louisville/</guid>
+      <description>This is a fear inspiring story, all too easy to imagine. Carol Trainer could hardly process what was happening. To her, a&#xA;60-year-old grandmother and Vietnam veteran, of all people. On Memorial&#xA;Day, of all times. Arrested for protesting the war…&#xA;“He comes up to me and says, ‘Drop your sign,&amp;rsquo;” Trainer recalls. “I&#xA;said, ‘Why?’ He said, ‘I told you to drop your sign.’ He grabbed it out&#xA;of my hand when I didn’t drop it.</description>
+    </item>
+    <item>
+      <title>911 &#43;6 years – i’ve done nothing</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/911-6-years-ive-done-nothing/</link>
+      <pubDate>Wed, 12 Sep 2007 02:51:40 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/911-6-years-ive-done-nothing/</guid>
+      <description>Well… it’s been a day – just like any other day. I wore black… biked to work… worked… biked home and walked in the park with Anita and Nova. A beautiful day. Nothing in my day to tie this date with six years ago… I was looking for it to come up.&#xA;Perhaps if I watched television more, or talked to strangers more… perhaps if I got out of my daily life and tried to make a change in the world which reflected my beliefs (such as they are)… perhaps if I didn’t live so comfortably I’d work to fix what seems obviously wrong with the world.</description>
+    </item>
+    <item>
+      <title>9/11, Six Years Later by David R. Henderson</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/9/11-six-years-later-by-david-r.-henderson/</link>
+      <pubDate>Mon, 10 Sep 2007 14:02:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/9/11-six-years-later-by-david-r.-henderson/</guid>
+      <description>This is an excellent article, discussing the specific misunderstandings and mistakes made by the US government in response to the 911 attack on the WTC and Pentagon.&#xA;“Freedom itself was attacked this morning by a faceless coward … and freedom will be defended.” In other words, George W. Bush thought that the reason the United States was attacked was that the attackers hated our freedom. How did he reach this conclusion?</description>
+    </item>
+    <item>
+      <title>Phase III of Bush’s War</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/phase-iii-of-bushs-war/</link>
+      <pubDate>Mon, 03 Sep 2007 01:12:15 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/09/phase-iii-of-bushs-war/</guid>
+      <description>Great article on Bush’s current strength and resolve to bring war to Iran and again devastate a sovereign nation.&#xA;Hearken to the astonishing rhetoric Bush used at the American Legion Convention in Las Vegas against Tehran:&#xA;“Iran … is the world’s leading state sponsor of terrorism. … Iran funds terrorist groups like Hamas and the Palestinian Islamic Jihad, which murder the innocent and target Israel. … Iran is sending arms to the Taliban.</description>
+    </item>
+    <item>
+      <title>stupid humor and photo previews</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/stupid-humor-and-photo-previews/</link>
+      <pubDate>Fri, 31 Aug 2007 04:00:45 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/stupid-humor-and-photo-previews/</guid>
+      <description>I must be brain-dead – this is funny to me now:&#xA;Also, not yet added to the photo gallery on my site, but here’s some of the photos I’ve recently been taking with the camera:</description>
+    </item>
+    <item>
+      <title>TED – Talks – Blaise Aguera y Arcas: Jaw-dropping Photosynth demo</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/ted-talks-blaise-aguera-y-arcas-jaw-dropping-photosynth-demo/</link>
+      <pubDate>Wed, 29 Aug 2007 16:48:43 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/ted-talks-blaise-aguera-y-arcas-jaw-dropping-photosynth-demo/</guid>
+      <description>Absolutely fantastic photosynth program demonstration. This really is inspiring.</description>
+    </item>
+    <item>
+      <title>A few photos with the new camear</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/a-few-photos-with-the-new-camear/</link>
+      <pubDate>Thu, 23 Aug 2007 14:11:36 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/a-few-photos-with-the-new-camear/</guid>
+      <description>Uploaded some photos from the new camera</description>
+    </item>
+    <item>
+      <title>whoever these people are, I’m in love with them</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/whoever-these-people-are-im-in-love-with-them/</link>
+      <pubDate>Mon, 13 Aug 2007 20:37:43 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/08/whoever-these-people-are-im-in-love-with-them/</guid>
+      <description>fun storm trooper photos</description>
+    </item>
+    <item>
+      <title>Go PHP5</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/go-php5/</link>
+      <pubDate>Tue, 31 Jul 2007 13:18:05 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/go-php5/</guid>
+      <description> &amp;lt;p class=&amp;quot;poweredbyperformancing&amp;quot;&amp;gt; Powered by &amp;lt;a href=&amp;quot;http://scribefire.com/&amp;quot;&amp;gt;ScribeFire&amp;lt;/a&amp;gt;. &amp;lt;/p&amp;gt; </description>
+    </item>
+    <item>
+      <title>I Am Baby Cakes – The Role Play Tournament</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/i-am-baby-cakes-the-role-play-tournament/</link>
+      <pubDate>Thu, 26 Jul 2007 02:58:02 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/i-am-baby-cakes-the-role-play-tournament/</guid>
+      <description>Highly entertaining, especially for all you nerds out there…</description>
+    </item>
+    <item>
+      <title>Back in Louisville, after family visitation</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/back-in-louisville-after-family-visitation/</link>
+      <pubDate>Wed, 25 Jul 2007 17:35:57 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/back-in-louisville-after-family-visitation/</guid>
+      <description>Well we made it back to Lou. after going to a family reunion in Arkansas and then visiting family in Texas.(photos)&#xA;We’ve now rolled over 140,000 miles on our Honda CRV (1997) and it’s doing great. We are nothing but happy with that vehicle.&#xA;Anita’s doing well. She’s had some “symptoms” of pregnancy, but for the most part she’s avoided most of the typical complaints. She attributes the lack morning sickness to vitamine B6 and the lack of fatigue to being on vacation and napping all the time.</description>
+    </item>
+    <item>
+      <title>So many things to make my life better</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/so-many-things-to-make-my-life-better/</link>
+      <pubDate>Mon, 09 Jul 2007 21:14:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/07/so-many-things-to-make-my-life-better/</guid>
+      <description>I’ve been using the “Control Suite” for a couple of development projects and I’m 100% pleased. The tools are modular (so you can take what you want), class based (so they don’t break your other code), well documented, fast, easy, and clean.&#xA;Anyone who works with/develops AJAX and a dynamic web-user-interface… especially if you already use prototype… I highly recommend you try this set of tools.&#xA;Control Suite : High Quality Controls &amp;amp; Widgets for Prototype</description>
+    </item>
+    <item>
+      <title>We are having a baby</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/we-are-having-a-baby/</link>
+      <pubDate>Wed, 20 Jun 2007 16:53:03 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/we-are-having-a-baby/</guid>
+      <description>Sometime mid January, 2008… Anita and Alan are having a baby.</description>
+    </item>
+    <item>
+      <title>post move to louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/post-move-to-louisville/</link>
+      <pubDate>Thu, 14 Jun 2007 14:45:27 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/post-move-to-louisville/</guid>
+      <description>We have spent the last several days moving way too many boxes and things from columbus, oh to louisville, ky. We a glad to be donea nd back at work… well… mostly.</description>
+    </item>
+    <item>
+      <title>Anita’s growing a kidney bean with a 142 beats/min heartrate</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/anitas-growing-a-kidney-bean-with-a-142-beats/min-heartrate/</link>
+      <pubDate>Sun, 10 Jun 2007 05:54:41 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/anitas-growing-a-kidney-bean-with-a-142-beats/min-heartrate/</guid>
+      <description>The “lil’ nug” inside Anita is currently the size of a kidney bean. The organs have all begun developing and the heart is beating strong, at 142 beats/min. Bloodwork and whatnot seem fine. We’ve got very uninformative ultrasound images which I may get scanned and post sometime…&#xA;We’re still both pretty attached to the name “Ruby” for a girl. Not sure about a boys name.</description>
+    </item>
+    <item>
+      <title>Pregnant… that’s right… we’re breeders</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/pregnant-thats-right-were-breeders/</link>
+      <pubDate>Thu, 07 Jun 2007 20:02:04 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/06/pregnant-thats-right-were-breeders/</guid>
+      <description>After several years of marriage and putting off having kids till we were more financially stable… we are now pregnant. Due in Jan. or Feb. 2008. We have no data, but “think” it’s going to be a girl…&#xA;Apparently, a few days ago, anita woke up from an amazingly realistic dream where she was holding “our baby girl”. We didn’t really think she was pregnant but after the dream, she had to take a pregnancy test and it turns out we are.</description>
+    </item>
+    <item>
+      <title>Liam – comedian who did the “shoes” video</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/liam-comedian-who-did-the-shoes-video/</link>
+      <pubDate>Mon, 14 May 2007 04:32:25 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/liam-comedian-who-did-the-shoes-video/</guid>
+      <description>From “Shoes” to “Muffins” to “Text Message Breakup” Liam has been keeping thousands of video watchers entertained… ok… so “Muffin’s” was a little less entertaining than the other two, but all three are great. I also found his youtube profile, with some other video’s I’m not yet familiar with… researching…. Here are the three video’s, for the convenience of any who need to watch (again).</description>
+    </item>
+    <item>
+      <title>thunderbird can do calendars</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/thunderbird-can-do-calendars/</link>
+      <pubDate>Thu, 10 May 2007 03:17:33 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/thunderbird-can-do-calendars/</guid>
+      <description>I’ve switched all my personal email to gmail, and have been using it for a couple of years now (i think).&#xA;But, I have work emails which I can not just forward (or would get confusing if I did). So, of course, I use Thunderbird – which is perfect… but it doesn’t have a calendar.&#xA;Well, now it does.&#xA;Check out this tutorial which gives an overview of 2 different plugins which allow 2-way communication between thunderbird and your google calendar.</description>
+    </item>
+    <item>
+      <title>Alan Updates</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/alan-updates/</link>
+      <pubDate>Tue, 08 May 2007 14:10:15 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/alan-updates/</guid>
+      <description>I haven’t been posting a lot… partially to keep the blog a bit more official while looking for employment and partially because I’ve been busy.&#xA;work updates: So I’ve been working at Via, from home, as a contractor. I’ve been doing that since Feb. Working with friends and doing mostly LAMP development (thankfully). The only downside is that it’s a smaller company and can’t afford to pay me what other places can.</description>
+    </item>
+    <item>
+      <title>iRack (MADtv)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/irack-madtv/</link>
+      <pubDate>Wed, 02 May 2007 04:19:59 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/05/irack-madtv/</guid>
+      <description>This video involves a not-so-subtle analogy…. I give it a clever rating of 3.8 stars (out of 5), but I liked it enough to post.&#xA;http://www.youtube.com/watch?v=AGHty_S0TU0</description>
+    </item>
+    <item>
+      <title>Human Computation – Google Video</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/03/human-computation-google-video/</link>
+      <pubDate>Thu, 08 Mar 2007 03:48:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/03/human-computation-google-video/</guid>
+      <description>fantastic video! good geeky thinking….&#xA;Human Computation – Google Video</description>
+    </item>
+    <item>
+      <title>the personality test to remind you what’s (not) important</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/03/the-personality-test-to-remind-you-whats-not-important/</link>
+      <pubDate>Thu, 01 Mar 2007 18:36:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/03/the-personality-test-to-remind-you-whats-not-important/</guid>
+      <description>Five questions that will dictate your personality for the rest of your life.&#xA;I don’t get it. It’s like those people who go around with those t-shirts and stickers that say “you laugh at me because I’m different, but I laugh at you because you’re all the same.” How different are you if you’re wearing a mass-produced t-shirt with a registered trade mark sold through one of the largest clothing franchises in the world?</description>
+    </item>
+    <item>
+      <title>Seven Things Learned from World of Warcraft</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/seven-things-learned-from-world-of-warcraft/</link>
+      <pubDate>Wed, 28 Feb 2007 18:25:17 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/seven-things-learned-from-world-of-warcraft/</guid>
+      <description>I have never been sucked into WoW like so many of my friends (because I’m too cheap to spend $15/month) but this article is still great. (It’s so well written, non-geek should enjoy)&#xA;johnaugust.com » Seven Things I Learned from World of Warcraft</description>
+    </item>
+    <item>
+      <title>Asylum Street Spankers</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/asylum-street-spankers/</link>
+      <pubDate>Fri, 16 Feb 2007 19:13:49 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/asylum-street-spankers/</guid>
+      <description>irreverent videos – compliments of jason s.&#xA;Asylum Street Spankers – Pussy Cat Song – (YouTube)&#xA;Asylum Street Spankers – Misc – (YouTube)&#xA;Asylum Street Spankers – Whatever – (YouTube)&#xA;Asylum Street Spankers – Winning the War on Drugs – (YouTube)</description>
+    </item>
+    <item>
+      <title>TELL THE TRUTH – Mos Def – Immortal Technique</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/tell-the-truth-mos-def-immortal-technique/</link>
+      <pubDate>Fri, 16 Feb 2007 15:04:41 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/tell-the-truth-mos-def-immortal-technique/</guid>
+      <description>TELL THE TRUTH – Mos Def – Immortal Technique – Eminem (YouTube)&#xA;A hip-hop track talking about the Bush Administration conspiracy… all content you and I are very familiar with, but a great mainstream presentation of that data. Just one more nail in Bush’s coffin (at least in regards to public opinion).</description>
+    </item>
+    <item>
+      <title>oh my god, shoes</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/oh-my-god-shoes/</link>
+      <pubDate>Thu, 15 Feb 2007 15:42:52 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/oh-my-god-shoes/</guid>
+      <description>shoes – “kelly” – “oh my god, shoes” (youtube)&#xA;This is one of my very favorite videos, thought I’d post it for easy watching…</description>
+    </item>
+    <item>
+      <title>A cold and frozen birthday for Anita</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/a-cold-and-frozen-birthday-for-anita/</link>
+      <pubDate>Wed, 14 Feb 2007 05:19:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/02/a-cold-and-frozen-birthday-for-anita/</guid>
+      <description>As you can see below – it’s cold and wet… It hasn’t stopped snowing or sleeting in about 24 hours.&#xA;Anita’s birthday was great. I drove her to get coffee and then to school. I picked up lunch and delivered it. School actually got cancelled early today (unheard of here). We hung out and watched Battlestar Gallactica for a while and then went to eat at the Surly Girl with some good friends.</description>
+    </item>
+    <item>
+      <title>over to Singapore</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/01/over-to-singapore/</link>
+      <pubDate>Mon, 08 Jan 2007 19:02:10 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/01/over-to-singapore/</guid>
+      <description>As one might so commonly read on IT employee blogs, “our team has been laid off”.&#xA;That’s right, the whole team is being outsourced to Singapore, effective Jan 31.&#xA;It will be a near-future disaster for the company, though it might encourage the abandonment of many applications and proceedures which I’ve been complaining about for years. But though on paper it looks like money saved, I suspect it will end up as more costly to keep things working/improving or a less expensive disaster where nothing works.</description>
+    </item>
+    <item>
+      <title>Quick little update – greyhound to louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/01/quick-little-update-greyhound-to-louisville/</link>
+      <pubDate>Sun, 07 Jan 2007 15:33:06 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2007/01/quick-little-update-greyhound-to-louisville/</guid>
+      <description>I’ve been very remiss at updating the blog here… I’ve had lots of good family time and some travels, some interesting stories and what-not.&#xA;but no… I’ve not been updating with anything important… and I’m apparently not going to start… Here’s a very minor update:&#xA;I’m getting on a greyhound bus today from Columbus to Louisville. Going to a few “in-the-office meetings” and also to help Karen and Bryan (Anita’s Mom &amp;amp; Stepfather) as they frantically get moved from their house in the suberbs to their Victorian house in Old Louisville.</description>
+    </item>
+    <item>
+      <title>vote – and know who you are votting for</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/11/vote-and-know-who-you-are-votting-for/</link>
+      <pubDate>Tue, 07 Nov 2006 18:45:42 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/11/vote-and-know-who-you-are-votting-for/</guid>
+      <description>don’tvote.com – OH&#xA;go vote – you voting can’t hurt anything, not voting might.</description>
+    </item>
+    <item>
+      <title>Benny Benassi’s Satisfaction Videoclip</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/benny-benassis-satisfaction-videoclip/</link>
+      <pubDate>Tue, 24 Oct 2006 16:49:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/benny-benassis-satisfaction-videoclip/</guid>
+      <description>Benny Benassi’s Satisfaction Videoclip.&#xA;Warning: flesh and power tools do not always go together this well.</description>
+    </item>
+    <item>
+      <title>taskbar suffler</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/taskbar-suffler/</link>
+      <pubDate>Fri, 20 Oct 2006 17:41:05 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/taskbar-suffler/</guid>
+      <description>home of the nerd cave | taskbar shuffle and more:&#xA;Once you download, install, and run Taskbar Shuffle, left-click and drag the programs/buttons on your Windows taskbar to rearrange them. It’s that easy. This is a great tool for those (like me) who usually have over a dozen applications they need to keep open at the same time for work or whatever… thus, you don’t have to hunt as hard for the open program you need to find.</description>
+    </item>
+    <item>
+      <title>a few fun science videos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/a-few-fun-science-videos/</link>
+      <pubDate>Fri, 13 Oct 2006 15:29:13 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/a-few-fun-science-videos/</guid>
+      <description>Fun, sciencey videos/links:&#xA;Water Balloon popping in slow motion Water Balloon, filling with dry ice, and collapsing in Liquid nitrogren Representation and explanation of 10 dimensional space (as described in string theory) GeoHacks – 30 minute interesting lecture on mapping and math Thinking Big: Robotics – 30 minutes interview on robotics and intelligence Protien Assembly – 13 min (1971) – hilarious cut-scenes Nagoya City Science Museum – 13 min in Japanese </description>
+    </item>
+    <item>
+      <title>dan bern made me a man</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/dan-bern-made-me-a-man/</link>
+      <pubDate>Sat, 07 Oct 2006 06:04:03 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/10/dan-bern-made-me-a-man/</guid>
+      <description>saw dan bern last night… he’s fantastic – still – always.&#xA;his second song was “I do what I have to do to make me feel like a man…” which is a great song. during it, watching him, I realized that I too, am a man…&#xA;sounds stupid, I know. I’ve been married for 6 years and have a real job and real responsibilities and nothing has changed in my life much for the last couple of years….</description>
+    </item>
+    <item>
+      <title>MoveOn petition to not let bush of the hook</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/moveon-petition-to-not-let-bush-of-the-hook/</link>
+      <pubDate>Tue, 19 Sep 2006 13:03:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/moveon-petition-to-not-let-bush-of-the-hook/</guid>
+      <description>MoveOn.org Political Action: The Senate must not pardon President Bush for breaking the law:&#xA;“The Senate must not pardon President Bush for breaking the law by illegally wiretapping innocent Americans. Instead, Congress should be holding him accountable.” </description>
+    </item>
+    <item>
+      <title>sarah and molly – brown bagging it</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/sarah-and-molly-brown-bagging-it/</link>
+      <pubDate>Sat, 16 Sep 2006 16:14:36 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/sarah-and-molly-brown-bagging-it/</guid>
+      <description>Check out this wonderful (heh) picture of molly and Sarah going to Sarah’s wedding…</description>
+    </item>
+    <item>
+      <title>Mates of State &amp; Dresdon Dolls –  some videos were found….</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/mates-of-state-dresdon-dolls-some-videos-were-found./</link>
+      <pubDate>Fri, 15 Sep 2006 21:10:18 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/mates-of-state-dresdon-dolls-some-videos-were-found./</guid>
+      <description>I got an email to view a video on mtvu.com, but thier crappy player wouldn’t work on windows XP pro 64… so, I went looking for other videos by them:&#xA;For the Actor – Mates of State – Google Video Mates of State — Ha Ha – Google VideoMates of State – Goods (Its All In Your Head) – Google Video That’s all the MOS I could find… though there was a funny “dancing to” video here and a video commentary: { Mates Of State “Fraud In The 80’s” with director commentary by Arno Salters }.</description>
+    </item>
+    <item>
+      <title>on the phones, for democracy</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/on-the-phones-for-democracy/</link>
+      <pubDate>Tue, 12 Sep 2006 20:43:44 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/on-the-phones-for-democracy/</guid>
+      <description>I am going to volunteer for 7pm Friday… anyone else interested in putting their time where their mouth is… or their mouth on the phone, where their politics are?&#xA;———- Forwarded message ———-&#xA;From: *******&#xA;Date: Sep 12, 2006 3:11 PM&#xA;Subject: Call for Change Campaign Columbus&#xA;To: alan blount&#xA;Hello,&#xA;We spoke on phone today and you expressed interest in helping with the Call for Change campaign to take back Congress.</description>
+    </item>
+    <item>
+      <title>CUDA Fall League 2006 starts</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/cuda-fall-league-2006-starts/</link>
+      <pubDate>Mon, 11 Sep 2006 00:44:19 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/cuda-fall-league-2006-starts/</guid>
+      <description>CUDA Fall League 2006 started today… it was a lot of fun!&#xA;Less serious than summer league, but a little more serious than a regular pickup game… we played light on numbers as a lot of players were out of town for tournaments.&#xA;If you didn’t make it, but want to come out… you should!</description>
+    </item>
+    <item>
+      <title>Labor Day Weekend Plans</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/labor-day-weekend-plans/</link>
+      <pubDate>Sat, 02 Sep 2006 13:13:13 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/09/labor-day-weekend-plans/</guid>
+      <description>Going to Lexington to visit Molly, Randy, Simon, and Gena… then going to Louisville. Got a friends dinner going on Sunday night, and family stuff Monday and Tuesday, then back to Colubmus.&#xA;Leaving now.</description>
+    </item>
+    <item>
+      <title>vacation in houston</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/08/vacation-in-houston/</link>
+      <pubDate>Wed, 02 Aug 2006 15:14:14 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/08/vacation-in-houston/</guid>
+      <description>Anita, our step sister Maddie (14), and I went to Houston, from July 20 through August 1st. We drove.&#xA;[map] First, we drove to and camped at the Hot Springs National Park, during the hottest part of a heat wave. Our A/C could occasionally not keep up, it was so hot… so when we ended up at the park, we went wading (which turned into swimming for some) in a creek that ran through the park.</description>
+    </item>
+    <item>
+      <title>give me storage or give me… well… more storage</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/07/give-me-storage-or-give-me-well-more-storage/</link>
+      <pubDate>Wed, 12 Jul 2006 19:32:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/07/give-me-storage-or-give-me-well-more-storage/</guid>
+      <description>Looking at the following article:&#xA;Indian-born scientist developing coated DVD’s that can make hard disks obsolete&#xA;..: I find my self thinking that hard drives wouldn’t be obsolete, but OS installations might be. Already there are many LiveCD installations of Linux and Windows, which don’t require a Hard Drive at all, but simply boot to the CD/DVD… With more sophisitication and personalization options (there are already setups where you can store personalizations on a USB flash drive or something) I think the idea of a static state OS would be very appealing.</description>
+    </item>
+    <item>
+      <title>2004 Election Stolen?  (yep)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/06/2004-election-stolen-yep/</link>
+      <pubDate>Tue, 13 Jun 2006 20:06:23 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/06/2004-election-stolen-yep/</guid>
+      <description>Was the 2004 Election Stolen?&#xA;Republicans prevented more than 350,000 voters in Ohio from casting ballots or having their votes counted — enough to have put John Kerry in the White House. BY ROBERT F. KENNEDY JR.&#xA;This is a great article, full of well cited and reasoned points… pointing towards a conclusion which may well get you branded as a conspiracy theorist… but still seems the most likely explanation.</description>
+    </item>
+    <item>
+      <title>Moonlight Kayaking, then family</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/06/moonlight-kayaking-then-family/</link>
+      <pubDate>Mon, 12 Jun 2006 18:32:03 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/06/moonlight-kayaking-then-family/</guid>
+      <description>Friday, Anita and I went to Bardstown, Ky to go “Moonlight Kyaking” with Theresa and some of her Rugby Teammates/friends [link].&#xA;Before we got there we swung by the Jim Beam plant (thinking it was where Myra did a bunch of cool carpentry work, but it wasn’t) and then the Bernheim Forrest. Bernheim has always been a great place to get back to nature a bit, but it’s gotten a lot nicer… the visitor’s center is amazing, and all the displays and trails we saw, were flawless.</description>
+    </item>
+    <item>
+      <title>Post Houston visit</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/05/post-houston-visit/</link>
+      <pubDate>Sat, 20 May 2006 19:47:34 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/05/post-houston-visit/</guid>
+      <description>I have put off writing something in response to my visit to Houston, Tx. Partially due to laziness, and perhaps partially to allow more time for settling of experience… mostly laziness, I suspect.&#xA;I was there from May 10th – 17th, 2006.&#xA;About half of the reason I went was simply to have a vacation. It was a chaotic time at work for the prior 2 months and after working many 70 hour weeks in a row… it was time to do something else.</description>
+    </item>
+    <item>
+      <title>Sci-Fi Film Fest, April 22</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/03/sci-fi-film-fest-april-22/</link>
+      <pubDate>Wed, 29 Mar 2006 05:53:19 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/03/sci-fi-film-fest-april-22/</guid>
+      <description>Sci-Fi Film Fest in Columbus from noon Saturday, April 22 until noon Sunday, April 23 @ the Drexel.&#xA;Yup – I’m going… you should come… you should bring your friends…&#xA;geeks – unite, support the geeks who are putting on this event, and eventually – take over the world (the same thing we do every night, pinky).</description>
+    </item>
+    <item>
+      <title>lord of war – response</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/lord-of-war-response/</link>
+      <pubDate>Sun, 26 Feb 2006 02:18:48 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/lord-of-war-response/</guid>
+      <description>I just got done watching the movie: Lord of War (2005)&#xA;I think it was a good film, in the vane of “blow” and “traffic” but with a different angle and a semi-moral overtone. The best part, IMO, is the ending and the open and blatant fact that when it comes to weapons of any sort, the US not only has the most, but sells the most – seemingly to anyone else.</description>
+    </item>
+    <item>
+      <title>whew… that was a relief</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/whew-that-was-a-relief/</link>
+      <pubDate>Wed, 22 Feb 2006 04:37:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/whew-that-was-a-relief/</guid>
+      <description>The Would You Have Been a Nazi Test&#xA;Achtung! You are 23% brainwashworthy, 18% antitolerant, and 28% blindly patriotic&#xA;Congratulations! You are not susceptible to brainwashing, your values and cares extend beyond the borders of your own country, and your Blind Patriotism does not reach unhealthy levels. If you had been German in the 30s, you would’ve left the country. One bad scenario — as I hypothetically project you back in time — is that you just wouldn’t have cared one way or the other about Nazism.</description>
+    </item>
+    <item>
+      <title>Louisvile Skyline – a new building on the horizon?</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/louisvile-skyline-a-new-building-on-the-horizon/</link>
+      <pubDate>Thu, 09 Feb 2006 20:35:48 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/louisvile-skyline-a-new-building-on-the-horizon/</guid>
+      <description>If anyone in the ‘ville hasn’t heard about the New Skyscraper for Louisville – check it out… It looks really cool (in my opinion) and would be a great thing to claim for the city… not to mention, it’d be very nice to have a modern art museum (in a building island, no less).&#xA;Also – a new google desktop search looks good (as expected).</description>
+    </item>
+    <item>
+      <title>Seduction Style: Au Natural</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/seduction-style-au-natural/</link>
+      <pubDate>Wed, 01 Feb 2006 05:28:04 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/02/seduction-style-au-natural/</guid>
+      <description>*Seduction Style Quiz results: Au Natural*&#xA;You rank up there with your seduction skills, though you might not know it.&#xA;That’s because you’re a natural at seduction. You don’t realize your power!&#xA;The root of your natural seduction power: your innocence and optimism.&#xA;You’re the type of person who happily plays around and creates a unique little world.&#xA;Little do you know that your personal paradise is so appealing that it sucks people in.</description>
+    </item>
+    <item>
+      <title>Article: Revelations about the Twin Towers in the 9/11 Oral Histories</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/article-revelations-about-the-twin-towers-in-the-9/11-oral-histories/</link>
+      <pubDate>Sun, 29 Jan 2006 18:24:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/article-revelations-about-the-twin-towers-in-the-9/11-oral-histories/</guid>
+      <description>I was recently sent a link to the article Explosive Testimony: Revelations about the Twin Towers in the 9/11 Oral Histories, on the site 911truth.org. I think the article, though kind of long, deserves a read. I wasn’t there but i agree that something happened…. it is almost unbelievably incredible that both towers collapsed in such a seemingly controlled manner. If towers / buildings collapsed like that by design, building demolition companies wouldn’t have a job….</description>
+    </item>
+    <item>
+      <title>waiting for the bus</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/waiting-for-the-bus/</link>
+      <pubDate>Wed, 25 Jan 2006 04:08:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/waiting-for-the-bus/</guid>
+      <description>I’m in Louisville right now… there are a lot of people in the office for a flurry of meetings and it seemed appropriate for me to come as well.&#xA;Our biggest meeting started at noon today, and ends at 3pm tomorrow. We stopped for dinner at ~6pm and I came back into the office to work on some stuff… got stuck reading email and working on a side project.&#xA;Now I’m waiting on a bus to take me back to Theresa’s, where I’m staying….</description>
+    </item>
+    <item>
+      <title>birthday #27</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/birthday-#27/</link>
+      <pubDate>Wed, 18 Jan 2006 03:58:45 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/birthday-#27/</guid>
+      <description>It my (Alan’s) 27th birthday today.&#xA;Thanks to all who have sent cards, emails, IMs, phone calls, etc to wish me a happy one. I’m rather surprised so many people have remembered. Also, special thanks to the “check givers”… all that money is going into savings to replenish the money that was withdrawn to pay for our new bed (soon to arrive).&#xA;I’m surprised to see that so many people sent jokes (or at least comments) about how old I was getting.</description>
+    </item>
+    <item>
+      <title>Adware seek &amp; find</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/adware-seek-find/</link>
+      <pubDate>Sun, 15 Jan 2006 05:22:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/adware-seek-find/</guid>
+      <description>I read the following blog post linked from slashdot. It is part of the blog for SiteAdvisor… a tool for testing for adware / spyware.&#xA;Those of you who still run into problems with adware and spyware, you might want to try this app out… it couldn’t hurt (unless it was a really clever double-agent type scam to get you to install it. no – i don’t think it is….. yes, it might be.</description>
+    </item>
+    <item>
+      <title>DeLay taken down &amp; other news</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/delay-taken-down-other-news/</link>
+      <pubDate>Mon, 09 Jan 2006 06:17:38 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/delay-taken-down-other-news/</guid>
+      <description>I just got done reading the article: [&#xA;Colleagues force DeLay to relinquish grip on leadership of House]1 on The Guardian. I have already heard about this on blackwednesday.org, but it’s a story that makes me smile.&#xA;Probably not as pleased as Al Franken, or many of the other people who really know how bad DeLay is… I’ve only heard what others (including Al Franken) have told me… but it’s enough to make me fear and loath him.</description>
+    </item>
+    <item>
+      <title>real audio stream downloading</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/real-audio-stream-downloading/</link>
+      <pubDate>Mon, 09 Jan 2006 05:45:51 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/real-audio-stream-downloading/</guid>
+      <description>I have looked for this information before, but the planets have aligned and I was able to find what I was looking for.&#xA;Here are complete instructions for how to download Real Audio streams and convert them to MP3 (or really, whatever) format:&#xA;Windows Linux Note: there is actually much more useful information on those pages if you were interested.&#xA;The tool for Windows is Flashget and for Linux, it’s simply mplayer.</description>
+    </item>
+    <item>
+      <title>my birthday present from you…</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/my-birthday-present-from-you/</link>
+      <pubDate>Sun, 08 Jan 2006 07:14:33 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/my-birthday-present-from-you/</guid>
+      <description>It will be my 27th birthday in on Jan 17th. That is not exciting, but I’m going to try to use it as a ploy to get you (yes – you, the person reading this right now) to give me a present.&#xA;It wont take money, and really only say… 10 minutes of your time.&#xA;Please (please) read the following article:&#xA;Blair Criminalizes His Critics by John Pilger.&#xA;So many people have put what I would like to be able to say, more succinctly and convincingly than I can… so read their work.</description>
+    </item>
+    <item>
+      <title>Alito is not neato</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/alito-is-not-neato/</link>
+      <pubDate>Fri, 06 Jan 2006 04:48:33 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/alito-is-not-neato/</guid>
+      <description>Over 750,000 people have signed on to a letter urging the Senate to reject Samuel Alito’s nomination to the Supreme Court. If you sign on, we’re that much closer to making it a full one million: Sign the letter, (I did).&#xA;You can also use MoveOn.org to send a letter to your senator about Alito.&#xA;Personally, I think the lifetime apointments of Supreme Court Justices is dangerous in it’s own right, but I can understand it to some extent… I just think it’s dangerous that the court can sway – and then be stuck in it’s sway for so long.</description>
+    </item>
+    <item>
+      <title>2005 Holiday trip – chapter 3 – Louisville</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/2005-holiday-trip-chapter-3-louisville/</link>
+      <pubDate>Tue, 03 Jan 2006 04:22:16 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2006/01/2005-holiday-trip-chapter-3-louisville/</guid>
+      <description>Before we went to Houston, Anita and I spent some time in Louisville.&#xA;We were able to see some friends and a good amount of family. We missed out on the big family events, as we were in Houston then… but we still got to play some games and relax and eat and all the basic events of together-hood.&#xA;I worked in the Louisville office, but because most people weren’t there, I was able to get more work done than I usually do when I go into the office… but still less than I can get done at home… weird, huh?</description>
+    </item>
+    <item>
+      <title>gearing up to split</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/12/gearing-up-to-split/</link>
+      <pubDate>Tue, 13 Dec 2005 06:45:18 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/12/gearing-up-to-split/</guid>
+      <description>We are getting our stuff together to leave columbus for a while. We have house-sitters / cat-sitters for the majority of the time we are gone… and we are bringing Nova with us, to Louisville.&#xA;We are also bringing Ginni’s queen sized mattress (strapped to the roof of the CRV with ratchet-straps and bungies). That will make for a slightly slower drive, but shouldn’t be too bad (I hope). In addition, it will be Anita, Alan, John, and Nova in the car with a few weeks worth of stuff for all.</description>
+    </item>
+    <item>
+      <title>Busy as (winter in) hell</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/12/busy-as-winter-in-hell/</link>
+      <pubDate>Thu, 08 Dec 2005 20:23:56 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/12/busy-as-winter-in-hell/</guid>
+      <description>The past week (starting at the end of last week actually) Anita and I have been insufferably busy. I’ve been working till midnight or later Sat-Wed… anita has, if anything, been working more… studying for finals and taking finals.&#xA;Luckily, the fires at my work seem to be more under control and Anita is, as of today, done with her tests… She of course doesn’t know her results, but I’m sure she’s doing fine…</description>
+    </item>
+    <item>
+      <title>M$ Clusters – what a bad idea</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/11/m-clusters-what-a-bad-idea/</link>
+      <pubDate>Wed, 16 Nov 2005 16:27:14 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/11/m-clusters-what-a-bad-idea/</guid>
+      <description>So now M$ is releaseing a version meant to cluster computers, you know, like a beowulf cluster. This is one of the worst Ideas I could think of. Why would you use a flaky, high-overhead, and often to crash OS to run distrobuted processing? There is no good reason, in my opinion. If you are willing to dedicate multiple computers to be a “super-computer” – you should be willing to hire a linux geek to setup and run the thing for you… if you wanted to run windows, you don’t need a super-computer.</description>
+    </item>
+    <item>
+      <title>Jenifire went to Peru (who knew?)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/11/jenifire-went-to-peru-who-knew/</link>
+      <pubDate>Tue, 01 Nov 2005 17:33:37 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/11/jenifire-went-to-peru-who-knew/</guid>
+      <description>So, in August, apparentally, Jeno went to Peru… It looks like she toured the countryside and hiked up mountains… went to the amazon rainforest, boated across pink-dolphin infested waters, and got friendly with sheep and mules alike.&#xA;I want the full story… if i get it I will post it somewhere…. perhaps I can convince her to start a blog of her own…</description>
+    </item>
+    <item>
+      <title>brave new passports</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/brave-new-passports/</link>
+      <pubDate>Mon, 31 Oct 2005 05:52:31 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/brave-new-passports/</guid>
+      <description>A quick note about techno-passports which are to be common soon (required I believe)… they put an antenna in the passport, to transmit data, and a material on the cover to stop the antenna from transmitting all time… strange? yes. this is of importance to people like April who are always (or at least often) using their passports… I bet it’s a few years yet before anita or I have to think about it.</description>
+    </item>
+    <item>
+      <title>Hell House II</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/hell-house-ii/</link>
+      <pubDate>Sun, 30 Oct 2005 15:02:09 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/hell-house-ii/</guid>
+      <description>Pre-Halloween Party : Hell House II&#xA;Well, as with pretty much all DJ Foursquare (and hushabye house) parties, this was a great event. Chill people, great crowd, good venue (effective at least), great music, etc… It also benifited from a great collection of costumes and a very moderate and (sorry for this review) disney-land-like bondage show… Honestly, I don’t think the crew was disney-land… I’m sure they had to weak-i-fy their setup/show for the audience invovled.</description>
+    </item>
+    <item>
+      <title>recent spoon photos</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/recent-spoon-photos/</link>
+      <pubDate>Mon, 24 Oct 2005 22:45:38 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/recent-spoon-photos/</guid>
+      <description>Spoon has posted some new (depending on when you last looked) photos… here are some of my favorites:&#xA;dj spoon, weed airport, an attractive salad, and 40 oz of art.&#xA;Now playing: [Tom Waits][5] – [Nighthawks at the Diner – Nighthawk Postcards][6]&#xA;[5]: http://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?artistTerm=Tom Waits [6]: http://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?songTerm=Nighthawks at the Diner - Nighthawk Postcards&amp;amp;artistTerm=Tom Waits</description>
+    </item>
+    <item>
+      <title>mutant mice… yeah – really</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/mutant-mice-yeah-really/</link>
+      <pubDate>Mon, 17 Oct 2005 00:54:12 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/mutant-mice-yeah-really/</guid>
+      <description>One of the strangest things I’ve run across… ORNL Mutant Mouse Database. It is litterally a place to find out about and purchase mutant mice… seriously.</description>
+    </item>
+    <item>
+      <title>Rediculously interesting reading at wikipedia (Nuclear Powerd, WMD, &amp; current book)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/rediculously-interesting-reading-at-wikipedia-nuclear-powerd-wmd-current-book/</link>
+      <pubDate>Mon, 10 Oct 2005 06:30:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/rediculously-interesting-reading-at-wikipedia-nuclear-powerd-wmd-current-book/</guid>
+      <description>Chernobyl Accident – Nuclear Reactor Explosion, 1986 April 26 Mohamed ElBaradei – IAEA Directory General, replacing Hans Blix Weapons of Mass Distraction – also see the top 10 from Connie Rice on The Tavis Smiley Show on NPR William Upski Wimsatt – The author of “Bomb the Suburbs”, which I’m currently reading (fantastic, if dated) Now playing: [Mates of State][10] – [Team Boo – Parachutes (Funeral Song)][11]&#xA;[10]: http://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?artistTerm=Mates of State [11]: http://phobos.</description>
+    </item>
+    <item>
+      <title>Jung tested and approved</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/jung-tested-and-approved/</link>
+      <pubDate>Sun, 09 Oct 2005 03:43:02 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/jung-tested-and-approved/</guid>
+      <description>I just took a Typology Test and ended up as ENFJ which broke down as the following:&#xA;[17%] Extroverted [25%] Intuitive [12%] Feeling [67%] Judging You can read more about the ENFJ type by looking at the following descriptions… one by D.Keirsey and one by J. Butt.&#xA;Update – Oct. 11&#xA;I found out that according to the Typology tests, the perfect match for ENFJ is ISFJ, and Anita is who got me to take the test… So, I had to find out what her type was… and of coruse, she’s ISFJ.</description>
+    </item>
+    <item>
+      <title>ApolloAlliance — renewable energy is good</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/apolloalliance-renewable-energy-is-good/</link>
+      <pubDate>Fri, 07 Oct 2005 03:59:06 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/apolloalliance-renewable-energy-is-good/</guid>
+      <description>I recently found out about what appears to be a great group called ApolloAlliance, which is setup in many states including Ohio and Kentucky. There’s a lot of good information there, including how to get invovled in local communities as well as how to become more energy efficient. (they’ve even got job listings)&#xA;Since I’m on the topic, I want to recommend anyone interested in energy conservationism (or conservationism in general) in the Louisville Kentucky area to check out the BRKST wiki (breakset resources and knowledge for sustainable thought) run by Jason Smithson.</description>
+    </item>
+    <item>
+      <title>MediaWiki Semantic Goodness</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/mediawiki-semantic-goodness/</link>
+      <pubDate>Wed, 05 Oct 2005 21:18:30 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/10/mediawiki-semantic-goodness/</guid>
+      <description>I feel like a spectator admiring athletes reading things like the this blog post [Semantic Wikipedia - At last one of dreams is at the verge of coming true.], but an excited spectator, none the less.&#xA;Wiki is already a fantastic tool for simple (or complex) content management, accessible to anyone within a few minutes… This proposed innovation would add the ability to add, inline, extra relationships which build a more complete (and interoperable) logical structure.</description>
+    </item>
+    <item>
+      <title>Hurricane Rita wasn’t too bad on Houston it seems</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/09/hurricane-rita-wasnt-too-bad-on-houston-it-seems/</link>
+      <pubDate>Sun, 25 Sep 2005 22:35:47 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/09/hurricane-rita-wasnt-too-bad-on-houston-it-seems/</guid>
+      <description>I very briefly talked to mom today and she said her mom (Penny) went back to her home today and things seem normal enough. She was driving so I didn’t get a full report, but judging by tone-of-voice, everything sounds fine. More information when I have it (and remember to post).</description>
+    </item>
+    <item>
+      <title>Rita – hurricane in Houston</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/09/rita-hurricane-in-houston/</link>
+      <pubDate>Thu, 22 Sep 2005 21:33:57 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/09/rita-hurricane-in-houston/</guid>
+      <description>An Email to/from Cathy (my mom) who lives in Houston, in response to the coming hurricane everyone is freaking out about (because of the recent Katrina problems in New Orleans).&#xA;From Alan&#xA;dear houston clan:&#xA;After calling mom 6+ times, and never getting through, anita suggested I email her… and due to the subject matter, I decided to email all of you.&#xA;come to columbus if you want to escape the hurricane.</description>
+    </item>
+    <item>
+      <title>New photos up – kittens and more</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/new-photos-up-kittens-and-more/</link>
+      <pubDate>Wed, 31 Aug 2005 22:29:04 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/new-photos-up-kittens-and-more/</guid>
+      <description>Many new photos of our kittens are now avaialble, including a really cute one of Jess and Io (on the right). Below are some of my favorites:&#xA;Thebe’s bath Thebe in a cup Thebe and Io in bowls There are also a few new photos of Nova and some of my Dad’s kittens we brought him, but they will have to be featured in a different posting.&#xA;Now playing: [Al Frankin][8] – [Lies and the Lying Liars who Tell Them][9]</description>
+    </item>
+    <item>
+      <title>the web allows much time to be wasted, well</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/the-web-allows-much-time-to-be-wasted-well/</link>
+      <pubDate>Tue, 30 Aug 2005 07:52:22 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/the-web-allows-much-time-to-be-wasted-well/</guid>
+      <description>TimeWaster 6000 – The Artsechro Mixer (funded by Red Bull, built by terralever and in part by Chris “ubergeek.tv” Hill)&#xA;Create your own “Concerto for Turntable” – Fuse classical and turntable music with the Red Bull Artsehcro Mixer. Here you can create your own songs by mixing various turntable loops and Artsehcro instruments. Once you create a song you can submit it to be rated by your peers and send it to friends.</description>
+    </item>
+    <item>
+      <title>Kitten Update</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kitten-update/</link>
+      <pubDate>Fri, 19 Aug 2005 04:24:52 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kitten-update/</guid>
+      <description>I took the kittens to the vet yesterday. It turns out they’re only 6 weeks old and they are both males. We have also decided on names for them. The black one is henceforth Thebe, and the white and orange one is Io. These are the names of 2 of Jupiter’s moons, so we were able to stick with the science theme afterall!</description>
+    </item>
+    <item>
+      <title>Kitten Update</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kitten-update/</link>
+      <pubDate>Fri, 19 Aug 2005 04:24:31 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kitten-update/</guid>
+      <description>I took the kittens to the vet yesterday. It turns out they’re only 6 weeks old and they are both males. We have also decided on names for them. The black one is henceforth Thebe, and the white and orange one is Io. These are the names of 2 of Jupiter’s moons, so we were able to stick with the science theme afterall!</description>
+    </item>
+    <item>
+      <title>kittens arrive</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kittens-arrive/</link>
+      <pubDate>Wed, 17 Aug 2005 02:06:09 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/kittens-arrive/</guid>
+      <description>We have kittens.&#xA;That’s right, it’s cute-fest-2005 in our apartment right now. We got a pair of 8 6 week old kittens on Sunday from Anita’s co-worker who got them dumped on her by her mom. They are a brother (black) and sister (white &amp;amp; orange) and have very quickly bonded with Anita and I… they are ok with Nova, but she’s not yet ok with them. Nova actually submitted to them, belly up and looking away; our guard dog proving her grit once again.</description>
+    </item>
+    <item>
+      <title>April is ok after the 7.2 magnitude earthquake</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/april-is-ok-after-the-7.2-magnitude-earthquake/</link>
+      <pubDate>Tue, 16 Aug 2005 08:18:35 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/april-is-ok-after-the-7.2-magnitude-earthquake/</guid>
+      <description>From an email from April:&#xA;_However, I did want to let everyone know that I am&#xA;safe and perfectly whole after this morning’s earthquake. For those of you&#xA;who have no idea what I’m talking about, a 7.2 magnitude earthquake hit&#xA;Japan at 11:46 this morning and I was a mere 60 some-odd kilometers south of&#xA;its center of its origin. It’s on the front page of BBC, CNN, MSN-NBC, etc.</description>
+    </item>
+    <item>
+      <title>japan backlog finished / Ryka’s bithday</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/japan-backlog-finished-/-rykas-bithday/</link>
+      <pubDate>Fri, 05 Aug 2005 15:45:15 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/08/japan-backlog-finished-/-rykas-bithday/</guid>
+      <description>Well, I’m finally done with updating the backlogged Japan blog entries. It was something I kept putting off, but I’m real glad I did it – the posts are kinda long, but it’s as much for my memory of the trip as anyone else’s (sorry).&#xA;I’m impressed that within 45 minutes of uploading the lastest batch of photos, some of them have been looked at 4 times already… I know I’m just getting lucky, but it still nice to know someone is looking.</description>
+    </item>
+    <item>
+      <title>there’s no place like…</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/theres-no-place-like/</link>
+      <pubDate>Wed, 27 Jul 2005 02:21:53 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/theres-no-place-like/</guid>
+      <description>Anita and I were planning on staying up all Monday night and going to the Tokyo Fish Market at 5 am on Tuesday, but around 3am we crashed. Anita got up at 4:30 and fully intended to get me up, but she saw that a sub-tropical-storm was headed at Tokyo and that it was already raining pretty hard… There’s something about being dog tired and lost in a city that is much worse sounding if you add in the attribute – rain soaked.</description>
+    </item>
+    <item>
+      <title>the train is slowing down</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/the-train-is-slowing-down/</link>
+      <pubDate>Tue, 26 Jul 2005 02:19:09 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/the-train-is-slowing-down/</guid>
+      <description>After the late night before, we all slept in… Anita and I slept in so much we missed our hotel’s breakfast. We found a snack and took the subway to the Tokyo Aquarium. It was totally disappointing. The animals had very small enclosures, particularly bothersome were the mammals. There were many dead or dirty exhibits and not too much to read in English… We left after (something like) an hour and a half and roamed the “Sunshine 60” shopping complex (basically a big mall like the galleria in Houston without the ice skating rink).</description>
+    </item>
+    <item>
+      <title>Party in Tokyo (Day 1)</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/party-in-tokyo-day-1/</link>
+      <pubDate>Mon, 25 Jul 2005 01:50:28 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/party-in-tokyo-day-1/</guid>
+      <description>Another morning of repacking, a walk to the station, and a train ride to Tokyo (~3 hours)… most people napped (I read).&#xA;We got out at Tokyo and took a subway to the hotel, dropped off our packs, and walked around to find food. Ironically, our hotel was right next to Akihabara, the Electronic Market in Tokyo, and it was Sunday, a day so busy the street is shut down to vehicles and the area is swarmed with geeks of all varieties and the people that feed on/off them.</description>
+    </item>
+    <item>
+      <title>Kyoto day 2</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kyoto-day-2/</link>
+      <pubDate>Sun, 24 Jul 2005 02:53:49 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kyoto-day-2/</guid>
+      <description>On our second full day in Kyoto we ate the last of the Fruit and some of the granola bars for breakfast; then we hopped on the #100 bus for the east side of Kyoto to see Ginkakuji-michi (the Silver Temple). The Silver Temple was much better than the Golden Temple because it was less overrun with tourists and also because the surrounding gardens were amazing. The cultivation of moss is, itself, remarkable, but to see the whole garden come together is quite impressive.</description>
+    </item>
+    <item>
+      <title>Kyoto day 1</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kyoto-day-1/</link>
+      <pubDate>Sat, 23 Jul 2005 02:55:54 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kyoto-day-1/</guid>
+      <description>We got an early start, showered, dressed, and set out for the train station to buy bus passes before 8:00 am. 2,000 Yen for a 2 day all bus all subway pass is a good deal… also because it means you don’t have to pay attention to which company bus or subway you want to use, because in the city of Kyoto there are at least 3-4 different companies for public transit and most other passes don’t cover them all.</description>
+    </item>
+    <item>
+      <title>Koori-Machi, layers of folded beauty</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/koori-machi-layers-of-folded-beauty/</link>
+      <pubDate>Wed, 20 Jul 2005 23:26:32 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/koori-machi-layers-of-folded-beauty/</guid>
+      <description>Wednesday, we went to the elementary school April visits a few times a week. We did a brief tour of the classes and had an audience with the principal and vice-principal. The school seemed wonderful, but we didn’t have as much time to spend there as we did in Jo-Chu. We had to rush through the school, stop for a quick Ramen lunch, and be back at April’s apartment in time for Karen to receive a several wonderful gifts from some of April’s students who were in Elizabethtown last year.</description>
+    </item>
+    <item>
+      <title>Kill them with kindness</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kill-them-with-kindness/</link>
+      <pubDate>Tue, 19 Jul 2005 15:06:59 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/kill-them-with-kindness/</guid>
+      <description>Tuesday 19 July 2005, we dressed in our nice clothes, carried our own house slippers so we didn’t have to use visitor slippers, and walked to Jo-Ho Chugakko Junior High School, known as Jo-Chu. Arriving at school a few minutes early (which was really on time) we met with the principal (Coach O’Sensei). Immediately we were amazed with how generous he was… treating us like honored guests would be putting it mildly.</description>
+    </item>
+    <item>
+      <title>Anita has hair / I have pictures</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/anita-has-hair-/-i-have-pictures/</link>
+      <pubDate>Wed, 13 Jul 2005 22:01:56 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/anita-has-hair-/-i-have-pictures/</guid>
+      <description>Anita’s hair is finally long enough to put into psuedo-pig-tails! glory glory…&#xA;[Anita’s hair is finally long enough to put into psuedo-pig-tails! glory glory…&#xA;]1&#xA;Also, while you are looking at that photo, look around the friends 2005 photos – there are finally a few other pictures besides documentation of my various hair styles…</description>
+    </item>
+    <item>
+      <title>2005 07 12 </title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/2005-07-12/</link>
+      <pubDate>Wed, 13 Jul 2005 02:10:16 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/2005-07-12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Post on WordPress</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/first-post-on-wordpress/</link>
+      <pubDate>Wed, 13 Jul 2005 02:09:55 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/personal/2005/07/first-post-on-wordpress/</guid>
+      <description>I have implemented a blogging system on my site (utilizing WordPress) and modified the display of my wiki to play well with the blog… The basics of the change are making the content fixed width, and moving the “article, discussion, edit, history, etc” tabs to a sidebar component on the wiki… then coming up with a shared header…&#xA;I still need to get the old blog entries into this system (very do-able), and I am thinking a homepage not in the wiki, is appropriate… either that or i should get rid of the “home” link in the header… hurumph – i think i’m going to remove the “home” link in the header now (since it’s the same as the wiki link for now).</description>
+    </item>
+  </channel>
+</rss>

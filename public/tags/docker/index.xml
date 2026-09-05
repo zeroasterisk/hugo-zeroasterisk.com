@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.com/tags/docker/</link>
+    <description>Recent content in docker on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CoreOS and Docker great presentation</title>
+      <link>https://zeroasterisk.com/2014/10/coreos-and-docker-great-presentation/</link>
+      <pubDate>Tue, 21 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.com/2014/10/coreos-and-docker-great-presentation/</guid>
+      <description>CoreOS &amp;amp; Docker, great presentation Found this inspiring presentation from a Chicago Docker meetup.&#xA;The presentation linked to an amazingly well done animation on RAFT consensus and great blog posts on deploying Docker containers with CoreOS Fleet.&#xA;The future of infrastructure is definitely containers + orchestration.</description>
+    </item>
+  </channel>
+</rss>

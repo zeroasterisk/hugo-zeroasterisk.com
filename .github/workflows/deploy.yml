@@ -1,0 +1,242 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build and validate content
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.121.1
+    outputs:
+      page-count: ${{ steps.validate.outputs.page-count }}
+      asset-count: ${{ steps.validate.outputs.asset-count }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Validate build output
+        id: validate
+        run: |
+          echo "🔍 Validating Hugo build output..."
+          
+          # Count HTML pages (exclude pagination index files)
+          PAGE_COUNT=$(find public -name "*.html" -type f | grep -v "/page/" | wc -l)
+          echo "📄 Generated pages: $PAGE_COUNT"
+          echo "page-count=$PAGE_COUNT" >> $GITHUB_OUTPUT
+          
+          # Count CSS/JS assets
+          ASSET_COUNT=$(find public -name "*.css" -o -name "*.js" | wc -l)
+          echo "🎨 Assets found: $ASSET_COUNT"
+          echo "asset-count=$ASSET_COUNT" >> $GITHUB_OUTPUT
+          
+          # Validate minimum page count
+          if [ "$PAGE_COUNT" -lt 400 ]; then
+            echo "❌ ERROR: Only $PAGE_COUNT pages generated, expected 400+"
+            echo "📋 Recent pages:"
+            find public -name "*.html" -type f | grep -v "/page/" | head -10
+            exit 1
+          fi
+          
+          # Check for critical files
+          CRITICAL_FILES=(
+            "public/index.html"
+            "public/sitemap.xml" 
+            "public/posts/index.html"
+            "public/personal/index.html"
+            "public/tags/index.html"
+            "public/css/main.css"
+            "public/CNAME"
+          )
+          
+          for file in "${CRITICAL_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ ERROR: Missing critical file: $file"
+              exit 1
+            fi
+          done
+          
+          # Validate CNAME content
+          CNAME_CONTENT=$(cat public/CNAME)
+          if [ "$CNAME_CONTENT" != "zeroasterisk.com" ]; then
+            echo "❌ ERROR: CNAME file contains '$CNAME_CONTENT', expected 'zeroasterisk.com'"
+            exit 1
+          fi
+          
+          # Check sitemap has entries
+          SITEMAP_ENTRIES=$(grep -o "<loc>" public/sitemap.xml | wc -l)
+          echo "🗺️ Sitemap entries: $SITEMAP_ENTRIES"
+          if [ "$SITEMAP_ENTRIES" -lt 350 ]; then
+            echo "❌ ERROR: Sitemap only has $SITEMAP_ENTRIES entries, expected 350+"
+            exit 1
+          fi
+          
+          # Sample content validation
+          if ! grep -q "Alan Blount" public/index.html; then
+            echo "❌ ERROR: Homepage missing expected content"
+            exit 1
+          fi
+          
+          echo "✅ Build validation passed:"
+          echo "   📄 $PAGE_COUNT pages generated" 
+          echo "   🎨 $ASSET_COUNT assets included"
+          echo "   🗺️ $SITEMAP_ENTRIES sitemap entries"
+          echo "   📝 CNAME configured for zeroasterisk.com"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # Test build on PRs (validation only, no deployment)
+  test-build:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    env:
+      HUGO_VERSION: 0.121.1
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Test build and validate
+        run: |
+          hugo --gc --minify --baseURL "https://test.example.com/"
+          
+          # Same validation as main build
+          PAGE_COUNT=$(find public -name "*.html" -type f | grep -v "/page/" | wc -l)
+          ASSET_COUNT=$(find public -name "*.css" -o -name "*.js" | wc -l)
+          
+          echo "🔍 PR Build Validation:"
+          echo "   📄 Pages: $PAGE_COUNT"
+          echo "   🎨 Assets: $ASSET_COUNT"
+          
+          if [ "$PAGE_COUNT" -lt 400 ]; then
+            echo "❌ PR build failed: Only $PAGE_COUNT pages, expected 400+"
+            exit 1
+          fi
+          
+          echo "✅ PR build validation passed - ready for production"
+
+  # Deploy job - only runs on main branch pushes after successful build
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Post-deployment verification
+  verify:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    steps:
+      - name: Wait for deployment propagation
+        run: |
+          echo "⏳ Waiting 60 seconds for GitHub Pages propagation..."
+          sleep 60
+
+      - name: Comprehensive site verification
+        run: |
+          echo "🔍 Verifying live deployment..."
+          
+          # Test core pages
+          PAGES_TO_TEST=(
+            "https://zeroasterisk.com/"
+            "https://zeroasterisk.com/posts/"
+            "https://zeroasterisk.com/personal/" 
+            "https://zeroasterisk.com/tags/"
+            "https://zeroasterisk.com/about/"
+          )
+          
+          for url in "${PAGES_TO_TEST[@]}"; do
+            echo "Testing: $url"
+            if ! curl -sf --max-time 10 "$url" > /dev/null; then
+              echo "❌ Failed to access: $url"
+              exit 1
+            fi
+          done
+          
+          # Test sample legacy URLs for SEO compatibility
+          LEGACY_URLS=(
+            "https://zeroasterisk.com/2017/07/playing-with-elixir-is-just-fun/"
+            "https://zeroasterisk.com/personal/2008/01/alans-birthday-well-wished-but-no-poppy/"
+            "https://zeroasterisk.com/tags/ai/"
+            "https://zeroasterisk.com/tags/2017/"
+          )
+          
+          for url in "${LEGACY_URLS[@]}"; do
+            echo "Testing legacy URL: $url"
+            if ! curl -sf --max-time 10 "$url" > /dev/null; then
+              echo "❌ Legacy URL broken: $url"
+              exit 1
+            fi
+          done
+          
+          # Validate homepage content
+          echo "🏠 Validating homepage content..."
+          HOMEPAGE=$(curl -sf "https://zeroasterisk.com/")
+          if ! echo "$HOMEPAGE" | grep -q "Alan Blount"; then
+            echo "❌ Homepage missing expected content"
+            exit 1
+          fi
+          
+          # Check sitemap accessibility
+          echo "🗺️ Validating sitemap..."
+          if ! curl -sf "https://zeroasterisk.com/sitemap.xml" > /dev/null; then
+            echo "❌ Sitemap not accessible"
+            exit 1
+          fi
+          
+          echo "✅ All post-deployment verification checks passed!"
+          echo "🚀 Site successfully deployed with ${{ needs.build.outputs.page-count }} pages"

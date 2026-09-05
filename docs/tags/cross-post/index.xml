@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cross-post on Alan Blount | AI/ML Engineer at Google</title>
+    <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/cross-post/</link>
+    <description>Recent content in cross-post on Alan Blount | AI/ML Engineer at Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zeroasterisk.github.io/zeroasterisk-unified-preview/tags/cross-post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Things Every AI Engineer Should Know About Agent Sandboxes</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/09/5-things-every-ai-engineer-should-know-about-agent-sandboxes/</link>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/09/5-things-every-ai-engineer-should-know-about-agent-sandboxes/</guid>
+      <description>5 Things Every AI Engineer Should Know About Agent Sandboxes Originally shared by Google Cloud Tech on X - September 1, 2026&#xA;Google Cloud Tech highlighted five critical considerations for AI engineers working with agent sandbox environments. These insights are crucial for anyone building secure, reliable AI agent systems.&#xA;Why This Matters Agent sandboxes are fundamental for:&#xA;Security isolation - Containing potentially unsafe agent actions Resource management - Controlling computational resources Execution boundaries - Defining safe operational limits Testing environments - Providing controlled spaces for agent development As someone working on AI agent systems at Google, these sandbox principles directly impact how we design memory architectures and agent runtime environments.</description>
+    </item>
+    <item>
+      <title>Agent Plugins Package Your Skills, Tools, and More</title>
+      <link>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/08/agent-plugins-package-your-skills-tools-and-more/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://zeroasterisk.github.io/zeroasterisk-unified-preview/2026/08/agent-plugins-package-your-skills-tools-and-more/</guid>
+      <description>Agent Plugins Package Your Skills, Tools, and More Originally published on Google Developers Blog - August 6, 2026&#xA;Google has announced Agent Plugins 1.0.0, a new vendor-neutral directory specification backed by major tech companies including Google, Amazon, and Microsoft. This standard aims to package Agent Skills and MCP (Model Context Protocol) servers into portable, interoperable units.&#xA;Key Highlights The specification standardizes the manifest (plugin.json) and utilizes a fixed directory layout, eliminating the need for developers to maintain separate wrappers or configurations to support different AI coding agents and IDEs.</description>
+    </item>
+  </channel>
+</rss>
