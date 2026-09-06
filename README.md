@@ -1,5 +1,8 @@
 # zeroasterisk.com Unified Website
 
+> **⚠️ Personal Hobby Project** — This is an independent, personal project by [Alan Blount](https://github.com/zeroasterisk). It is **not affiliated with, endorsed by, or supported by any employer, company, or organization**. No warranty; use at your own risk.
+
+
 A modern, professional website for Alan Blount showcasing AI/ML work at Google and technical expertise.
 
 ## 🎯 Design Philosophy
