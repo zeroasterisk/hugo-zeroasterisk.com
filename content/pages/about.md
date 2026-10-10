@@ -2,6 +2,7 @@
 title: "About"
 description: "Member of Technical Staff / Technical Product Manager at Google, focused on agent security, governance, capabilities, quality, and evaluation"
 type: "page"
+aliases: ["/about/"]
 ---
 
 # About Alan Blount
