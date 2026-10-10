@@ -119,9 +119,9 @@ Key settings in `config.toml`:
 
 ```toml
 # Site identity
-title = "Alan Blount | AI/ML Engineer at Google"
+title = "Alan Blount | Member of Technical Staff / TPM at Google"
 author = "Alan Blount"
-job = "AI/ML Engineer at Google"
+job = "Member of Technical Staff / Technical Product Manager at Google"
 
 # Content organization
 [permalinks]

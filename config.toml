@@ -1,6 +1,6 @@
 baseURL = "https://zeroasterisk.com"
 languageCode = "en-us"
-title = "Alan Blount | AI/ML Engineer at Google"
+title = "Alan Blount | Member of Technical Staff / TPM at Google"
 
 # Modern Hugo configuration
 paginate = 10
@@ -56,11 +56,11 @@ buildFuture = false
 
 # Site parameters
 [params]
-  description = "AI/ML Engineer at Google working on agent systems, memory architectures, and LLMOps. Creator of Headroom and contributor to agentic runtimes."
+  description = "Member of Technical Staff / Technical Product Manager at Google. Agent security, governance, capabilities, quality, and evaluation. Lead author of the Kaggle Introduction to Agents whitepaper; creator of Headroom."
   
   # Author info
   author = "Alan Blount"
-  job = "AI/ML Engineer at Google"
+  job = "Member of Technical Staff / Technical Product Manager at Google"
   location = "Boulder, CO"
   
   # Social links

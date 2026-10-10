@@ -1,7 +1,7 @@
 ---
 title: "5 Things Every AI Engineer Should Know About Agent Sandboxes"
-date: 2026-09-01  
-description: "Essential insights for AI engineers working with agent sandbox environments and secure execution contexts"
+date: 2026-09-01
+description: "Co-authored Google Cloud Tech article: cold starts, isolation primitives, network egress, state forking, and a 4-question rubric for picking an agent sandbox."
 tags: ["ai", "agents", "sandboxes", "google-cloud", "security", "cross-post", "2026"]
 type: "posts"
 canonical_url: "https://x.com/GoogleCloudTech/status/2094598332131709078"
@@ -11,22 +11,20 @@ crosspost: true
 
 # 5 Things Every AI Engineer Should Know About Agent Sandboxes
 
-**Originally shared by [Google Cloud Tech on X](https://x.com/GoogleCloudTech/status/2094598332131709078)** - *September 1, 2026*
+**Co-authored with Ryan Ismert, published by [Google Cloud Tech on X](https://x.com/GoogleCloudTech/status/2094598332131709078)**, *September 1, 2026*
 
-Google Cloud Tech highlighted five critical considerations for AI engineers working with agent sandbox environments. These insights are crucial for anyone building secure, reliable AI agent systems.
+We spent several quarters benchmarking, breaking, and running agent sandbox runtimes across Google Cloud and open-source stacks. The five takeaways:
+
+1. Cold-start marketing numbers are measured on empty loops, not real runtimes (our real-world bootstrap: ~610 ms vs. a claimed 150 ms).
+2. The isolation spectrum is defined by what code you share with your neighbor.
+3. For autonomous agents, network egress is a bigger attack surface than the hypervisor.
+4. State forking and memory snapshots matter more than raw boot time.
+5. Use a 4-question decision rubric before picking your sandbox stack.
 
 ## Why This Matters
 
-Agent sandboxes are fundamental for:
-- **Security isolation** - Containing potentially unsafe agent actions
-- **Resource management** - Controlling computational resources  
-- **Execution boundaries** - Defining safe operational limits
-- **Testing environments** - Providing controlled spaces for agent development
-
-As someone working on AI agent systems at Google, these sandbox principles directly impact how we design memory architectures and agent runtime environments. The intersection of security, performance, and functionality in agent sandboxes is a key consideration for production AI systems.
-
-This aligns with the work we're doing on agent infrastructure and the need for robust execution environments that balance capability with safety.
+When you give an LLM a terminal, a probabilistic engine can compile binaries, install packages, and make outbound network calls. Isolation and egress control are core to agent security and governance, not an afterthought. Agents also don't behave like microservices or batch jobs: they idle ~95% of the time waiting on reasoning, then burst. So execution infrastructure has to be built differently.
 
 ---
 
-*View the original post and any additional discussion: [Google Cloud Tech on X](https://x.com/GoogleCloudTech/status/2094598332131709078)*
+*Read the full article: [Google Cloud Tech on X](https://x.com/GoogleCloudTech/status/2094598332131709078)*
