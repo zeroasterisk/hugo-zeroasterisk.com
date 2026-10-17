@@ -66,24 +66,12 @@ Agents are probabilistic by design, so `assert output == expected` isn't enough.
 - **Platform-native solutions**: build with the grain of existing systems
 - **Trust is the product**: building an agent is easy; trusting it is hard
 
-## Personal Side
-
-When I'm not working on AI systems, you'll find me:
-- **Parenting**: raising kids with my wife Anita in Boulder
-- **Teaching**: helping kids balance screen time with productive projects
-- **Learning**: always exploring new technologies and methodologies
-- **Writing**: documenting experiences both technical and personal
-
-## Boulder, Colorado
-
-I love living in Boulder. It's the perfect blend of tech innovation and outdoor adventure, with incredible access to hiking, biking, and the mountains, plus a thriving tech community.
-
 ## Connect
 
 I'm always interested in discussing:
 - Agent security, identity, and governance
 - Agent quality, evaluation, and Agent Ops
-- Agent interoperability (A2A, MCP) and memory
+- Agent interoperability (A2A, MCP)
 - The intersection of technology and parenting
 
 Find me on [GitHub](https://github.com/zeroasterisk), [X/Twitter](https://x.com/zeroasterisk), or [LinkedIn](https://linkedin.com/in/alanblount).

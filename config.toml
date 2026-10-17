@@ -75,11 +75,10 @@ buildFuture = false
   show_last_modified = true
   
   # Professional focus areas
-  focus_areas = ["AI Agent Systems", "Memory Architectures", "LLMOps", "Agentic Runtimes", "Developer Tools"]
+  focus_areas = ["Agent Security & Governance", "Quality & Evaluation", "Agent Ops", "Agent Interoperability (A2A/MCP)"]
   
   # Analytics
   googleAnalytics = "UA-2011466-1"
   
   # Content organization
-  highlight_work = true
   minimal_style = true
