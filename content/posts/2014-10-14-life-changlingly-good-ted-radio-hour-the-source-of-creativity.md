@@ -1,4 +1,5 @@
 ---
+aliases: ["/personal/2014/10/life-changingly-good-ted-radio-hour/"]
 title: "Life Changlingly Good TED Radio Hour: “The Source of Creativity”"
 date: 2014-10-14T14:07:05+00:00
 tags: ["2014"]

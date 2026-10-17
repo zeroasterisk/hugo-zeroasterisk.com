@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/01/2017-nerd-goals/"]
 title: "2017 01 01 Nerd Goals"
 date: 2017-01-01
 tags: ["2017"]

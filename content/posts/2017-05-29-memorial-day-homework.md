@@ -1,4 +1,5 @@
 ---
+aliases: ["/personal/2017/05/2017-memorial-day-homework/"]
 title: "2017 05 29 Memorial Day Homework"
 date: 2017-05-29
 tags: ["2017"]

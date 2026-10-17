@@ -1,4 +1,5 @@
 ---
+aliases: ["/2014/10/coreos-and-docker-great-presentation/"]
 title: "Coreos & Docker, great presentation"
 date: 2014-10-21T18:43:00+00:00
 tags: ["2014"]
