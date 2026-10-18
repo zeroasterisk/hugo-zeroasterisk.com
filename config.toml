@@ -56,7 +56,8 @@ buildFuture = false
 
 # Site parameters
 [params]
-  description = "Member of Technical Staff / Technical Product Manager at Google. Agent security, governance, capabilities, quality, and evaluation. Lead author of the Kaggle Introduction to Agents whitepaper."
+  description = "MTS / TPM at Google. Agent security, governance, quality, and evals. Agent interoperability (A2A, MCP, ADK, AP2, UCP, ARD, A2UI). AAIF TSC member."
+  bio = "Member of Technical Staff / Technical Product Manager at Google, working on agent security, governance, capabilities, quality, and evaluation at scale. One of the leads of the Kaggle × Google 5-Day AI Agents Intensive. Focused on agent interoperability: A2A, MCP, ADK, AP2, UCP, ARD, and A2UI. Technical Steering Committee member, Agentic AI Foundation (AAIF)."
   
   # Author info
   author = "Alan Blount"

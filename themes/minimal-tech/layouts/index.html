@@ -5,7 +5,7 @@
         <section class="hero">
             <h1 class="hero-title">{{ .Site.Params.author }}</h1>
             <p class="hero-subtitle">{{ .Site.Params.job }}</p>
-            <p class="hero-description">{{ .Site.Params.description }}</p>
+            <p class="hero-description">{{ .Site.Params.bio | default .Site.Params.description }}</p>
             
             {{ with .Site.Params.focus_areas }}
             <div class="focus-areas">

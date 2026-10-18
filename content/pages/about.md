@@ -54,7 +54,10 @@ Agents are probabilistic by design, so `assert output == expected` isn't enough.
 
 ## Open Source & Community
 
-- **Agent protocols & runtimes**: A2A, ADK, MCP, plus OpenClaw, Scion, Flue, and ax
+- **[Agentic AI Foundation (AAIF) Technical Steering Committee](https://aaif.io/tc)** member
+- **Kaggle × Google 5-Day AI Agents Intensive**: one of the leads
+- **Agent interoperability**: A2A, MCP, ADK, AP2, UCP, ARD, and A2UI
+- **Agent runtimes**: OpenClaw, Scion, Flue, and ax
 - **zeroasterisk on GitHub**: developer tools and AI-related projects
 - **Mentoring**: free coding bootcamps, universities, conferences, and meetups
 
@@ -71,7 +74,7 @@ Agents are probabilistic by design, so `assert output == expected` isn't enough.
 I'm always interested in discussing:
 - Agent security, identity, and governance
 - Agent quality, evaluation, and Agent Ops
-- Agent interoperability (A2A, MCP)
+- Agent interoperability (A2A, MCP, ADK, AP2, UCP, ARD, A2UI)
 - The intersection of technology and parenting
 
 Find me on [GitHub](https://github.com/zeroasterisk), [X/Twitter](https://x.com/zeroasterisk), or [LinkedIn](https://linkedin.com/in/alanblount).
