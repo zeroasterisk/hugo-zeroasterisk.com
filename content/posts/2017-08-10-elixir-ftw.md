@@ -6,7 +6,7 @@ type: "posts"
 ---
 
 I've been using Elixir for a few weeks now, sometimes
-[forcing it to play nice with Mongodb/Meteor](/2017/06/meteor-and-elixir-rocky-courtship/)
+[forcing it to play nice with Mongodb/Meteor](/2017/06/meteor-and-elixir-part-one-a-rocky-courtship/)
 , which it doesn't really want to do.
 Sometimes with Posgres _(which it loves)_.
 Sometimes just plain ole' Elixir with no persistance.
